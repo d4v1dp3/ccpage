@@ -7137,6 +7137,9 @@ body.landing-page {
   font-size: 18px;
   margin-top: 5px;
 }
+.cic-map{
+  text-align: center;
+}
 .landing-page .features-text-alone {
   margin: 40px 0;
 }
