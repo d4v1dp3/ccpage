@@ -7001,17 +7001,31 @@ body.landing-page {
 .landing-page .header-back.one {
   background: url('../img/landing/header_one.jpg') 50% 0 no-repeat;
 }
-.landing-page .header-back.two {
-  background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
+
+/** Imagenes en carrousel, headers **/
+.landing-page .header-back.core {
+  background: url('../img/landing/header_core.jpg') 50% 0 no-repeat;
 }
-.landing-page .header-back.three {
-  background: url('../img/landing/header_three.jpg') 50% 0 no-repeat;
+.landing-page .header-back.bigdata {
+  background: url('../img/landing/header_bigdata.jpg') 50% 0 no-repeat;
 }
-.landing-page .header-back.four {
-  background: url('../img/landing/header_four.jpg') 50% 0 no-repeat;
+.landing-page .header-back.algoritmia {
+  background: url('../img/landing/header_algoritmia.jpg') 50% 0 no-repeat;
 }
-.landing-page .header-back.five {
-  background: url('../img/landing/header_five.jpg') 50% 0 no-repeat;
+.landing-page .header-back.workshop {
+  background: url('../img/landing/header_workshop.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.conferencias {
+  background: url('../img/landing/header_conferencias.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.ponente {
+  background: url('../img/landing/header_ponente.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.robotica {
+  background: url('../img/landing/header_robotica.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.ciudadInteligente {
+  background: url('../img/landing/header_ciudadInteligente.jpg') 50% 0 no-repeat;
 }
 
 .landing-page .carousel {
