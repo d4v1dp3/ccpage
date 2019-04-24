@@ -7181,7 +7181,7 @@ body.landing-page {
   margin: auto;
 }
 .landing-page .social-icon a {
-  background: #1ab394;
+  background: #773956;
   color: #fff;
   padding: 4px 8px;
   height: 28px;
@@ -7190,7 +7190,7 @@ body.landing-page {
   border-radius: 50px;
 }
 .landing-page .social-icon a:hover {
-  background: #179d82;
+  background: #682444;
 }
 .landing-page .img-small {
   height: 88px;
@@ -7296,6 +7296,9 @@ body.landing-page {
 .landing-page .btn-danger.btn-outline:hover {
   color: #fff;
 }
+
+/* modificado para colors guinda */
+/*
 .landing-page .btn-primary {
   background-color: #1ab394;
   border-color: #1ab394;
@@ -7336,6 +7339,54 @@ body.landing-page {
   background-color: #1dc5a3;
   border-color: #1dc5a3;
 }
+*/
+/* fin */ 
+
+/* cambios a colores guinda en botones */
+.landing-page .btn-primary {
+  background-color: #773956;
+  border-color: #773956;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+.landing-page .btn-primary:hover,
+.landing-page .btn-primary:focus,
+.landing-page .btn-primary:active,
+.landing-page .btn-primary.active,
+.landing-page .open .dropdown-toggle.btn-primary {
+  background-color: #682444;
+  border-color: #682444;
+  color: #FFFFFF;
+}
+.landing-page .btn-primary:active,
+.landing-page .btn-primary.active,
+.landing-page .open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.landing-page .btn-primary.disabled,
+.landing-page .btn-primary.disabled:hover,
+.landing-page .btn-primary.disabled:focus,
+.landing-page .btn-primary.disabled:active,
+.landing-page .btn-primary.disabled.active,
+.landing-page .btn-primary[disabled],
+.landing-page .btn-primary[disabled]:hover,
+.landing-page .btn-primary[disabled]:focus,
+.landing-page .btn-primary[disabled]:active,
+.landing-page .btn-primary.active[disabled],
+.landing-page fieldset[disabled] .btn-primary,
+.landing-page fieldset[disabled] .btn-primary:hover,
+.landing-page fieldset[disabled] .btn-primary:focus,
+.landing-page fieldset[disabled] .btn-primary:active,
+.landing-page fieldset[disabled] .btn-primary.active {
+  background-color: #844c66;
+  border-color: #844c66;
+}
+/* fin */
+
+
+
 @media (min-width: 768px) {
   .landing-page {
     /* Navbar positioning foo */
