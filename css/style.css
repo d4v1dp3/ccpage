@@ -6823,7 +6823,7 @@ body.body-small .vote-icon {
   display: none;
 }
 body.landing-page {
-  color: #676a6c;
+  color: #000000;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   background-color: #fff;
 }
@@ -7004,7 +7004,7 @@ body.landing-page {
 
 /** Imagenes en carrousel, headers **/
 .landing-page .header-back.core {
-  background: url('../img/landing/header_core.jpg') 50% 0 no-repeat;
+  background: url('../img/landing/header_main.jpg') 50% 0 no-repeat;
 }
 .landing-page .header-back.bigdata {
   background: url('../img/landing/header_bigdata.jpg') 50% 0 no-repeat;
@@ -7340,7 +7340,7 @@ body.landing-page {
   border-color: #1dc5a3;
 }
 */
-/* fin */ 
+/* fin */
 
 /* cambios a colores guinda en botones */
 .landing-page .btn-primary {
@@ -8628,4 +8628,34 @@ body.md-skin {
   #page-wrapper {
     margin: 0;
   }
+}
+
+.header-box{
+  color: #444;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.color-orange{
+  color: #ff9300;
+}
+
+.minilogo{
+  height: 40px;
+}
+
+.minilogo-left{
+  padding-right: 20px;
+}
+
+.minilogo-right{
+  padding-left:  20px;
+}
+
+.separador{
+  width: 100%;
+  background: #888;
+  height: 3px;
 }
