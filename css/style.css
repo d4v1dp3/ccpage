@@ -7181,7 +7181,7 @@ body.landing-page {
   margin: auto;
 }
 .landing-page .social-icon a {
-  background: #773956;
+  background: #e67e22;
   color: #fff;
   padding: 4px 8px;
   height: 28px;
@@ -7190,8 +7190,9 @@ body.landing-page {
   border-radius: 50px;
 }
 .landing-page .social-icon a:hover {
-  background: #682444;
+  background: #e88a38;
 }
+
 .landing-page .img-small {
   height: 88px;
   width: 88px;
@@ -7342,10 +7343,10 @@ body.landing-page {
 */
 /* fin */
 
-/* cambios a colores guinda en botones */
+/* Ahora son naranjas botones */
 .landing-page .btn-primary {
-  background-color: #773956;
-  border-color: #773956;
+  background-color: #e67e22;
+  border-color: #e67e22;
   color: #FFFFFF;
   font-size: 14px;
   padding: 10px 20px;
@@ -7356,10 +7357,10 @@ body.landing-page {
 .landing-page .btn-primary:active,
 .landing-page .btn-primary.active,
 .landing-page .open .dropdown-toggle.btn-primary {
-  background-color: #682444;
-  border-color: #682444;
+  background-color: #e88a38;
+  border-color: #e88a38;
   color: #FFFFFF;
-}
+} 
 .landing-page .btn-primary:active,
 .landing-page .btn-primary.active,
 .landing-page .open .dropdown-toggle.btn-primary {
@@ -7380,10 +7381,10 @@ body.landing-page {
 .landing-page fieldset[disabled] .btn-primary:focus,
 .landing-page fieldset[disabled] .btn-primary:active,
 .landing-page fieldset[disabled] .btn-primary.active {
-  background-color: #844c66;
-  border-color: #844c66;
+  background-color: #e88a38;
+  border-color: #e88a38;
 }
-/* fin */
+/*fin*/
 
 
 
