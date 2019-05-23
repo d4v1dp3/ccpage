@@ -7,6 +7,7 @@
     "calls": "Calls",
     "precios": "Pricing",
     "talleres": "Workshops",
+    "comite": "Organizing Committee",
     "contacto": "Contacts",
     "ubicacion": "Location"
   },
@@ -78,6 +79,10 @@
     "parrafo_2":"The participant will apply the concepts of the area of Data Science when they are of volumes that require the use of a group of computers \"cluster\" and parallel processing. It will also build a cluster and develop programs following the Map-Reduce paradigm.",
     "subtitle_3":"Ethical Hacking (2017)",
     "parrafo_3":"The course is based on the preparation of Practical Safety Laboratories, Black Box and White Box Techniques, Safety Countermeasures, Hardening Processes, White Papers and Good Safety Practices."
+  },
+  "comite":{
+    "title":"Pricing",
+    "estatus":"Soon"
   },
   "contacto":{
     "titulo": "Contact",
