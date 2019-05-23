@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27ecb6a2-f0c4-4f71-a87c-233ace9ab945" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/.~lock.LNCS-Ejemplo.docx#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="544" column="50" selection-start-line="544" selection-start-column="50" selection-end-line="544" selection-end-column="50" />
+            <state relative-caret-position="203">
+              <caret line="579" column="24" selection-start-line="579" selection-start-column="24" selection-end-line="579" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -32,6 +30,7 @@
     <findStrings>
       <find>descarga</find>
       <find>Juan Ca</find>
+      <find>files/fi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,12 +110,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558400048152</updated>
       <workItem from="1558400055270" duration="1769000" />
-      <workItem from="1558566252629" duration="4184000" />
+      <workItem from="1558566252629" duration="5868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5953000" />
+    <option name="totallyTimeSpent" value="7637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1366" height="734" extended-state="6" />
@@ -147,8 +146,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="544" column="50" selection-start-line="544" selection-start-column="50" selection-end-line="544" selection-end-column="50" />
+        <state relative-caret-position="203">
+          <caret line="579" column="24" selection-start-line="579" selection-start-column="24" selection-end-line="579" selection-end-column="24" />
         </state>
       </provider>
     </entry>
