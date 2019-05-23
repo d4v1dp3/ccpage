@@ -1,30 +1,138 @@
 {
-  "navbar":{
+  "nav":{
     "inicio": "Home",
     "fechas": "Dates",
     "acerca": "About",
     "ponencias": "Exponsor",
     "calls": "Calls",
-    "precios": "Precios",
+    "precios": "Pricing",
     "talleres": "Workshops",
     "contacto": "Contacts",
-    "ubicacion": "Location",
+    "ubicacion": "Location"
   },
-  "body":{
-    "welcome": "Welcome Amelia"
+  "date":{
+    "titulo":"Dates",
+    "fecha_titulo":"From June 24 to 26, 2019",
+    "evento_1":"Articles receipt",
+    "evento_2":"Workshops proposal receipt",
+    "evento_3":"Congress",
+    "tl_1":"Start of reception",
+    "tl_2":"End of reception",
+    "tl_3":"Results",
+    "tl_4":"Workshops",
+    "tl_5":"Conferences",
+    "fecha_1":"May 1, 2019",
+    "fecha_2":"May 31, 2019",
+    "fecha_3":"July 2, 2019",
+    "fecha_4":"April 17, 2019",
+    "fecha_5":"June 5, 2019",
+    "fecha_6":"June 20, 2019",
+    "fecha_7":"June 30 to August 5, 2019",
+    "fecha_8":"August 6 to August 9, 2019",
+    "fecha_9":"April 17",
+    "fecha_10":"April 17",
+    "fecha_11":"June 30"
+  },
+  "about":{
+    "titulo": "About of CORE",
+    "texto_1": "The CORE begins its long tradition 18 years ago with the idea of ​​being a scientific congress led by students of the Centro de Investigación en Computación. Each edition presenting its own personality by changing the members of the organizing committee who print their own stamp to this now recognized event.",
+    "texto_2": "Throughout the history of this congress, dozens of speakers of international stature have been presented who coexist with the new and experienced researchers who present their work to the scientific community through this meeting place.",
+    "texto_3":"As we know the academic world requires spaces to present the advances in the different areas of knowledge; whether they are research that improves previous methods, that present new problems in which to apply existing knowledge, new ways of solving problems or new areas to be explored.",
+    "texto_4":"It is precisely this need that has successfully covered, year after year, this recognized congress and which in the present edition seeks to fully fill through a high level congress that connects international keynote speakers, young researchers, industry, and university-level and post-graduate assistants. As well as the publication of the articles that pass the scientific and editorial scrutiny in the indexed journal Research in Computing Science ISSN 1870-4069."
+  },
+  "general":{
+    "titulo_1":"49 presentations",
+    "titulo_2":"150 Hours of content",
+    "titulo_3":"+500 attendees",
+    "titulo_4":"7 Competencies and challenges",
+    "titulo_5":"12 Workshops",
+    "titulo_6":"80 Research works"
+  },
+  "conference":{
+    "titulo_1":"Magistral - Modeling and Control based on Quaternions (2017)",
+    "descripcion_1":"Dr Pedro Castillo from the University of Technology of Compiègne, France presented his most recent research on quadripopter control.",
+    "titulo_2":"First programming competition (2014)",
+    "descripcion_2":"A set of problems is chosen to challenge and develop the skills of the contestants.",
+    "titulo_3":"Microarchitecture of the processor Lagarto I (2018)",
+    "descripcion_3":"Workshop given by the MICROSE laboratory with the purpose of giving an instruction to the Lagarto processor, developed by the CIC IPN.",
+    "titulo_4":"Cybersecurity: Capture the flag (2016)",
+    "descripcion_4":"Tournament that tests hacking skills through different tests or challenges."
+  },
+  "presentations":{
+    "titulo":"Previous presentations",
+    "investigacion":"Modularity in artificial biological brains (2015)"
+  },
+  "frase":{
+    "frase":"The science of today is the technology of tomorrow."
+  },
+  "pricing":{
+    "title":"Pricing",
+    "estatus":"Soon"
+  },
+  "challenges":{
+    "title":"Old Workshops",
+    "subtitle":"Workshop",
+    "subtitle_1":"Microarchitecture of the processor Lagarto I",
+    "parrafo_1":"The course is oriented to the development and understanding of the Lagarto I architecture developed by the CIC IPN. The participant will apply his knowledge in computer architecture, Verilog among others.",
+    "subtitle_2":"Big Data (2017)",
+    "parrafo_2":"The participant will apply the concepts of the area of Data Science when they are of volumes that require the use of a group of computers \"cluster\" and parallel processing. It will also build a cluster and develop programs following the Map-Reduce paradigm.",
+    "subtitle_3":"Ethical Hacking (2017)",
+    "parrafo_3":"The course is based on the preparation of Practical Safety Laboratories, Black Box and White Box Techniques, Safety Countermeasures, Hardening Processes, White Papers and Good Safety Practices."
+  },
+  "contacto":{
+    "titulo": "Contact",
+    "info": "Organizer | Simulation and modeling laboratory",
+    "boton": " Contact us",
+    "redes": "Follow us"
+  },
+  "calls":{
+    "titulo":"Calls",
+    "articulos_titulo":"Call for articles",
+    "articulos_texto_1":"All submitted articles will be reviewed by experts in each area evaluating originality, significance, quality and clarity. Participants are invited to submit their articles according to the calendar presented below.",
+    "articulos_fechas":"Important dates",
+    "articulos_fechas_1":"Start of reception: May 01, 2019",
+    "articulos_fechas_2":"End of reception: May 31, 2019",
+    "articulos_fechas_3":"Results: July 02, 2019",
+    "articulos_fechas_4":"Conferences: 6 - 9 August 2019",
+    "articulos_titulo_2":"Presentation of articles",
+    "articulos_texto_2":"The accepted articles will be published in the indexed journal Research in Computer Science (ISSN 1870-4069)",
+    "articulos_texto_3":"Items must be prepared according to Springer LNCS guidelines",
+    "articulos_titulo_3":"Themes of interest",
+    "articulos_li_1":"Software engineering and quality",
+    "articulos_li_2":"Informatic security",
+    "articulos_li_3":"Geographic information systems",
+    "articulos_li_4":"Embedded systems and high performance computing",
+    "articulos_li_5":"Computer simulation",
+    "articulos_li_6":"Natural language processing",
+    "articulos_li_7":"Automation and intelligent systems",
+    "articulos_li_8":"Quantum computation",
+    "articulos_li_9":"Artificial intelligence",
+    "articulos_li_10":"Diffuse logic and neural networks",
+    "articulos_li_11":"Image processing and artificial vision",
+    "articulos_li_12":"Human-computer interaction",
+    "articulos_li_13":"Big Data",
+    "articulos_li_14":"Cloud Computing",
+    "articulos_li_15":"Smart cities",
+    "articulos_li_16":"Internet of things",
+    "articulos_comentario":"* The topics are not limited",
+    "articulos_descarga":"Download format for Paper",
+    "articulos_boton":"Inscribe paper",
 
-  },
-  "topnav":{
-
-    "messageinfo": "You have 42 messages and 6 notifications.",
-    "search": "Search for something...",
-    "logout": "Log out",
-    "welcometext": "Welcome to INSPINIA+ Admin Theme.",
-    "language": "Language"
-  },
-  "demo":{
-    "text1": "Internationalization (sometimes shortened to \"I18N , meaning \"I - eighteen letters -N\") is the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization . The internationalization process is sometimes called translation or localization enablement ."
+    "workshop_titulo":"Call for workshops",
+    "workshop_texto_1":"The workshop must include the registration form, duration of the workshop, costs, material (if required) and presentation. The workshop will be considered depending on the available classrooms and the theme to be developed by the committee of this congress. The speakers are invited to submit their proposals according to the calendar presented below.",
+    "workshop_fechas":"Important dates",
+    "workshop_li_1":"Start of reception: April 17, 2019",
+    "workshop_li_2":"End of reception: June 5, 2019",
+    "workshop_li_3":"Results: June 20, 2019",
+    "workshop_li_4":"Conferences: June 30 to August 5, 2019",
+    "workshop_descarga":"Download file for the Workshop",
+    "workshop_comentario_1":"Send to the email ",
+    "workshop_comentario_2":"attaching the file."
   }
-
-
 }
+
+
+
+
+
+
