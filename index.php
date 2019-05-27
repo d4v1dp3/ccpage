@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+$lang = "es";
+if( $_GET["lang"]){
+    if($_GET["lang"] == "en"){
+        $lang = "en";
+    }
+
+}
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -23,6 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <a class="navbar-toggle navbar-right" href="#"><img src="img/flags/24/Mexico.png" class="set_es" alt="ES">&nbsp;&nbsp;<img class="set_en" src="img/flags/24/United-States.png" alt="EN"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="navi18n" class="nav navbar-nav navbar-right">
@@ -35,7 +45,7 @@
                     <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
                     <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
                     <li><a class="page-scroll" data-i18n="nav.contacto" href="#contact">Contacto</a></li>
-                    <li><a class="page scroll" href="#"><img src="img/flags/24/Mexico.png" id="set_es" alt="ES">&nbsp;&nbsp;<img id="set_en" src="img/flags/24/United-States.png" alt="EN"></a></li>
+                    <li><a class="page-scroll visible-md-*" href="#"><img src="img/flags/24/Mexico.png" class="set_es" alt="ES">&nbsp;&nbsp;<img class="set_en" src="img/flags/24/United-States.png" alt="EN"></a></li>
                 </ul>
             </div>
         </div>
@@ -221,9 +231,9 @@
                         </div>
 
                         <div class="vertical-timeline-content">
-                            <h2 data-i18n="date.tl_1">Inicio de recepción</h2>
+                            <h2 data-i18n="date.tl_1a">Inicio de recepción</h2>
                             <p data-i18n="date.fecha_4">17 de Abril del 2019</p>
-                            <h2 data-i18n="date.tl_2">Fin de recepción</h2>
+                            <h2 data-i18n="date.tl_2a">Fin de recepción</h2>
                             <p data-i18n="date.fecha_5">5 de Junio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados</h2>
                             <p data-i18n="date.fecha_6">20 de Junio del 2019</p>
@@ -554,7 +564,7 @@
             <div class="col-lg-8 col-lg-offset-2 features-text">
                 <h2 data-i18n="calls.articulos_titulo">Convocatoria de artículos</h2>
                 <p data-i18n="calls.articulos_texto_1"> Todos los artículos enviados serán revisados por expertos en
-                    cada area evaluando originalidad,
+                    cada área evaluando originalidad,
                     significancia, calidad y claridad. Los participantes son invitados a enviar sus artículos según el
                     calendario que se presenta a continuación.</p>
                 <h3 data-i18n="calls.articulos_fechas">Fechas Importantes</h3>
@@ -578,7 +588,7 @@
                     <li data-i18n="calls.articulos_li_4">Sistemas embebidos y cómputo de alto desempeño</li>
                     <li data-i18n="calls.articulos_li_5">Simulación por computadora</li>
                     <li data-i18n="calls.articulos_li_6">Procesamiento de lenguaje natural</li>
-                    <li data-i18n="calls.articulos_li_7">Automotización y sistemas inteligentes</li>
+                    <li data-i18n="calls.articulos_li_7">Automatización y sistemas inteligentes</li>
                     <li data-i18n="calls.articulos_li_8">Cómputo cuántico</li>
                     <li data-i18n="calls.articulos_li_9">Inteligencia artificial</li>
                     <li data-i18n="calls.articulos_li_10">Lógica difusa y redes neuronales</li>
@@ -603,11 +613,7 @@
         <div class="col-sm-6">
             <div class="col-lg-8 col-lg-offset-2 features-text">
                 <h2 data-i18n="calls.workshop_titulo">Convocatoria de talleres</h2>
-                <p data-i18n="calls.workshop_texto_1"> El taller deberá incluir el formato de inscripción, duración del
-                    taller, costos, material (si es que
-                    llega a requerirlo) y presentación. El taller sera considerando dependiendo de las aulas disponibles
-                    y el tema a desarrollar por el comité de este congreso. Los ponentes son invitados a enviar sus
-                    propuestas según el calendario que se presenta a continuación.
+                <p data-i18n="calls.workshop_texto_1"> El taller deberá incluir el formato de inscripción, duración del taller, costos, material (si es que llega a requerirlo) y presentación. El taller sera considerando dependiendo de las aulas disponibles y el tema a desarrollar por el comité de este congreso. Los interesados pueden enviar sus propuestas según el calendario que se presenta a continuación.
                 <h3 data-i18n="calls.workshop_fechas">Fechas Importantes</h3>
                 <ul>
                     <li data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
@@ -823,14 +829,12 @@
     </div>
 </section>
 
-<section id="contact" class="contact" style="margin-top: 0">
+<section id="comite" class="comite" style="margin-top: 0">
     <div class="container">
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1 data-i18n="contacto.titulo">Contacto</h1>
-                <br>
-                <h3 data-i18n="contacto.comiteo" style="color:darkgray;">Comité organizador</h3>
+                <h1 data-i18n="contacto.comiteo">Comité Local</h1>
             </div>
         </div>
         <div class="row">
@@ -839,16 +843,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/chimal.png">
                     <div class="media-body">
                         <div class="commens-name">Dr. Juan Carlos Chimal</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
-                    </div>
-                </div>
-            </div>
-           <div class="col-sm-4 col-md-3 col-xs-6">
-                <div class="comments-avatar">
-                    <img class="pull-left" alt="image" src="img/landing/comite/comite_cortes_diaz_hiram_david.png">
-                    <div class="media-body">
-                        <div class="commens-name">Hiram David Cortes Díaz</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -857,7 +852,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_fernandez_cid_ivan.png">
                     <div class="media-body">
                         <div class="commens-name">Ivan Fernández Cid</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -866,7 +861,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_cruz_silva_jacobo_emanuel.png">
                     <div class="media-body">
                         <div class="commens-name">Jacobo Emanuel Cruz Silva</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -875,7 +870,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_lopez_lozada_elizabeth.png">
                     <div class="media-body">
                         <div class="commens-name">Elizabeth López Lozada</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -884,7 +879,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_perez_martinez_david.png">
                     <div class="media-body">
                         <div class="commens-name">David Pérez Martínez</div>
-                        <small class="text-muted" data-i18n="contacto.info">Run as faster as alcohol flow in his veins</small>
+                        <small class="text-muted">I have a iMac</small>
                     </div>
                 </div>
             </div>
@@ -893,7 +888,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_segura_cristino_david_jesus.png">
                     <div class="media-body">
                         <div class="commens-name">David Jesús Segura Cristino</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -902,7 +897,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_maaz_amjad.png">
                     <div class="media-body">
                         <div class="commens-name">Amjad Maaz</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -910,8 +905,8 @@
                 <div class="comments-avatar">
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_maldonado_romo_alberto.png">
                     <div class="media-body">
-                        <div class="commens-name">Alberto Romo Maldinado</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <div class="commens-name">Alberto Maldonado Romo</div>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -920,7 +915,7 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_medina_cortes_carlos_alonso.png">
                     <div class="media-body">
                         <div class="commens-name">Carlos Alonso Medina Cortés</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -929,7 +924,23 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_mendoza_lopez_alberto.png">
                     <div class="media-body">
                         <div class="commens-name">Alberto López Mendoza</div>
-                        <small class="text-muted">Laboratorio de simulación y modelado</small>
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_abdiel_reyes_vera.png">
+                    <div class="media-body">
+                        <div class="commens-name">Abdiel Reyes Vera</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_karen_pamela_lopez_medina.png">
+                    <div class="media-body">
+                        <div class="commens-name">Karen Pamela López Medina</div>
                     </div>
                 </div>
             </div>
@@ -944,6 +955,15 @@
                     <img class="pull-left" alt="image" src="img/landing/comite/staff_bustamante_campos_oscar_alfredo.png">
                     <div class="media-body">
                         <div class="commens-name">Oscar Alfredo Bustamante Campos</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_cortes_diaz_hiram_david.png">
+                    <div class="media-body">
+                        <div class="commens-name">Hiram David Cortes Díaz</div>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
@@ -972,8 +992,16 @@
                 </div>
             </div>
         </div>
-
-        <br/>
+    </div>
+    </section>
+    <section id="contact" class="contact" style="margin-top: 0">
+        <div class="container">
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1 data-i18n="contacto.titulo">Contacto</h1>
+                </div>
+            </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <a href="mailto:core@cic.ipn.mx" class="btn btn-primary">
@@ -987,7 +1015,7 @@
                     </li>
                     <li><a href="https://www.facebook.com/CORECIC" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.instagram.com/core.congress/" target="_blank"><i
+                    <li><a href="https://www.instagram.com/corecongress19/" target="_blank"><i
                             class="fa fa-instagram"></i></a>
                     </li>
                     <li><a href="https://www.youtube.com/channel/UCDxkP-E13ugi-O_fSNBWqiQ" target="_blank"><i
@@ -1022,6 +1050,10 @@
 <script src="js/plugins/pace/pace.min.js"></script>
 <script src="js/plugins/wow/wow.min.js"></script>
 <script>
+    $(function() {
+
+    });
+
     $(document).ready(function () {
         $('body').scrollspy({
             target: '.navbar-fixed-top',
@@ -1057,7 +1089,7 @@
             $('#map').i18n();
         });
 
-        $('#set_en').on('click', function () {
+        $('.set_en').on('click', function () {
             i18n.setLng('en', function () {
                 $('#navi18n').i18n();
                 $('#carousel').i18n();
@@ -1077,9 +1109,20 @@
                 $('.set_es').removeClass('active');
             });
         });
-        $('#set_es').on('click', function () {
-            $(location).attr('href', "index.html");
+        $('.set_es').on('click', function () {
+            $(location).attr('href', "index.php");
         });
+
+        <?php
+            if($lang == "en"){?>
+                $('.set_en').click();
+
+                <?php } else {?>
+
+                <?php }
+
+        ?>
+
     });
 
     var cbpAnimatedHeader = (function () {

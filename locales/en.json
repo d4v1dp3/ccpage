@@ -3,11 +3,11 @@
     "inicio": "Home",
     "fechas": "Dates",
     "acerca": "About",
-    "ponencias": "Presentations",
+    "ponencias": "Conferences",
     "calls": "Calls",
     "precios": "Pricing",
     "talleres": "Workshops",
-    "comite": "Organizing Committee",
+    "comite": "Local Committee",
     "contacto": "Contact",
     "ubicacion": "Location"
   },
@@ -31,11 +31,13 @@
   "date":{
     "titulo":"Dates",
     "fecha_titulo":"From June 24 to 26, 2019",
-    "evento_1":"Papers receipt",
-    "evento_2":"Workshops proposal receipt",
+    "evento_1":"Call for papers",
+    "evento_2":"Call for workshops",
     "evento_3":"Congress",
-    "tl_1":"Start of reception",
-    "tl_2":"End of reception",
+    "tl_1":"Call for papers issued",
+    "tl_2":"Deadline for paper submission",
+    "tl_1a":"Call for workshops issued",
+    "tl_2a":"Deadline for workshop submission",
     "tl_3":"Results",
     "tl_4":"Workshops",
     "tl_5":"Conferences",
@@ -53,15 +55,15 @@
   },
   "about":{
     "titulo": "About CORE",
-    "texto_1": "The CORE begins its long tradition 18 years ago with the idea of ​​being a scientific congress led by students of the Centro de Investigación en Computación. Each edition, presenting its own personality by changing the members of the organizing committee who print their own stamp to this now recognized event.",
+    "texto_1": "The CORE begins its long tradition 18 years ago with the idea of ​​being a scientific congress led by students of the Computing Research Center. Each edition, presenting its own personality by changing the members of the organizing committee who print their own stamp to this now recognized event.",
     "texto_2": "Throughout the history of this congress, dozens of international speakers have been presented, they coexist with the new and experienced researchers who present their work to the scientific community through this meeting place.",
     "texto_3":"As we know the academic world requires spaces to present the advances in the different areas of knowledge; whether they are research that improves previous methods, that present new problems in which to apply existing knowledge, new ways of solving problems or new areas to be explored.",
     "texto_4":"It is precisely this need that has successfully covered, year after year, this recognized congress and which in the present edition seeks to fully fill through a high level congress that connects international keynote speakers, young researchers, industry, and university-level and post-graduate assistants. As well as the publication of the articles that pass the scientific and editorial scrutiny in the indexed journal Research in Computing Science ISSN 1870-4069."
   },
   "general":{
-    "titulo_1":"49 presentations",
+    "titulo_1":"49 Conferences",
     "titulo_2":"150 Hours of content",
-    "titulo_3":"+500 attendees",
+    "titulo_3":"+500 Attendees",
     "titulo_4":"7 Competences and challenges",
     "titulo_5":"12 Workshops",
     "titulo_6":"80 Research works"
@@ -77,7 +79,7 @@
     "descripcion_4":"Tournament that tests hacking skills through different tests or challenges."
   },
   "presentations":{
-    "titulo":"Previous presentations",
+    "titulo":"Previous conferences",
     "investigacion":"Modularity in artificial biological brains (2015)"
   },
   "frase":{
@@ -98,14 +100,14 @@
     "parrafo_3":"The course is based on the preparation of Practical Safety Laboratories, Black Box and White Box Techniques, Safety Countermeasures, Hardening Processes, White Papers and Good Safety Practices."
   },
   "comite":{
-    "title":"Organizing Committee",
+    "title":"Local Committee",
     "estatus":"In construction"
   },
   "contacto":{
     "titulo": "Contact",
     "info": "Organizer | Simulation and modeling laboratory",
     "boton": "core@cic.ipn.mx",
-    "comiteo": "Organizing Committee",
+    "comiteo": "Local Committee",
     "redes": "Follow us"
   },
   "calls":{
@@ -113,8 +115,8 @@
     "articulos_titulo":"Call for papers",
     "articulos_texto_1":"All submitted papers will be reviewed by experts in each area evaluating originality, significance, quality and clarity. Participants are invited to submit their papers according to the calendar presented below.",
     "articulos_fechas":"Important dates",
-    "articulos_fechas_1":"Start of reception: May 01, 2019",
-    "articulos_fechas_2":"End of reception: May 31, 2019",
+    "articulos_fechas_1":"Call for papers issued: May 01, 2019",
+    "articulos_fechas_2":"Deadline for paper submission: May 31, 2019",
     "articulos_fechas_3":"Results: July 02, 2019",
     "articulos_fechas_4":"Conferences: 6 - 9 August 2019",
     "articulos_titulo_2":"Submission of papers",
@@ -139,13 +141,13 @@
     "articulos_li_16":"Internet of things",
     "articulos_comentario":"* Topics are not limited",
     "articulos_descarga":"Download format for Paper",
-    "articulos_boton":"Inscribe paper",
+    "articulos_boton":"Submit paper",
 
     "workshop_titulo":"Call for workshops",
-    "workshop_texto_1":"The workshop must include the registration form, duration of the workshop, costs, material (if required) and presentation. The workshop will be considered depending on the available classrooms and the theme to be developed by the committee of this congress. The speakers are invited to submit their proposals according to the calendar presented below.",
+    "workshop_texto_1":"The workshop must include the registration form, duration of the workshop, costs, material (if required) and presentation. The workshop will be considered depending on the available classrooms and the topic to be developed by the committee of this congress. The speakers are invited to submit their proposals according to the calendar presented below.",
     "workshop_fechas":"Important dates",
-    "workshop_li_1":"Start of reception: April 17, 2019",
-    "workshop_li_2":"End of reception: June 5, 2019",
+    "workshop_li_1":"Call for workshops issued: April 17, 2019",
+    "workshop_li_2":"Deadline for workshops submission: June 5, 2019",
     "workshop_li_3":"Results: June 20, 2019",
     "workshop_li_4":"Conferences: June 30 to August 5, 2019",
     "workshop_descarga":"Download file for the Workshop",
