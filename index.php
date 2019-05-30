@@ -68,8 +68,7 @@ if( $_GET["lang"]){
                 <div class="carousel-caption">
                     <div class="header-box">
                         <h1 data-i18n="carousel.titulo">Congreso Internacional</h1>
-                        <h1><img class="minilogo minilogo-left" src="img/landing/logo_mini_ipn.png" alt="mini-ipn"> Core
-                            2019 <img class="minilogo minilogo-right" src="img/landing/logo_mini_cic.png"
+                        <h1><img class="minilogo minilogo-left" src="img/landing/logo_mini_ipn.png" alt="mini-ipn"> Core 2019 <img class="minilogo minilogo-right" src="img/landing/logo_mini_cic.png"
                                       alt="mini-cic"></h1>
                         <div class="separador"></div>
                         <h1 data-i18n="carousel.dates" class="color-orange">Agosto 6 - 9, 2019</h1>
@@ -89,7 +88,7 @@ if( $_GET["lang"]){
                     <h1 data-i18n="carousel.asistep" >Asiste como ponente</h1>
                     <p data-i18n="carousel.recep" >Recepción de artículos. Convocatoria abierta</p>
                     <p>
-                        <a class="btn btn-lg btn-primary" href="#pricing" role="button">Más información</a>
+                        <a class="btn btn-lg btn-primary" href="#pricing" data-i18n="carousel.more" role="button">Más información</a>
                     </p>
                 </div>
             </div>
@@ -919,7 +918,7 @@ if( $_GET["lang"]){
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-md-3 col-xs-6">
+   <!-- <div class="col-sm-4 col-md-3 col-xs-6">
                 <div class="comments-avatar">
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_mendoza_lopez_alberto.png">
                     <div class="media-body">
@@ -927,7 +926,7 @@ if( $_GET["lang"]){
                         <small class="text-muted"></small>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-sm-4 col-md-3 col-xs-6">
                 <div class="comments-avatar">
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_abdiel_reyes_vera.png">
