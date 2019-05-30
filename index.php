@@ -39,10 +39,10 @@ if( $_GET["lang"]){
                     <li><a class="page-scroll" data-i18n="nav.inicio" href="#page-top">Inicio</a></li>
                     <li><a class="page-scroll" data-i18n="nav.fechas" href="#date">Fechas</a></li>
                     <li><a class="page-scroll" data-i18n="nav.acerca" href="#about">Acerca de</a></li>
+                    <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
                     <li><a class="page-scroll" data-i18n="nav.ponencias" href="#conference">Ponencias</a></li>
                     <li><a class="page-scroll" data-i18n="nav.calls" href="#calls">Calls</a></li>
                     <li><a class="page-scroll" data-i18n="nav.precios" href="#pricing">Costos</a></li>
-                    <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
                     <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
                     <li><a class="page-scroll" data-i18n="nav.contacto" href="#contact">Contacto</a></li>
                     <li><a class="page-scroll visible-md-*" href="#"><img src="img/flags/24/Mexico.png" class="set_es" alt="ES">&nbsp;&nbsp;<img class="set_en" src="img/flags/24/United-States.png" alt="EN"></a></li>
@@ -446,6 +446,69 @@ if( $_GET["lang"]){
     </div>
 </section>
 
+<section id="challenges" class="features gray-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1 data-i18n="challenges.title">Talleres 2019</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_1">Microarquitectura del procesador Lagarto</h2>
+                <i class="fa fa-flag big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_1">El curso esta orientado para el desarrollo y compresión de la
+                    arquitectura Lagarto I desarrollada por
+                    el CIC IPN. El participante aplicara sus conocimientos en arquitectura de computadoras, Verilog
+                    entre otros.</p>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de explots.</h2>
+                <i class="fa fa-bolt big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_2">Cosas para hakiar.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_3">Introducción al desarrollo de apps moviles con realidad aumentada.</h2>
+                <i class="fa fa-cubes big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_3">Cosas chidori.</p>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_4">Detectando persinas en imágenes usando deep learning.</h2>
+                <i class="fa fa-cubes big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_4">Cosas deep.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker.</h2>
+                <i class="fa fa-cubes big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_5">Reto de la ballenita.</p>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_6">Big Data en la ciencia de datos.</h2>
+                <i class="fa fa-cubes big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_6">Puros datos.</p>
+            </div>
+        </div>
+        <!--
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <a href="#" class="btn btn-primary">Ver todos</a>
+            </div>
+        </div>
+        -->
+    </div>
+</section>
+
 <section id="conference" class="container services">
     <div class="row">
         <div class="col-sm-3">
@@ -569,14 +632,13 @@ if( $_GET["lang"]){
                 <h3 data-i18n="calls.articulos_fechas">Fechas Importantes</h3>
                 <ul>
                     <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_2">Fin de recepción : 31 de Mayo del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_3">Resultados : 02 de Julio del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_4">Conferencias : 6 - 9 Agosto del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_3">Resultados: 02 de Julio del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                 </ul>
                 <h3 data-i18n="calls.articulos_titulo_2">Presentación de artículos</h3>
                 <p data-i18n="calls.articulos_texto_2"> Los artículos aceptados serán publicados en la revista indexada
-                    <b><i>Research in Computer Science
-                        (ISSN 1870-4069)</i></b></p>
+                    <b><i>Research in Computer Science (ISSN 1870-4069)</i></b></p>
                 <p data-i18n="calls.articulos_texto_3"> Los artículos deben ser preparados según las pautas de <b><i>Springer
                     LNCS</i></b></p>
                 <h3 data-i18n="calls.articulos_titulo_3">Temas de interés</h3>
@@ -636,6 +698,7 @@ if( $_GET["lang"]){
     </div>
 </section>
 
+<!--
 <section id="pricing" class="pricing">
     <div class="container">
         <div class="row m-b-lg">
@@ -655,62 +718,27 @@ if( $_GET["lang"]){
         </div>
     </div>
 </section>
-
-<!-- <section id="pricing" class="pricing">
+-->
+<section id="pricing" class="pricing">
     <div class="container">
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1>Costos</h1>
+                <h1 data-i18n="pricing.title">Costos</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 wow zoomIn">
                 <ul class="pricing-plan list-unstyled">
                     <li class="pricing-title">
-                        Comunidad Politécnica
-                    </li>
-                    <li class="pricing-desc">
-                    </li>
-                    <li class="pricing-price">
-                        Participante / <span>$118.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Ponente / <span>$2,006.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Taller / <span>$236.00 MXN</span>
-                    </li>
-                    <li>
-                        Acceso a conferencias magistrales
-                    </li>
-                    <li>
-                        Acceso a ponencias
-                    </li>
-                    <li>
-                        Café del oxxo y galletas Emperador
-                    </li>
-                    <li>
-                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4 wow zoomIn">
-                <ul class="pricing-plan list-unstyled selected">
-                    <li class="pricing-title">
                         Público en General
                     </li>
-                    <li class="pricing-desc">
+                    <li class="pricing-desc"></li>
+                    <li class="pricing-price">
+                        Ponente / <span>$3,000.00 MXN</span>
                     </li>
                     <li class="pricing-price">
-                        Congreso / <span>$235.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Taller / <span>$235.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Ponente / <span>$2,115.00 MXN</span>
+                        Taller (cada uno) / <span>$100.00 MXN</span>
                     </li>
                     <li>
                         Acceso a conferencias magistrales
@@ -726,7 +754,32 @@ if( $_GET["lang"]){
                     </li>
                 </ul>
             </div>
-
+            <div class="col-lg-4 wow zoomIn">
+                <ul class="pricing-plan list-unstyled selected">
+                    <li class="pricing-title">
+                        Comunidad Politécnica
+                    </li>
+                    <li class="pricing-desc"></li>
+                    <li class="pricing-price">
+                        Ponente / <span>$2,800.00 MXN</span>
+                    </li>
+                    <li class="pricing-price">
+                        Taller (cada uno) / <span>$50.00 MXN</span>
+                    </li>
+                    <li>
+                        Acceso a conferencias magistrales
+                    </li>
+                    <li>
+                        Acceso a ponencias
+                    </li>
+                    <li>
+                        <strong>Café del oxxo y galletas Emperador</strong>
+                    </li>
+                    <li>
+                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
             <div class="col-lg-4 wow zoomIn">
                 <ul class="pricing-plan list-unstyled">
                     <li class="pricing-title">
@@ -735,13 +788,10 @@ if( $_GET["lang"]){
                     <li class="pricing-desc">
                     </li>
                     <li class="pricing-price">
-                        Taza /<span>$118.00 MXN</span>
+                        Asistencia a conferencias comunidad Politéctica (kit de bienvenida) /<span>$150.00 MXN</span>
                     </li>
                     <li class="pricing-price">
-                        Playera conmemorativa /<span>$235.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Club sandwich / <span>$50.00 MXN</span>
+                        Asistencia a conferencias externos (kit de bienvenida) /<span>$200.00 MXN</span>
                     </li>
                     <li>
                         <a class="btn btn-primary btn-xs" href="#">Solicitar</a>
@@ -751,69 +801,17 @@ if( $_GET["lang"]){
         </div>
         <div class="row m-t-lg">
             <div class="col-lg-12 text-center m-t-lg">
-                <p><strong><span class="navy">Público general</span></strong> presentar comprobante de pago para ser
-                    canjeado por recibo simple del IPN. Si requiere factura debe incluir datos fiscales: RFC, razón
+                <p><strong><span class="navy">Público general</span></strong> Si requiere factura debe incluir datos fiscales: RFC, razón
                     social y domicilio fiscal.<br />
                     <strong><span class="navy">Comunidad politécnica</span></strong> presentar copia de credencial
-                    IPN vigente y comprobante de pago para ser canjeado por recibo simple del IPN.<br />
-                    <strong><span class="navy">Souvenirs</span></strong> Los pagos se pueden realizar directamente
-                    en las mesas de registro el durante el evento.Sólo efectivo.
+                    IPN vigente.<br />
+                    <strong><span class="navy">Los pagos</span></strong> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes. <strong>No se aceptarán pagos en efectivo los dias del evento.</strong>
                 </p>
             </div>
         </div>
     </div>
-</section> -->
-
-
-<section id="challenges" class="features gray-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1 data-i18n="challenges.title">Talleres anteriores</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_1">Micro-arquitectura del procesador Lagarto I</h2>
-                <i class="fa fa-flag big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_1">El curso esta orientado para el desarrollo y compresión de la
-                    arquitectura Lagarto I desarrollada por
-                    el CIC IPN. El participante aplicara sus conocimientos en arquitectura de computadoras, Verilog
-                    entre otros.</p>
-            </div>
-            <div class="col-lg-5 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_2">Big Data (2017)</h2>
-                <i class="fa fa-bolt big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_2">El participante aplicará los conceptos del área de Ciencia de
-                    Datos cuando estos son de volúmenes
-                    que requieren el uso de un grupo de computadoras «cluster» y procesamiento en paralelo. Asimismo
-                    construirá un cluster y elaborará programas siguiendo el paradigma Map–Reduce.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_3">Hacking ético (2017)</h2>
-                <i class="fa fa-cubes big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_3">El curso está basado en la preparación Laboratorios Prácticos de
-                    Seguridad, Técnicas de Black Box
-                    y White Box, Contramedidas en Seguridad, Procesos de Hardening, White Papers y Buenas prácticas
-                    de Seguridad.</p>
-            </div>
-            <div class="col-lg-5"></div>
-        </div>
-        <!--
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <a href="#" class="btn btn-primary">Ver todos</a>
-            </div>
-        </div>
-        -->
-    </div>
 </section>
+
 <section id="map" class="features cic-map">
     <div class="container">
         <div class="row m-b-lg">
