@@ -217,7 +217,7 @@ if( $_GET["lang"]){
                             <h2 data-i18n="date.tl_1">Inicio de recepción</h2>
                             <p data-i18n="date.fecha_1">1 de Mayo del 2019</p>
                             <h2 data-i18n="date.tl_2">Fin de recepción</h2>
-                            <p data-i18n="date.fecha_2">31 de Mayo del 2019</p>
+                            <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados</h2>
                             <p data-i18n="date.fecha_3">2 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
@@ -480,7 +480,7 @@ if( $_GET["lang"]){
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_4">Detectando persinas en imágenes usando deep learning.</h2>
+                <h2 data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning.</h2>
                 <i class="fa fa-paperclip big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_4">En este taller de 4 horas, tu vas reentrenar el modelo neuronal YOLO (You only look once) para localizar personas o vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usaras una herramienta para etiquetar tus propias imágenes y entendederas a grosso modo como debe hacer el entrenamiento de los modelos neuronales profundos.</p>
             </div>

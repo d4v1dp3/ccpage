@@ -95,10 +95,16 @@
     "subtitle":"Workshop",
     "subtitle_1":"Microarchitecture of processor Lagarto I",
     "parrafo_1":"The course is oriented to development and understanding of the Lagarto I architecture developed by the CIC IPN. The participant will apply his knowledge in computer architecture, Verilog among others.",
-    "subtitle_2":"Big Data (2017)",
-    "parrafo_2":"The participant will apply concepts of Data Science when they are big enough to use a group of computers \"cluster\" and parallel processing. It will also build a cluster and develop programs following the Map-Reduce paradigm.",
-    "subtitle_3":"Ethical Hacking (2017)",
-    "parrafo_3":"The course is based on the preparation of Practical Safety Laboratories, Black Box and White Box Techniques, Safety Countermeasures, Hardening Processes, White Papers and Good Safety Practices."
+    "subtitle_2":"Introduction to the development of explots",
+    "parrafo_2":"The main objective is that the student acquire the knowledge and necessary skills to be able to identify and exploit basic vulnerabilities in the software programming. Coming from bad practices of programming, making a software vulnerable to buffer overflow, heap overflow and format string attacks.",
+    "subtitle_3":"Introduction to the development of mobile apps with augmented reality.",
+    "parrafo_3":"Give the basics in the use of Unity and Vuforia, for the development of mobile apps on Android using AR.",
+    "subtitle_4":"Detecting people in images using deep learning.",
+    "parrafo_4":"In this 4 hours workshop, you'll re-train the neural model YOLO to recognize People, vehicles and other objects in the picture using COLAB. We Will explain the neural architecture YOLO wich is one of the Best ones to detect objects, you'll get to know the métricas used for the performance evaluación of detectors. You'll use a tool to tag your own pictures and get a rought understanding of how to train a deep neural network.",
+    "subtitle_5":"Applications with Docker",
+    "parrafo_5":"In this introductory course to Docker students will learn how to create, deploy and manage images and Docker containers. At the end of the course you will know how to use Docker to build applications quickly and execute them anywhere.",
+    "subtitle_6":"Big Data in data science",
+    "parrafo_6":"The participants will acquire the bases to continue his study in the field of data science and have opportunities in the development of projects in this area that currently has  great income offers for who those who know how to solve problems in this field"
   },
   "comite":{
     "title":"Local Committee",

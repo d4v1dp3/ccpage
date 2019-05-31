@@ -8660,3 +8660,7 @@ body.md-skin {
   background: #888;
   height: 3px;
 }
+
+.cross-text {
+  text-decoration: line-through;
+}
