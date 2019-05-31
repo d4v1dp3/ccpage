@@ -458,7 +458,7 @@ if( $_GET["lang"]){
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_1">Microarquitectura del procesador Lagarto</h2>
-                <i class="fa fa-flag big-icon pull-right"></i>
+                <i class="fa fa-bolt big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_1">El curso esta orientado para el desarrollo y compresión de la
                     arquitectura Lagarto I desarrollada por
                     el CIC IPN. El participante aplicara sus conocimientos en arquitectura de computadoras, Verilog
@@ -467,22 +467,22 @@ if( $_GET["lang"]){
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de explots.</h2>
-                <i class="fa fa-bolt big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_2">Cosas para hakiar.</p>
+                <i class="fa fa-flag big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_2">El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_3">Introducción al desarrollo de apps moviles con realidad aumentada.</h2>
-                <i class="fa fa-cubes big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_3">Cosas chidori.</p>
+                <i class="fa fa-tint big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_3">Proporcionar los conocimientos básicos en el manejo de Unity y Vuforia para el desarrollo de aplicaciones móviles en Android implementando realidad aumentada.</p>
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_4">Detectando persinas en imágenes usando deep learning.</h2>
-                <i class="fa fa-cubes big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_4">Cosas deep.</p>
+                <i class="fa fa-paperclip big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_4">En este taller de 4 horas, tu vas reentrenar el modelo neuronal YOLO (You only look once) para localizar personas o vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usaras una herramienta para etiquetar tus propias imágenes y entendederas a grosso modo como debe hacer el entrenamiento de los modelos neuronales profundos.</p>
             </div>
         </div>
         <div class="row">
@@ -490,13 +490,13 @@ if( $_GET["lang"]){
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker.</h2>
                 <i class="fa fa-cubes big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_5">Reto de la ballenita.</p>
+                <p data-i18n="challenges.parrafo_5">En este curso introductorio a Docker aprenderás como crear, desplegar y administrar imágenes y contenedores de Docker. Al término del curso sabrás cómo utilizar Docker para construir aplicaciones de forma rápida y ejecutarlas donde sea.</p>
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_6">Big Data en la ciencia de datos.</h2>
-                <i class="fa fa-cubes big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_6">Puros datos.</p>
+                <i class="fa fa-signal big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_6">Los participantes adquirirán las bases para continuar su estudio de la Ciencia de Datos y tengan oportunidad de desarrollar proyectos en esta área que actualmente tiene ofertas de ingresos para quienes conozcan cómo resolver problemas en este campo.</p>
             </div>
         </div>
         <!--
@@ -728,36 +728,10 @@ if( $_GET["lang"]){
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 wow zoomIn">
+            <div class="col-lg-6 wow zoomIn">
                 <ul class="pricing-plan list-unstyled">
                     <li class="pricing-title">
                         Público en General
-                    </li>
-                    <li class="pricing-desc"></li>
-                    <li class="pricing-price">
-                        Ponente / <span>$3,000.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Taller (cada uno) / <span>$100.00 MXN</span>
-                    </li>
-                    <li>
-                        Acceso a conferencias magistrales
-                    </li>
-                    <li>
-                        Acceso a ponencias
-                    </li>
-                    <li>
-                        <strong>Néscafe y dos Gansito</strong>
-                    </li>
-                    <li class="plan-action">
-                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 wow zoomIn">
-                <ul class="pricing-plan list-unstyled selected">
-                    <li class="pricing-title">
-                        Comunidad Politécnica
                     </li>
                     <li class="pricing-desc"></li>
                     <li class="pricing-price">
@@ -766,35 +740,27 @@ if( $_GET["lang"]){
                     <li class="pricing-price">
                         Taller (cada uno) / <span>$50.00 MXN</span>
                     </li>
-                    <li>
-                        Acceso a conferencias magistrales
-                    </li>
-                    <li>
-                        Acceso a ponencias
-                    </li>
-                    <li>
-                        <strong>Café del oxxo y galletas Emperador</strong>
-                    </li>
-                    <li>
+                    <li class="pricing-price">Reconocimiento de asistencia a conferencias comunidad Politéctica /<span>$150.00 MXN</span></li>
+                    <li class="plan-action">
                         <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-4 wow zoomIn">
-                <ul class="pricing-plan list-unstyled">
+            <div class="col-lg-6 wow zoomIn">
+                <ul class="pricing-plan list-unstyled selected">
                     <li class="pricing-title">
-                        Souvenirs
+                        Comunidad Politécnica
                     </li>
-                    <li class="pricing-desc">
+                    <li class="pricing-desc"></li>
+                    <li class="pricing-price">
+                        Ponente / <span>$2,500.00 MXN</span>
                     </li>
                     <li class="pricing-price">
-                        Asistencia a conferencias comunidad Politéctica (kit de bienvenida) /<span>$150.00 MXN</span>
+                        Taller (cada uno) / <span>$50.00 MXN</span>
                     </li>
-                    <li class="pricing-price">
-                        Asistencia a conferencias externos (kit de bienvenida) /<span>$200.00 MXN</span>
-                    </li>
+                    <li class="pricing-price">Reconocimiento de asistencia a conferencias externos/<span>$200.00 MXN</span></li>
                     <li>
-                        <a class="btn btn-primary btn-xs" href="#">Solicitar</a>
+                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
                     </li>
                 </ul>
             </div>
