@@ -98,9 +98,9 @@ if( $_GET["lang"]){
             <div class="container">
                 <div class="carousel-caption">
                     <h1 data-i18n="carousel.taller_interes">¿Interesado en impartir un taller?</h1>
-                    <p data-i18n="carousel.calls">Consulta las fechas para la recepción de propuestas de talleres</p>
+                    <p data-i18n="carousel.calls">Consulta las fechas para la recepción de propuestas de talleres (finalizado)</p>
                     <p>
-                        <a class="btn btn-lg btn-primary" href="#calls" role="button" data-i18n="carousel.callw">Convocatoria para workshops</a>
+                        <!--<a class="btn btn-lg btn-primary" href="#calls" role="button" data-i18n="carousel.callw">Convocatoria para workshops</a>-->
                     </p>
                 </div>
             </div>
@@ -218,6 +218,7 @@ if( $_GET["lang"]){
                             <p data-i18n="date.fecha_1">1 de Mayo del 2019</p>
                             <h2 data-i18n="date.tl_2">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
+                            <p data-i18n="date.fecha_2a">30 de Junio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados</h2>
                             <p data-i18n="date.fecha_3">2 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
@@ -231,13 +232,13 @@ if( $_GET["lang"]){
 
                         <div class="vertical-timeline-content">
                             <h2 data-i18n="date.tl_1a">Inicio de recepción</h2>
-                            <p data-i18n="date.fecha_4">17 de Abril del 2019</p>
+                            <p class="cross-text" data-i18n="date.fecha_4">17 de Abril del 2019</p>
                             <h2 data-i18n="date.tl_2a">Fin de recepción</h2>
-                            <p data-i18n="date.fecha_5">5 de Junio del 2019</p>
+                            <p class="cross-text" data-i18n="date.fecha_5">5 de Junio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados</h2>
                             <p data-i18n="date.fecha_6">20 de Junio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_10"> Abril 17 </span>| <strong
-                                    data-i18n="date.evento_2">Recepción de propuestas de talleres</strong></span>
+                                    data-i18n="date.evento_2">Recepción de propuestas de talleres (finalizada)</strong></span>
                         </div>
                     </div>
 
@@ -488,7 +489,7 @@ if( $_GET["lang"]){
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker.</h2>
+                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker (por confirmar).</h2>
                 <i class="fa fa-cubes big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_5">En este curso introductorio a Docker aprenderás como crear, desplegar y administrar imágenes y contenedores de Docker. Al término del curso sabrás cómo utilizar Docker para construir aplicaciones de forma rápida y ejecutarlas donde sea.</p>
             </div>
@@ -632,7 +633,8 @@ if( $_GET["lang"]){
                 <h3 data-i18n="calls.articulos_fechas">Fechas Importantes</h3>
                 <ul>
                     <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
+                    <li class="cross-text" data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_3">Resultados: 02 de Julio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                 </ul>
@@ -673,19 +675,19 @@ if( $_GET["lang"]){
         </div>
         <div class="col-sm-6">
             <div class="col-lg-8 col-lg-offset-2 features-text">
-                <h2 data-i18n="calls.workshop_titulo">Convocatoria de talleres</h2>
-                <p data-i18n="calls.workshop_texto_1"> El taller deberá incluir el formato de inscripción, duración del taller, costos, material (si es que llega a requerirlo) y presentación. El taller sera considerando dependiendo de las aulas disponibles y el tema a desarrollar por el comité de este congreso. Los interesados pueden enviar sus propuestas según el calendario que se presenta a continuación.
+                <h2 data-i18n="calls.workshop_titulo">Convocatoria de talleres (finalizado)</h2>
+                <p class="cross-text" data-i18n="calls.workshop_texto_1"> El taller deberá incluir el formato de inscripción, duración del taller, costos, material (si es que llega a requerirlo) y presentación. El taller sera considerando dependiendo de las aulas disponibles y el tema a desarrollar por el comité de este congreso. Los interesados pueden enviar sus propuestas según el calendario que se presenta a continuación.
                 <h3 data-i18n="calls.workshop_fechas">Fechas Importantes</h3>
                 <ul>
-                    <li data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
-                    <li data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
+                    <li class="cross-text" data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
+                    <li class="cross-text"  data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
                     <li data-i18n="calls.workshop_li_3">Resultados : 20 de Junio del 2019</li>
                     <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Junio al 5 Agosto del 2019</li>
                 </ul>
             </div>
             <div class="col-lg-8 col-lg-offset-2 m-t-lg m-b-lg">
-                <h4><a href="files/ficha%20de%20registro%20para%20workshops.docx"><i class="fa fa-download fa-lg"></i>
-                    <span data-i18n="calls.workshop_descarga">Descargar ficha para el Taller</span></a></h4>
+                <h4><i class="fa fa-download fa-lg"></i>
+                    <span data-i18n="calls.workshop_descarga">Descargar ficha para el Taller</span></h4>
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
                 <!--<a href="#" class="btn btn-primary">Inscribir workshop</a>-->
@@ -730,48 +732,35 @@ if( $_GET["lang"]){
         <div class="row">
             <div class="col-lg-6 wow zoomIn">
                 <ul class="pricing-plan list-unstyled">
-                    <li class="pricing-title">
-                        Público en General
-                    </li>
+                    <li data-i18n="pricing.publico" class="pricing-title">Público en General</li>
                     <li class="pricing-desc"></li>
-                    <li class="pricing-price">
-                        Ponente / <span>$2,800.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Taller (cada uno) / <span>$50.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">Reconocimiento de asistencia a conferencias comunidad Politéctica /<span>$150.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
+                    <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$50.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.rec"> Reconocimiento de asistencia a conferencias comunidad Politéctica / </text><span>$150.00 MXN</span></li>
                     <li class="plan-action">
-                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
+                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="#">Registrarse</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-6 wow zoomIn">
                 <ul class="pricing-plan list-unstyled selected">
-                    <li class="pricing-title">
-                        Comunidad Politécnica
-                    </li>
+                    <li data-i18n="pricing.comun" class="pricing-title">Comunidad Politécnica</li>
                     <li class="pricing-desc"></li>
-                    <li class="pricing-price">
-                        Ponente / <span>$2,500.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">
-                        Taller (cada uno) / <span>$50.00 MXN</span>
-                    </li>
-                    <li class="pricing-price">Reconocimiento de asistencia a conferencias externos/<span>$200.00 MXN</span></li>
+                    <li  class="pricing-price"><text data-i18n="pricing.eponente"> Ponente / </text><span>$2,500.00 MXN</span></li>
+                    <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$50.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
                     <li>
-                        <a class="btn btn-primary btn-xs" href="#">Registrarse</a>
+                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="#">Registrarse</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="row m-t-lg">
             <div class="col-lg-12 text-center m-t-lg">
-                <p><strong><span class="navy">Público general</span></strong> Si requiere factura debe incluir datos fiscales: RFC, razón
-                    social y domicilio fiscal.<br />
-                    <strong><span class="navy">Comunidad politécnica</span></strong> presentar copia de credencial
-                    IPN vigente.<br />
-                    <strong><span class="navy">Los pagos</span></strong> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes. <strong>No se aceptarán pagos en efectivo los dias del evento.</strong>
+                <p>
+                    <strong><span data-i18n="pricing.publico" class="navy">Público general</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
+                    <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
+                    <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong>
                 </p>
             </div>
         </div>
