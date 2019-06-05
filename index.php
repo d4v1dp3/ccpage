@@ -18,6 +18,7 @@ if( $_GET["lang"]){
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="font-awesome/css/fontcustom.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -459,7 +460,7 @@ if( $_GET["lang"]){
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_1">Microarquitectura del procesador Lagarto</h2>
-                <i class="fa fa-bolt big-icon pull-right"></i>
+                <i class="fa fa-microchip big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_1">El curso esta orientado para el desarrollo y compresión de la
                     arquitectura Lagarto I desarrollada por
                     el CIC IPN. El participante aplicara sus conocimientos en arquitectura de computadoras, Verilog
@@ -468,7 +469,7 @@ if( $_GET["lang"]){
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de explots.</h2>
-                <i class="fa fa-flag big-icon pull-right"></i>
+                <i class="fa fa-bug big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_2">El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.</p>
             </div>
         </div>
@@ -476,13 +477,13 @@ if( $_GET["lang"]){
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_3">Introducción al desarrollo de apps moviles con realidad aumentada.</h2>
-                <i class="fa fa-tint big-icon pull-right"></i>
+                <i class="fa fa-mobile-phone  big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_3">Proporcionar los conocimientos básicos en el manejo de Unity y Vuforia para el desarrollo de aplicaciones móviles en Android implementando realidad aumentada.</p>
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning.</h2>
-                <i class="fa fa-paperclip big-icon pull-right"></i>
+                <i class="fa fa-drivers-license-o  big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_4">En este taller de 4 horas, tu vas reentrenar el modelo neuronal YOLO (You only look once) para localizar personas o vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usaras una herramienta para etiquetar tus propias imágenes y entendederas a grosso modo como debe hacer el entrenamiento de los modelos neuronales profundos.</p>
             </div>
         </div>
@@ -490,7 +491,7 @@ if( $_GET["lang"]){
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
                 <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker (por confirmar).</h2>
-                <i class="fa fa-cubes big-icon pull-right"></i>
+                <i class="fa fa-docker big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_5">En este curso introductorio a Docker aprenderás como crear, desplegar y administrar imágenes y contenedores de Docker. Al término del curso sabrás cómo utilizar Docker para construir aplicaciones de forma rápida y ejecutarlas donde sea.</p>
             </div>
             <div class="col-lg-5 features-text">
@@ -738,7 +739,7 @@ if( $_GET["lang"]){
                     <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$50.00 MXN</span></li>
                     <li class="pricing-price"><text data-i18n="pricing.rec"> Reconocimiento de asistencia a conferencias comunidad Politéctica / </text><span>$150.00 MXN</span></li>
                     <li class="plan-action">
-                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="#">Registrarse</a>
+                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                     </li>
                 </ul>
             </div>
@@ -750,7 +751,7 @@ if( $_GET["lang"]){
                     <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$50.00 MXN</span></li>
                     <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
                     <li>
-                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="#">Registrarse</a>
+                        <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                     </li>
                 </ul>
             </div>
