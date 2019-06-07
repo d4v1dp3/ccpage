@@ -61,20 +61,11 @@ if ($_GET["lang"]) {
                     echo "</div>";
                   }
                   ?>
-                  <!--<div class="row">
-                    <div class="col-lg-6 col-lg-offset-1 features-text">
-                      <h4>Microarquitectura del procesador Lagarto</h4></div>
-                    <div class="col-lg-2 features-text">
-                      <h5>Pendiente</h5></div>
-                    <div class="col-lg-2 features-text">
-                      <button type="button">
-                        <i class="fa fa-close"></i></button></div>
-                  </div>-->
             </div>
         </div>
         <br>
         <br>
-        <div class="modal fade" id="inscribir-taller" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="inscribir-taller" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <form class="m-t" role="form" method="post" action="taller">
@@ -95,6 +86,7 @@ if ($_GET["lang"]) {
                   ?>
                 </div>
                 <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                   <button type="submit" class="btn btn-primary">Inscribirme</button>
                 </div>
               </form>

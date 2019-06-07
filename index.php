@@ -45,6 +45,7 @@ if( $_GET["lang"]){
                     <li><a class="page-scroll" data-i18n="nav.calls" href="#calls">Calls</a></li>
                     <li><a class="page-scroll" data-i18n="nav.precios" href="#pricing">Costos</a></li>
                     <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
+                    <li><a class="page-scroll" data-i18n="nav.comite" href="#comite">Comité</a></li>
                     <li><a class="page-scroll" data-i18n="nav.contacto" href="#contact">Contacto</a></li>
                     <li><a class="page-scroll visible-md-*" href="#"><img src="img/flags/24/Mexico.png" class="set_es" alt="ES">&nbsp;&nbsp;<img class="set_en" src="img/flags/24/United-States.png" alt="EN"></a></li>
                 </ul>
