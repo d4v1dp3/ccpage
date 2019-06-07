@@ -127,6 +127,53 @@ if ($_GET["lang"]) {
           </div>
         </div>
         <!-- VER TALLERES -->
+        <div class="modal fade" id="ver-talleres" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <form class="m-t" role="form" method="post" action="taller">
+                <div class="modal-header">
+                  <h1 class="modal-title m-l-xl" id="titulo-modal">Talleres</h1>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                      <small>Taller</small>
+                    </div>
+                    <div class="col-lg-2 features-text">
+                      <small>Cupo</small>
+                    </div>
+                    <div class="col-lg-2 features-text">
+                      <small>Capacidad</small>
+                    </div>
+                    <div class="col-lg-2 features-text">
+                      <small>Confirmados</small>
+                    </div>
+                  </div>
+                  <?php
+                    $talleres = array("Microarquitectura del procesador lagarto", "Introducción al desarrollo de explots", "Introducción al desarrollo de apps móviles con realidad aumentada", "Detectando personas en imágenes usando deep learning", "Entrega de aplicaciones con Docker", "Big Data en la ciencia de datos");
+                    $capacidades = array(10, 10, 10, 10, 10, 10);
+                    $confirmados = array(5, 4, 6, 8, 10, 1);
+                    for ($i=0; $i < count($talleres); $i++) { 
+                    echo "<div class="."'row'".">";
+                    echo "<div class="."'col-lg-5 col-lg-offset-1 features-text'".">";
+                    echo "<h5>".$talleres[$i]."</h5></div>";
+                    echo "<div class="."'col-lg-2 features-text'".">";
+                    echo "<span>".($capacidades[$i] - $confirmados[$i])."</span></div>";
+                    echo "<div class="."'col-lg-2 features-text'".">";
+                    echo "<span>".$capacidades[$i]."</span></div>";
+                    echo "<div class="."'col-lg-2 features-text'".">";
+                    echo "<span>".$confirmados[$i]."</span></div>";
+                    echo "</div>";
+                  }
+                  ?>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <script src="js/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/js-form.js"></script>
