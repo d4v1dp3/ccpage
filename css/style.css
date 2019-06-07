@@ -4719,6 +4719,19 @@ body.mini-navbar.fixed-sidebar .logo-element {
     width: 300px;
 }
 
+/* TALLER */
+
+.taller-box {
+  max-width: 600px;
+  z-index: 100;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.inscribir-taller-btn{
+    width: 200px;
+}
+
 /* ERROR & LOGIN & LOCKSCREEN*/
 .middle-box {
   max-width: 400px;
