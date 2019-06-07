@@ -128,7 +128,7 @@ if ($_GET["lang"]) {
         </div>
         <!-- VER TALLERES -->
         <div class="modal fade" id="ver-talleres" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <form class="m-t" role="form" method="post" action="taller">
                 <div class="modal-header">
@@ -139,14 +139,20 @@ if ($_GET["lang"]) {
                     <div class="col-lg-5 col-lg-offset-1 features-text">
                       <small>Taller</small>
                     </div>
-                    <div class="col-lg-2 features-text">
+                    <div class="col-lg-1 features-text">
                       <small>Cupo</small>
                     </div>
-                    <div class="col-lg-2 features-text">
+                    <div class="col-lg-1 features-text">
                       <small>Capacidad</small>
                     </div>
                     <div class="col-lg-2 features-text">
                       <small>Confirmados</small>
+                    </div>
+                    <div class="col-lg-1 features-text">
+                      <small>Editar</small>
+                    </div>
+                    <div class="col-lg-1 features-text">
+                      <small>Borrar</small>
                     </div>
                   </div>
                   <?php
@@ -157,12 +163,18 @@ if ($_GET["lang"]) {
                     echo "<div class="."'row'".">";
                     echo "<div class="."'col-lg-5 col-lg-offset-1 features-text'".">";
                     echo "<h5>".$talleres[$i]."</h5></div>";
-                    echo "<div class="."'col-lg-2 features-text'".">";
+                    echo "<div class="."'col-lg-1 features-text'".">";
                     echo "<span>".($capacidades[$i] - $confirmados[$i])."</span></div>";
-                    echo "<div class="."'col-lg-2 features-text'".">";
+                    echo "<div class="."'col-lg-1 features-text'".">";
                     echo "<span>".$capacidades[$i]."</span></div>";
                     echo "<div class="."'col-lg-2 features-text'".">";
                     echo "<span>".$confirmados[$i]."</span></div>";
+                    echo "<div class="."'col-lg-1 features-text'".">";
+                    echo "<button type="."button".">";
+                    echo "<i class="."'fa fa-pencil'"."></i></button></div>";
+                    echo "<div class="."'col-lg-1 features-text'".">";
+                    echo "<button type="."button".">";
+                    echo "<i class="."'fa fa-close'"."></i></button></div>";
                     echo "</div>";
                   }
                   ?>
