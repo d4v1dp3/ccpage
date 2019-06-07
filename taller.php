@@ -68,7 +68,7 @@ if ($_GET["lang"]) {
         <div class="modal fade" id="inscribir-taller" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <form class="m-t" role="form" method="post" action="taller">
+              <form class="m-t" role="form" method="post" action="inscribir-taller">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>

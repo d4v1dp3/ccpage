@@ -44,7 +44,6 @@ if ($_GET["lang"]) {
         <div class="modal fade" id="ver-asistentes" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <form class="m-t" role="form" method="post" action="taller">
                 <div class="modal-header">
                   <h1 class="modal-title m-l-xl" id="titulo-modal">Asistentes</h1>
                 </div>
@@ -77,9 +76,8 @@ if ($_GET["lang"]) {
                   ?>
                 </div>
                 <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                 </div>
-              </form>
             </div>
           </div>
         </div>
@@ -87,7 +85,6 @@ if ($_GET["lang"]) {
         <div class="modal fade" id="ver-ponentes" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-              <form class="m-t" role="form" method="post" action="taller">
                 <div class="modal-header">
                   <h1 class="modal-title m-l-xl" id="titulo-modal">Ponentes</h1>
                 </div>
@@ -120,9 +117,8 @@ if ($_GET["lang"]) {
                   ?>
                 </div>
                 <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                 </div>
-              </form>
             </div>
           </div>
         </div>
@@ -130,7 +126,6 @@ if ($_GET["lang"]) {
         <div class="modal fade" id="ver-talleres" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <form class="m-t" role="form" method="post" action="taller">
                 <div class="modal-header">
                   <h1 class="modal-title m-l-xl" id="titulo-modal">Talleres</h1>
                 </div>
@@ -180,7 +175,31 @@ if ($_GET["lang"]) {
                   ?>
                 </div>
                 <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#agregar-taller">Agregar taller</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- AGREGAR TALLER -->
+        <div class="modal fade" id="agregar-taller" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="m-t" role="form" method="post" action="agregar-taller">
+                <div class="modal-header">
+                  <h1 class="modal-title m-l-xl" id="titulo-modal">Agregar Taller</h1>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="workshopName" name="taller" maxlength="50" placeholder="Nombre del taller" required="">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control only-digit" name="cupo" maxlength="3" placeholder="Cupo" required="">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="submit" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#ver-talleres">Crear</button>
                 </div>
               </form>
             </div>
