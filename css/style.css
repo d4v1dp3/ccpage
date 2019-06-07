@@ -4706,6 +4706,19 @@ body.mini-navbar.fixed-sidebar .logo-element {
     width: 350px;
 }
 
+/* LOGIN */
+
+.login-box {
+  max-width: 300px;
+  z-index: 100;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+
+.login-btn{
+    width: 300px;
+}
+
 /* ERROR & LOGIN & LOCKSCREEN*/
 .middle-box {
   max-width: 400px;

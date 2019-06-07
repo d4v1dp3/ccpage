@@ -22,7 +22,7 @@ if ($_GET["lang"]) {
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="gray-bg">
-        <div class="register-box text-center loginscreen animated fadeInDown">
+        <div class="login-box text-center loginscreen animated fadeInDown">
             <div>
                 <br>
                 <h2>Iniciar sesión</h2>
@@ -36,7 +36,7 @@ if ($_GET["lang"]) {
                         <input type="password" class="form-control" name="password" maxlength="16" placeholder="Contraseña" required="">
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary register-btn m-b">Iniciar sesión</button>
+                    <button type="submit" class="btn btn-primary login-btn m-b">Iniciar sesión</button>
                 </form>
             </div>
         </div>
