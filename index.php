@@ -738,7 +738,7 @@ if( $_GET["lang"]){
                     <li class="pricing-desc"></li>
                     <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
                     <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$250.00 MXN</span></li>
-                    <li class="pricing-price"><text data-i18n="pricing.rec"> Reconocimiento de asistencia a conferencias comunidad Politécnica / </text><span>$150.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.rec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
                     <li class="plan-action">
                         <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                     </li>
@@ -750,7 +750,7 @@ if( $_GET["lang"]){
                     <li class="pricing-desc"></li>
                     <li  class="pricing-price"><text data-i18n="pricing.eponente"> Ponente / </text><span>$2,500.00 MXN</span></li>
                     <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$250.00 MXN</span></li>
-                    <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias comunidad Politécnica / </text><span>$150.00 MXN</span></li>
                     <li>
                         <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                     </li>
