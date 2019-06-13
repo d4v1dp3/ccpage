@@ -222,7 +222,7 @@ if( $_GET["lang"]){
                             <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
                             <p data-i18n="date.fecha_2a">30 de Junio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados</h2>
-                            <p data-i18n="date.fecha_3">2 de Julio del 2019</p>
+                            <p data-i18n="date.fecha_3">12 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
                                     data-i18n="date.evento_1">Recepción de artículos</strong></span>
                         </div>
@@ -251,7 +251,7 @@ if( $_GET["lang"]){
 
                         <div class="vertical-timeline-content">
                             <h2 data-i18n="date.tl_4">Talleres</h2>
-                            <p data-i18n="date.fecha_7">30 de Junio al 5 Agosto del 2019</p>
+                            <p data-i18n="date.fecha_7">30 de Julio al 5 Agosto del 2019</p>
                             <h2 data-i18n="date.tl_5">Conferencias</h2>
                             <p data-i18n="date.fecha_8">6 al 9 de Agosto del 2019</p>
                             <span class="vertical-date"> <span data-i18n="date.fecha_11">Junio 30</span> | <strong
@@ -491,7 +491,7 @@ if( $_GET["lang"]){
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker (por confirmar).</h2>
+                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker.</h2>
                 <i class="fa fa-docker big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_5">En este curso introductorio a Docker aprenderás como crear, desplegar y administrar imágenes y contenedores de Docker. Al término del curso sabrás cómo utilizar Docker para construir aplicaciones de forma rápida y ejecutarlas donde sea.</p>
             </div>
@@ -637,7 +637,7 @@ if( $_GET["lang"]){
                     <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
                     <li class="cross-text" data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
                     <li data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_3">Resultados: 02 de Julio del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_3">Resultados: 12 de Julio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                 </ul>
                 <h3 data-i18n="calls.articulos_titulo_2">Presentación de artículos</h3>
@@ -684,7 +684,7 @@ if( $_GET["lang"]){
                     <li class="cross-text" data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
                     <li class="cross-text"  data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
                     <li data-i18n="calls.workshop_li_3">Resultados : 20 de Junio del 2019</li>
-                    <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Junio al 5 Agosto del 2019</li>
+                    <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Julio al 5 Agosto del 2019</li>
                 </ul>
             </div>
             <div class="col-lg-8 col-lg-offset-2 m-t-lg m-b-lg">
@@ -737,8 +737,8 @@ if( $_GET["lang"]){
                     <li data-i18n="pricing.publico" class="pricing-title">Público en General</li>
                     <li class="pricing-desc"></li>
                     <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
-                    <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$50.00 MXN</span></li>
-                    <li class="pricing-price"><text data-i18n="pricing.rec"> Reconocimiento de asistencia a conferencias comunidad Politéctica / </text><span>$150.00 MXN</span></li>
+                    <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$250.00 MXN</span></li>
+                    <li class="pricing-price"><text data-i18n="pricing.rec"> Reconocimiento de asistencia a conferencias comunidad Politécnica / </text><span>$150.00 MXN</span></li>
                     <li class="plan-action">
                         <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                     </li>
@@ -749,7 +749,7 @@ if( $_GET["lang"]){
                     <li data-i18n="pricing.comun" class="pricing-title">Comunidad Politécnica</li>
                     <li class="pricing-desc"></li>
                     <li  class="pricing-price"><text data-i18n="pricing.eponente"> Ponente / </text><span>$2,500.00 MXN</span></li>
-                    <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$50.00 MXN</span></li>
+                    <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$250.00 MXN</span></li>
                     <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
                     <li>
                         <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
@@ -815,7 +815,7 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_cruz_silva_jacobo_emanuel.png">
                     <div class="media-body">
                         <div class="commens-name">Jacobo Emanuel Cruz Silva</div>
-                        <small class="text-muted"></small>
+                        <small class="text-muted">I have a Nao</small>
                     </div>
                 </div>
             </div>
@@ -824,7 +824,7 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_lopez_lozada_elizabeth.png">
                     <div class="media-body">
                         <div class="commens-name">Elizabeth López Lozada</div>
-                        <small class="text-muted"></small>
+                        <small class="text-muted">I have a T.V. as monitor</small>
                     </div>
                 </div>
             </div>
@@ -842,16 +842,7 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_segura_cristino_david_jesus.png">
                     <div class="media-body">
                         <div class="commens-name">David Jesús Segura Cristino</div>
-                        <small class="text-muted"></small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6">
-                <div class="comments-avatar">
-                    <img class="pull-left" alt="image" src="img/landing/comite/comite_maaz_amjad.png">
-                    <div class="media-body">
-                        <div class="commens-name">Amjad Maaz</div>
-                        <small class="text-muted"></small>
+                        <small class="text-muted">I have a Powerwheels</small>
                     </div>
                 </div>
             </div>
@@ -860,7 +851,7 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_maldonado_romo_alberto.png">
                     <div class="media-body">
                         <div class="commens-name">Alberto Maldonado Romo</div>
-                        <small class="text-muted"></small>
+                        <small class="text-muted">I use GeantV</small>
                     </div>
                 </div>
             </div>
@@ -942,6 +933,15 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/staff_pinal_ramirez_octavio_elias.png">
                     <div class="media-body">
                         <div class="commens-name">Octavio Elías Piñal Ramírez</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_maaz_amjad.png">
+                    <div class="media-body">
+                        <div class="commens-name">Amjad Maaz</div>
+                        <small class="text-muted"></small>
                     </div>
                 </div>
             </div>
