@@ -851,7 +851,7 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_maldonado_romo_alberto.png">
                     <div class="media-body">
                         <div class="commens-name">Alberto Maldonado Romo</div>
-                        <small class="text-muted">I use GeantV</small>
+                        <small class="text-muted">Quantum Assistant</small>
                     </div>
                 </div>
             </div>
