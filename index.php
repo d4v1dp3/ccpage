@@ -803,6 +803,15 @@ if( $_GET["lang"]){
             </div>
             <div class="col-sm-4 col-md-3 col-xs-6">
                 <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_lopez_lozada_elizabeth.png">
+                    <div class="media-body">
+                        <div class="commens-name">Elizabeth López Lozada</div>
+                        <small class="text-muted">I have a T.V. as monitor</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_fernandez_cid_ivan.png">
                     <div class="media-body">
                         <div class="commens-name">Ivan Fernández Cid</div>
@@ -816,15 +825,6 @@ if( $_GET["lang"]){
                     <div class="media-body">
                         <div class="commens-name">Jacobo Emanuel Cruz Silva</div>
                         <small class="text-muted">I have a Nao</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6">
-                <div class="comments-avatar">
-                    <img class="pull-left" alt="image" src="img/landing/comite/comite_lopez_lozada_elizabeth.png">
-                    <div class="media-body">
-                        <div class="commens-name">Elizabeth López Lozada</div>
-                        <small class="text-muted">I have a T.V. as monitor</small>
                     </div>
                 </div>
             </div>
@@ -857,6 +857,14 @@ if( $_GET["lang"]){
             </div>
             <div class="col-sm-4 col-md-3 col-xs-6">
                 <div class="comments-avatar">
+                    <img class="pull-left" alt="image" src="img/landing/comite/comite_karen_pamela_lopez_medina.png">
+                    <div class="media-body">
+                        <div class="commens-name">Karen Pamela López Medina</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-xs-6">
+                <div class="comments-avatar">
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_medina_cortes_carlos_alonso.png">
                     <div class="media-body">
                         <div class="commens-name">Carlos Alonso Medina Cortés</div>
@@ -878,14 +886,6 @@ if( $_GET["lang"]){
                     <img class="pull-left" alt="image" src="img/landing/comite/comite_abdiel_reyes_vera.png">
                     <div class="media-body">
                         <div class="commens-name">Abdiel Reyes Vera</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-3 col-xs-6">
-                <div class="comments-avatar">
-                    <img class="pull-left" alt="image" src="img/landing/comite/comite_karen_pamela_lopez_medina.png">
-                    <div class="media-body">
-                        <div class="commens-name">Karen Pamela López Medina</div>
                     </div>
                 </div>
             </div>
