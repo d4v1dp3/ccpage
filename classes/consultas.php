@@ -64,6 +64,7 @@ class consultas {
             $rs->close();
             if ($count == 1) {
                 $_SESSION = $data;
+                $_SESSION['usuario'] = $data['nombre']." ".$data['apellido'];
                 $_SESSION['logged_in'] = true;
                 return true;
             } else {

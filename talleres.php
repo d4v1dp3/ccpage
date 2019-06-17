@@ -17,6 +17,12 @@
         <title>Factiva | Talleres</title>
     </head>
     <body>
+        <?php
+            session_start();
+            if(!($_SESSION['logged_in'])) {
+                header('Location: login.php');
+            }
+        ?>
         <div id="wrapper">
             <nav class="navbar-default navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
@@ -26,7 +32,11 @@
                                     <img alt="image" class="img-circle" src="img/landing/68_68/avatar_carlos_c.jpg" />
                                 </span>
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                    <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Nombre usuario</strong>
+                                    <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
+                                        <?php
+                                            echo "Hola, ".$_SESSION['usuario'];
+                                        ?>
+                                    </strong>
                                         </span> </span> </a>
                             </div>
                             <div class="logo-element">
