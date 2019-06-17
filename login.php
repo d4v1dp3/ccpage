@@ -44,7 +44,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
                             <a href="ResetPassword.jsp">Olvidé mi contraseña</a>
                             <p class="text-muted text-center">
                             </p>
-                            <a class="btn btn-sm btn-white btn-block" href="index.php">Ir al inicio</a>
+                            <a class="btn btn-sm btn-white btn-block" href="index.php">Ir a inicio</a>
                         </form>
                         <br><br><br>
                     </div>
