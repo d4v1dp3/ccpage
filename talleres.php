@@ -29,7 +29,7 @@
                     <ul class="nav metismenu" id="side-menu">
                         <li class="nav-header">
                             <div class="dropdown profile-element"> <span>
-                                    <img alt="image" class="img-circle" src="img/landing/68_68/avatar_carlos_c.jpg" />
+                                    <img alt="image" class="img-circle" src="img/landing/68_68/default-avatar.png" />
                                 </span>
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
@@ -47,7 +47,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="inicio.jsp"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span>  </a>
+                            <a href="inicio.jsp"><i class="fa fa-star"></i> <span class="nav-label">Mi cuenta</span>  </a>
                         </li>
                         <li>
                             <a href="<%=durl%>"><i class="fa fa-users"></i> <span class="nav-label">Asistentes</span>  </a>
@@ -57,9 +57,6 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-flask" ></i> <span class="nav-label">Talleres</span>  </a>
-                        </li>
-                        <li>
-                            <a href="<%=curl%>"><i class="fa fa-star"></i> <span class="nav-label">Mi cuenta</span>  </a>
                         </li>
                         <li>
                             <a href="classes/logout.php"><i class="fa fa-sign-out"></i> <span class="nav-label">Cerrar sesión</span>  </a>
