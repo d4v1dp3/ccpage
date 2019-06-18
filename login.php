@@ -4,7 +4,7 @@ session_start();
 //print_r($_SESSION);
 $message = "";
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-    header('Location: talleres.php');
+    header('Location: cuenta.php');
 } elseif (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
     $message = "<p class='text-danger text-center'><strong>Usuario y/o contraseña incorrectos</strong></p>";
 } else {

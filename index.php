@@ -40,7 +40,7 @@ if( $_GET["lang"]){
                     <li><a class="page-scroll" data-i18n="nav.inicio" href="#page-top">Inicio</a></li>
                     <li><a class="page-scroll" data-i18n="nav.fechas" href="#date">Fechas</a></li>
                     <li><a class="page-scroll" data-i18n="nav.acerca" href="#about">Acerca de</a></li>
-                    <!--<li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>-->
+                    <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
                     <li><a class="page-scroll" data-i18n="nav.ponencias" href="#conference">Ponencias</a></li>
                     <li><a class="page-scroll" data-i18n="nav.calls" href="#calls">Calls</a></li>
                     <li><a class="page-scroll" data-i18n="nav.precios" href="#pricing">Costos</a></li>
@@ -449,7 +449,6 @@ if( $_GET["lang"]){
     </div>
 </section>
 
-<!--
 <section id="challenges" class="features gray-section">
     <div class="container">
         <div class="row">
@@ -470,7 +469,7 @@ if( $_GET["lang"]){
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de explots.</h2>
+                <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de exploits.</h2>
                 <i class="fa fa-bug big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_2">El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.</p>
             </div>
@@ -503,7 +502,6 @@ if( $_GET["lang"]){
                 <p data-i18n="challenges.parrafo_6">Los participantes adquirirán las bases para continuar su estudio de la Ciencia de Datos y tengan oportunidad de desarrollar proyectos en esta área que actualmente tiene ofertas de ingresos para quienes conozcan cómo resolver problemas en este campo.</p>
             </div>
         </div>
-        -->
         <!--
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
@@ -511,10 +509,9 @@ if( $_GET["lang"]){
             </div>
         </div>
         -->
-        <!--
+
     </div>
 </section>
--->
 
 <section id="conference" class="container services">
     <div class="row">

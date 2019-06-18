@@ -9,7 +9,7 @@ if (!empty($_POST)) {
         $consultar = new consultas();
         $data = $consultar->login($_POST);
         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-            header('Location: ../talleres.php');
+            header('Location: ../cuenta.php');
         } else {
             header('Location: ../login.php');
         }

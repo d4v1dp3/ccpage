@@ -2,8 +2,8 @@
 
 class Conexion {
 
-    public $usuario = "root";
-    public $password = "";
+    public $usuario = "core";
+    public $password = "c0r32019";
     public $servidor = "localhost";
     public $basededatos = "core2019";
     public $conexion;
