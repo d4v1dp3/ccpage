@@ -65,6 +65,9 @@ class consultas {
             if ($count == 1) {
                 $_SESSION['usuario'] = $data;
                 $_SESSION['logged_in'] = true;
+                $statement = $conexion->prepare("UPDATE login SET ultima_sesion=NOW() WHERE usuario=?");
+                $statement->bind_param('s', $trimmed_data['username']);
+                $statement->execute();
                 return true;
             } else {
                 $_SESSION['logged_fail'] = true;

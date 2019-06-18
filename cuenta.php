@@ -17,12 +17,12 @@
         <title>Factiva | Talleres</title>
     </head>
     <body>
-        <!--<?php
+        <?php
             session_start();
             if(!($_SESSION['logged_in'])) {
                 header('Location: login.php');
             }
-        ?>-->
+        ?>
         <div id="wrapper">
             <nav class="navbar-default navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
@@ -33,9 +33,7 @@
                                 </span>
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
-                                        <?php
-                                            echo "Hola, ".$_SESSION['usuario']['nombre']." ".$_SESSION['usuario']['apellido'];
-                                        ?>
+                                        <?php echo "Hola, ".$_SESSION['usuario']['nombre']." ".$_SESSION['usuario']['apellido'];?>
                                     </strong>
                                         </span> </span> </a>
                             </div>
@@ -47,7 +45,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="cuenta.php"><i class="fa fa-star"></i> <span class="nav-label">Mi cuenta</span>  </a>
+                            <a href="cuenta.php"><i class="fa fa-user"></i> <span class="nav-label">Mi cuenta</span>  </a>
                         </li>
                         <!--
                         <li>
@@ -81,8 +79,16 @@
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">
                                     <h1>Bienvenido al Core Congress</h1>
-                                    <h2>Gracias por registrarte!</h2><br>
-                                    <p>En breve tendremos información para la inscripción de talleres, revisa la pagina mas tarde :)</p>
+                                    <h2>¡Gracias por registrarte!</h2><br>
+                                    <h3>Nombre</h3>
+                                    <?php echo "<p>".$_SESSION['usuario']['nombre']." ".$_SESSION['usuario']['apellido']."<br><br><br></p>";?>
+                                    <h3>Correo electrónico</h3>
+                                    <?php echo "<p>".$_SESSION['usuario']['usuario']."<br><br><br></p>";?>
+                                    <h3>Escuela de procedencia</h3>
+                                    <?php echo "<p>".$_SESSION['usuario']['procedencia']."<br><br><br></p>";?>
+                                    <h3>Teléfono</h3>
+                                    <?php echo "<p>".$_SESSION['usuario']['telefono']."<br><br><br></p>";?>
+                                    <!--<p>En breve tendremos información para la inscripción de talleres, revisa la pagina mas tarde :)</p>-->
                                 </div>
                             </div>
                         </div>
