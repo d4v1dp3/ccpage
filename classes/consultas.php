@@ -55,7 +55,7 @@ class consultas {
         $conexion = $newConexion->getConnection();
         if (!empty($data)) {
             $trimmed_data = array_map('trim', $data);
-            $statement = $conexion->prepare("SELECT u.id, l.usuario, u.es_ponente, nombre, apellido, tipo FROM login l LEFT JOIN usuario u ON u.usuario = l.usuario WHERE l.usuario=? AND contrasena=AES_ENCRYPT(?,'sUp3r?M4rI0')");
+            $statement = $conexion->prepare("SELECT u.id, l.usuario, u.es_ponente, u.procedencia, u.telefono, nombre, apellido, tipo FROM login l LEFT JOIN usuario u ON u.usuario = l.usuario WHERE l.usuario=? AND contrasena=AES_ENCRYPT(?,'sUp3r?M4rI0')");
             $statement->bind_param('ss', $trimmed_data['username'], $trimmed_data['password']);
             $statement->execute();
             $rs = $statement->get_result();
@@ -63,8 +63,7 @@ class consultas {
             $count = mysqli_num_rows($rs);
             $rs->close();
             if ($count == 1) {
-                $_SESSION = $data;
-                $_SESSION['usuario'] = $data['nombre']." ".$data['apellido'];
+                $_SESSION['usuario'] = $data;
                 $_SESSION['logged_in'] = true;
                 return true;
             } else {

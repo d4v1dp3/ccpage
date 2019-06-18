@@ -33,7 +33,9 @@
                                 </span>
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">
-                                        <?php echo "Hola, ".$_SESSION['usuario']; ?>
+                                        <?php
+                                            echo "Hola, ".$_SESSION['usuario']['nombre']." ".$_SESSION['usuario']['apellido'];
+                                        ?>
                                     </strong>
                                         </span> </span> </a>
                             </div>
