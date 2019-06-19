@@ -13,7 +13,7 @@ if (!empty($_POST)) {
         $_SESSION['toastr'] = "toastr.error('', 'El campo ponente no puede quedar vacio');";
     } elseif (!isset($cupo)) {
         $_SESSION['toastr'] = "toastr.error('', 'El campo cupo no puede quedar vacio');";
-    } elseif (!isset($fecha)) {
+    } elseif (!isset($fecha_evento)) {
         $_SESSION['toastr'] = "toastr.error('', 'El campo fecha no puede quedar vacio');";
     } elseif (!isset($lugar)) {
         $_SESSION['toastr'] = "toastr.error('', 'El campo lugar no puede quedar vacio');";
@@ -22,8 +22,8 @@ if (!empty($_POST)) {
         $conexion = $newConexion->getConnection();
         $registro = 'false';
         try {
-            $statement = $conexion->prepare("INSERT INTO taller VALUES(DEFAULT,?,?,?,?,?,'Abierto','1',?)");
-            $statement->bind_param("ssssss", $nombre, $descripcion, $ponente, $cupo, $fecha, $lugar);
+            $statement = $conexion->prepare("INSERT INTO taller VALUES(DEFAULT,?,?,?,?,STR_TO_DATE(?,'%d/%m/%Y %H:%i'),'Abierto','1',?,NOW())");
+            $statement->bind_param("ssssss", $nombre, $descripcion, $ponente, $cupo, $fecha_evento, $lugar);
             $statement->execute();
             if ($statement->affected_rows === 0) {
                 $registro = 'false';
@@ -41,7 +41,9 @@ if (!empty($_POST)) {
             $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
         }
     }
-    header('Location: ../talleres.php');
+} else {
+    $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
 }
+header('Location: ../admin/talleres.php');
 ?>
 

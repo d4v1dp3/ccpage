@@ -32,6 +32,29 @@ class consultas {
         return $resultado;
     }
 
+    public function consultaAsistentes($ponente) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("SELECT * FROM lista_asistentes WHERE es_ponente=?");
+        $statement->bind_param("s", $ponente);
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
+    }
+    
+    public function consultaTalleres(){
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("SELECT * FROM lista_talleres;");
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
+    }
+
     public function registraUsuario($username, $passwd, $es_ponente, $tipo) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -64,7 +87,7 @@ class consultas {
             $rs->close();
             if ($count == 1) {
                 $_SESSION = $data;
-                $_SESSION['usuario'] = $data['nombre']." ".$data['apellido'];
+                $_SESSION['usuario'] = $data['nombre'] . " " . $data['apellido'];
                 $_SESSION['logged_in'] = true;
                 return true;
             } else {

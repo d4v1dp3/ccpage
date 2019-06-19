@@ -5,7 +5,7 @@ include '../classes/consultas.php';
 try {
     $newConexion = new Conexion();
     $conexion = $newConexion->getConnection();
-    $query = "SELECT DISTINCT UPPER(procedencia) FROM usuario ORDER BY procedencia ASC";
+    $query = "SELECT DISTINCT UPPER(procedencia) FROM usuario WHERE procedencia IS NOT NULL ORDER BY procedencia ASC";
     if ($result = $conexion->query($query)) {
         while ($row = $result->fetch_row()) {
             $arr[] = $row[0];
