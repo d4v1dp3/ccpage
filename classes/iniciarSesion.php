@@ -9,7 +9,11 @@ if (!empty($_POST)) {
         $consultar = new consultas();
         $data = $consultar->login($_POST);
         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-            header('Location: ../cuenta.php');
+            if (isset($_SESSION['tipo']) && $_SESSION['tipo'] === '3') {
+                header('Location: ../admin/inicio.php');
+            } elseif (isset($_SESSION['tipo'])) {
+                header('Location: ../users/inicio.php');
+            }
         } else {
             header('Location: ../login.php');
         }

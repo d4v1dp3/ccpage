@@ -2,9 +2,9 @@
 
 class Conexion {
 
-    public $usuario = "core";
-    public $password = "c0r32019";
-    public $servidor = "localhost";
+    public $usuario = "root";
+    public $password = "dvrcdvpdt";
+    public $servidor = "localhost:4447";
     public $basededatos = "core2019";
     public $conexion;
 

@@ -5,8 +5,6 @@ if(isset($_GET["lang"])){
     if($_GET["lang"] == "en"){
         $lang = "en";
     }
-}else{
-    $lang = "es";
 }
 ?>
 <html>

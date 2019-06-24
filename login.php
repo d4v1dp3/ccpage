@@ -4,7 +4,13 @@ session_start();
 //print_r($_SESSION);
 $message = "";
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
-    header('Location: cuenta.php');
+    if (isset($_SESSION['tipo']) && $_SESSION['tipo'] == '1') {
+        header('Location: admin/inicio.php');
+    } elseif (isset($_SESSION['tipo']) && $_SESSION['tipo'] == '3') {
+        header('Location: users/inicio.php');
+    } else {
+        header('Location: classes/logout.php');
+    }
 } elseif (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
     $message = "<p class='text-danger text-center'><strong>Usuario y/o contraseña incorrectos</strong></p>";
 } else {

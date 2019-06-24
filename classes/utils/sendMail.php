@@ -19,10 +19,10 @@ class Mailing {
         $mail->SMTPSecure = 'tls';
         $mail->Host = 'smtp.gmail.com';
         $mail->Port = 587;
-        $mail->Username = 'portalproveedores.senderos@gmail.com';
-        $mail->Password = '#14X5mY09';
-        $mail->setFrom('portalproveedores.senderos@gmail.com', 'CORE 2019');
-        $mail->addReplyTo('portalproveedores.senderos@gmail.com', 'CORE 2019');
+        $mail->Username = 'corecongress.noreply@gmail.com';
+        $mail->Password = '#C0r3C0ngr355';
+        $mail->setFrom('corecongress.noreply@gmail.com', 'CORE Congress 2019');
+        $mail->addReplyTo('corecongress.noreply@gmail.com', 'CORE Congress 2019');
         $mail->isHTML(true);
         $mail->Subject = $asunto;
         $mail->Body = $mensaje;

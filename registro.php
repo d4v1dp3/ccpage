@@ -102,11 +102,9 @@ if (isset($_SESSION["toastr"])) {
                         data: 'api/procedencia.php'
                     });
                 });
-
                 $(".check-btn").on("click", function () {
                     activePaper();
                 });
-
                 $(".iCheck-helper").on("click", function () {
                     activePaper();
                 });
@@ -114,7 +112,7 @@ if (isset($_SESSION["toastr"])) {
                     toastr.options = {
                         closeButton: true,
                         showMethod: 'slideDown',
-                        timeOut: 10000
+                        timeOut: 4000
                     };<?php echo $toastr ?>
                 }, 1000);
             });
