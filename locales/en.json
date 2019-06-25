@@ -155,7 +155,13 @@
     "requerimientos_8": "Computer with at least 8GB of RAM, disk space of at least half terabyte and 32-inch monitors (2 monitors desirable per person). Internet with bandwidth or an acceptable speed for downloading files larger than 1GB. Storage devices for data backup. Text editors: Notepad ++ or Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Spreadsheet, Apache Tomcat.",
     "subtitle_9":"Deep analysis of Digital documents 2.0",
     "parrafo_9":"Human language is the most effective and complex means of communication. One of the challenges to be solved in this age of information and knowledge is the automatic treatment of language. The general objective of this workshop is to provide attendees with an intensive and accessible introduction to Artificial Intelligence, Computational Linguistics and related topics currently available. Using this concepts appropriately represents an opportunity niche for development of high-impact multidisciplinary works.",
-    "ponente_9": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico.",
+    "ponente_9": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico."
+  },
+  "deep-learning":{
+    "subtitle_4":"Detecting people in images using deep learning.",
+    "ponente_4": "He is a teacher, researcher, scientist and enthusiast for spreading useful knowledge. Graduated by CINVESTAV-IPN as doctor (2015) and master in science (2007). Has 11 years of experience in teaching at a higher level, 4 years in research: has published 22 articles in conferences and international journals; Has directed more than 20 undergraduate, 6 master's and 7 doctoral students. His lines of research are artificial neural networks and autonomous mobile robot navigation.",
+    "duration": "Workshop duration",
+    "duracion_4": "1 day, 4 hours"
   },
   "comite":{
     "title":"Local Committee",

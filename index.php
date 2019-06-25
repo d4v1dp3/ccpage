@@ -1071,7 +1071,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="deep-learning.subtitle_4">Detectando personas en imágenes usando deep learning</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1079,7 +1079,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Erik Zamora</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_4">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
+              <p data-i18n="deep-learning.ponente_4">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: ezamora1981@gmail.com</p><br>
@@ -1089,15 +1089,15 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_4">Saber programar, en particular en python, y haber cursado matemáticas básicas de la ingeniería (primeros 2 semestres).</p>
+                    <p data-i18n="deep-learning.requerimientos_4">Saber programar, en particular en python, y haber cursado matemáticas básicas de la ingeniería (primeros 2 semestres).</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="deep-learning.duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_4">1 día, 4 horas</p>
+                    <p data-i18n="deep-learning.duracion_4">1 día, 4 horas</p>
                 </div>
             </div>
           </div>
@@ -1464,6 +1464,7 @@ if(isset($_GET["lang"])){
             $('#challenges').i18n();
             $('#about').i18n();
             $('#map').i18n();
+            $('#deep-learning').i18n();
         });
 
         $('.set_en').on('click', function () {
@@ -1482,6 +1483,7 @@ if(isset($_GET["lang"])){
                 $('#about').i18n();
                 $('#map').i18n();
                 $('#contact').i18n();
+                $('#deep-learning').i18n();
                 $('.set_en').addClass('active');
                 $('.set_es').removeClass('active');
             });
