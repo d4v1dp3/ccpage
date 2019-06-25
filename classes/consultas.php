@@ -31,7 +31,7 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-    
+
     public function validaContrasena($username, $passwd) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -56,6 +56,24 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
+
+    public function restableceContrasena($username, $passwd) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("UPDATE login SET contrasena=AES_ENCRYPT(?,'sUp3r?M4rI0') WHERE usuario=?");
+        $statement->bind_param("ss", $passwd, $username);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
+
     public function validaInscripcion($idUsuario, $idTaller) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -92,8 +110,8 @@ class consultas {
         $rs->close();
         return $data;
     }
-    
-    public function consultaTalleres(){
+
+    public function consultaTalleres() {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $statement = $conexion->prepare("SELECT * FROM lista_talleres;");
@@ -103,8 +121,8 @@ class consultas {
         $rs->close();
         return $data;
     }
-    
-    public function consultaTalleresDisponibles($idUsuario){
+
+    public function consultaTalleresDisponibles($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario <> ? OR id_usuario IS NULL");
@@ -115,8 +133,8 @@ class consultas {
         $rs->close();
         return $data;
     }
-    
-    public function consultaTalleresInscritos($idUsuario){
+
+    public function consultaTalleresInscritos($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario = ?");
@@ -127,7 +145,7 @@ class consultas {
         $rs->close();
         return $data;
     }
-    
+
     public function actualizaContrasena($username, $passwd) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -144,7 +162,7 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-    
+
     public function inscribirTaller($idUsuario, $idTaller) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -161,13 +179,30 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-    
+
     public function abandonarTaller($idUsuario, $idTaller) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $resultado = 'false';
         $statement = $conexion->prepare("DELETE FROM usuario_taller WHERE id_usuario=? AND id_taller=?;");
         $statement->bind_param("ss", $idUsuario, $idTaller);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
+    
+    public function eliminarTaller($idTaller) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("DELETE FROM taller WHERE id=?;");
+        $statement->bind_param("s", $idTaller);
         $statement->execute();
         if ($statement->affected_rows === 0) {
             $resultado = 'false';

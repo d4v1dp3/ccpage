@@ -7,7 +7,6 @@ include 'utils/mailComposer.php';
 include 'utils/sendMail.php';
 
 $consultar = new consultas();
-$existeMail = $consultar->consultaCorreo($_POST['email']);
 if (isset($_POST['ponente'])) {
     $es_ponente = "1";
 } else {
@@ -19,7 +18,7 @@ if (!isset($email)) {
     $_SESSION['toastr'] = "toastr.error('', 'El campo correo no puede quedar vacio');";
 } elseif (!($email === $confirmEmail)) {
     $_SESSION['toastr'] = "toastr.error('', 'Los campos de correo no coinciden');";
-} elseif ($existeMail == 'false') {
+} elseif ($consultar->consultaCorreo($_POST['email']) == 'false') {
     $_SESSION['toastr'] = "toastr.error('', 'El correo ya ha sido registrado anteriormente');";
 } elseif (!isset($nombre)) {
     $_SESSION['toastr'] = "toastr.error('', 'El campo nombre no puede quedar vacio');";
@@ -58,8 +57,7 @@ if (!isset($email)) {
     if ($registro == 'true') {
         $newPasswd = new GeneraPasswd();
         $passwd = $newPasswd->getPasswd(6);
-        $login = $consultar->registraUsuario($email, $passwd, $es_ponente, "1");
-        if ($login == 'true') {
+        if ($consultar->registraUsuario($email, $passwd, $es_ponente, "1") == 'true') {
             $_SESSION['toastr'] = 'toastr.success("", "Registro generado con éxito. Recibiras en tu correo el usuario y contraseña de acceso");';
             //enviar correo
             $newCuerpo = new MailComposer();

@@ -1,38 +1,28 @@
 <?php
 session_start();
-include 'conexion.php';
+include 'consultas.php';
+
+$consultar = new consultas();
+$datos = explode("|", $_POST['hidden']);
 
 if (!empty($_POST)) {
     extract($_POST);
     if (!isset($hidden)) {
-        $_SESSION['toastr'] = "toastr.error('', 'Imposible eliminar sin parametros');";
+        $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
+    } elseif (!isset($datos[0])) {
+        $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
+    } elseif (!isset($datos[1])) {
+        $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
+    } elseif (!isset($_SESSION['id']) && $_SESSION['id'] != '1') {
+        //valida que sea el administrador id = '1';
+        $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
+    } elseif ($consultar->eliminarTaller(base64_decode($datos[0])) == 'false') {
+        $_SESSION['toastr'] = 'toastr.error("", "La solicitud no pudo ser completada, intente nuevamente");';
     } else {
-        $newConexion = new Conexion();
-        $conexion = $newConexion->getConnection();
-        $registro = 'false';
-        try {
-            $statement = $conexion->prepare("INSERT INTO taller VALUES(DEFAULT,?,?,?,?,STR_TO_DATE(?,'%d/%m/%Y %H:%i'),'Abierto','1',?,NOW())");
-            $statement->bind_param("ssssss", $nombre, $descripcion, $ponente, $cupo, $fecha_evento, $lugar);
-            $statement->execute();
-            if ($statement->affected_rows === 0) {
-                $registro = 'false';
-            } else {
-                $registro = 'true';
-            }
-            $statement->close();
-        } catch (PDOException $e) {
-            $registro = 'false';
-            echo $sql . "<br>" . $e->getMessage();
-        }
-        if ($registro == 'true') {
-            $_SESSION['toastr'] = 'toastr.success("", "Registro generado con éxito.");';
-        } else {
-            $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
-        }
+        $_SESSION['toastr'] = 'toastr.success("", "Se ha eliminado el taller <i>' . $datos[1] . '</i>");';
     }
 } else {
-    $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
+    $_SESSION['toastr'] = 'toastr.error("", "La solicitud no pudo ser completada, intente nuevamente");';
 }
 header('Location: ../admin/talleres.php');
 ?>
-

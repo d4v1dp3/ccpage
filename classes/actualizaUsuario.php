@@ -15,13 +15,10 @@ if ($validaPasswd == 'false') {
     $_SESSION['toastr'] = "toastr.error('', 'El campo confirmar contraseña no puede quedar vacio');";
 } elseif (!($nuevaPass === $confirmPass)) {
     $_SESSION['toastr'] = "toastr.error('', 'Las contraseñas no coinciden');";
+} elseif (($consultar->actualizaContrasena($_SESSION['usuario'], $nuevaPass) == 'false')) {
+    $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
 } else {
-    $registro = $consultar->actualizaContrasena($_SESSION['usuario'], $nuevaPass);
-    if ($registro == 'true') {
-        $_SESSION['toastr'] = 'toastr.success("", "Datos actualizados correctamente");';
-    } else {
-        $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
-    }
+    $_SESSION['toastr'] = 'toastr.success("", "Datos actualizados correctamente");';
 }
 header('Location: ../users/cuenta.php');
 ?>

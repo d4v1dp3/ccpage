@@ -1,7 +1,6 @@
 <?php
 ob_start();
 session_start();
-//print_r($_SESSION);
 $message = "";
 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
     if (isset($_SESSION['tipo']) && $_SESSION['tipo'] == '1') {
@@ -47,7 +46,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in']) {
                             </div>
                             <button type="submit" class="btn btn-primary block full-width m-b">Iniciar sesión</button>
                             <?php echo $message; ?>
-                            <a href="ResetPassword.jsp">Olvidé mi contraseña</a>
+                            <a href="recuperarPassword.php">Olvidé mi contraseña</a>
                             <p class="text-muted text-center">
                             </p>
                             <a class="btn btn-sm btn-white btn-block" href="index.php">Ir a inicio</a>
