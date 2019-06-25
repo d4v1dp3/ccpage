@@ -220,7 +220,7 @@ if(isset($_GET["lang"])){
                             <h2 data-i18n="date.tl_2">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
                             <p data-i18n="date.fecha_2a">30 de Junio del 2019</p>
-                            <h2 data-i18n="date.tl_3">Resultados</h2>
+                            <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
                             <p data-i18n="date.fecha_3">12 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
                                     data-i18n="date.evento_1">Recepción de artículos</strong></span>
@@ -236,7 +236,7 @@ if(isset($_GET["lang"])){
                             <p class="cross-text" data-i18n="date.fecha_4">17 de Abril del 2019</p>
                             <h2 data-i18n="date.tl_2a">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_5">5 de Junio del 2019</p>
-                            <h2 data-i18n="date.tl_3">Resultados</h2>
+                            <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
                             <p data-i18n="date.fecha_6">20 de Junio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_10"> Abril 17 </span>| <strong
                                     data-i18n="date.evento_2">Recepción de propuestas de talleres (finalizada)</strong></span>
@@ -459,56 +459,126 @@ if(isset($_GET["lang"])){
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_1">Microarquitectura del procesador Lagarto</h2>
+                <h2 data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning</h2>
+                <i class="fa fa-drivers-license-o  big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_4">En este taller de 4 horas, tu vas re-entrenar el modelo neuronal YOLO (You only look once) para localizar personas, vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usarás una herramienta para etiquetar tus propias imágenes y entendederas a groso modo como debe hacer el entrenamiento de los modelos neuronales profundos. </p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <small>Dr. Erik Zamora</small>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <a data-toggle="modal" data-target="#deep-learning" href="#deep-learning"><small>Ver más</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_3">Introducción al desarrollo de aplicaciones móviles con realidad aumentada</h2>
+                <i class="fa fa-mobile-phone  big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_3">Proporcionar los conocimientos básicos en el manejo de Unity y Vuforia para el desarrollo de aplicaciones móviles en Android implementando realidad aumentada.</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>Dr. Amadeo José Argüelles Cruz</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#augmented-reality" href="#augmented-reality"><small>Ver más</small></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de exploits</h2>
+                <i class="fa fa-bug big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_2">El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>M. en C. Florencio Javier González Rodríguez</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#exploits" href="#exploits"><small>Ver más</small></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_6">Big Data en la Ciencia de datos</h2>
+                <i class="fa fa-signal big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_6">Los participantes adquirirán las bases para continuar su estudio de la Ciencia de Datos y tengan oportunidad de desarrollar proyectos en esta área que actualmente tiene ofertas de ingresos para quienes conozcan cómo resolver problemas en este campo.</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>Dr. Jesús Manuel Olivares Ceja</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#big-data" href="#big-data"><small>Ver más</small></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_1"> Diseño de la arquitectura del procesador lagarto RISC-V</h2>
                 <i class="fa fa-microchip big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_1">El curso esta orientado para el desarrollo y compresión de la
                     arquitectura Lagarto I desarrollada por
                     el CIC IPN. El participante aplicara sus conocimientos en arquitectura de computadoras, Verilog
                     entre otros.</p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <small>Dr. Marco Antonio Ramírez Salinas</small>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <a data-toggle="modal" data-target="#lagarto" href="#lagarto"><small>Ver más</small></a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_2">Introducción al desarrollo de exploits.</h2>
-                <i class="fa fa-bug big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_2">El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_3">Introducción al desarrollo de apps moviles con realidad aumentada.</h2>
-                <i class="fa fa-mobile-phone  big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_3">Proporcionar los conocimientos básicos en el manejo de Unity y Vuforia para el desarrollo de aplicaciones móviles en Android implementando realidad aumentada.</p>
-            </div>
-            <div class="col-lg-5 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning.</h2>
-                <i class="fa fa-drivers-license-o  big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_4">En este taller de 4 horas, tu vas reentrenar el modelo neuronal YOLO (You only look once) para localizar personas o vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usaras una herramienta para etiquetar tus propias imágenes y entendederas a grosso modo como debe hacer el entrenamiento de los modelos neuronales profundos.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker.</h2>
+                <h2 data-i18n="challenges.subtitle_5">Entrega de aplicaciónes con Docker</h2>
                 <i class="fa fa-docker big-icon pull-right"></i>
                 <p data-i18n="challenges.parrafo_5">En este curso introductorio a Docker aprenderás como crear, desplegar y administrar imágenes y contenedores de Docker. Al término del curso sabrás cómo utilizar Docker para construir aplicaciones de forma rápida y ejecutarlas donde sea.</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>Ing. Alejandro López Hernández</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#docker" href="#docker"><small>Ver más</small></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_7">Primeros pasos en R.O.S</h2>
+                <i class="fa fa-cogs big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_7">Que los participantes se familiaricen con R.O.S. y al final del taller puedan crear sus propios nodos. El beneficio para los participantes es aprender a utilizar una herramienta que facilita el desarrollo de prototipos en el área de la robótica la cual es utilizada por los centros de investigación mas importantes en esta área y que se esta perfilando para convertirse en un estándar de la industria.</p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <small>M. en C. José Ángel Martínez Navarro</small>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <a data-toggle="modal" data-target="#ros-first-steps" href="#ros-first-steps"><small>Ver más</small></a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-5 features-text">
                 <small data-i18n="challenges.subtitle">Taller</small>
-                <h2 data-i18n="challenges.subtitle_6">Big Data en la ciencia de datos.</h2>
-                <i class="fa fa-signal big-icon pull-right"></i>
-                <p data-i18n="challenges.parrafo_6">Los participantes adquirirán las bases para continuar su estudio de la Ciencia de Datos y tengan oportunidad de desarrollar proyectos en esta área que actualmente tiene ofertas de ingresos para quienes conozcan cómo resolver problemas en este campo.</p>
+                <h2 data-i18n="challenges.subtitle_8">Exploración para el descubrimiento de conocimiento en datos abiertos</h2>
+                <i class="fa fa-database big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_8">Proporcionar a los participantes una metodología dentro de la Ciencia de Datos para el análisis de información y realizar el descubrimiento de conocimiento por medio de herramientas ETL y de visualización, haciendo uso de bases de datos abiertas, las cuales pueden ser del dominio público o privado.</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>Dr. Gilberto L. Martínez Luna</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#open-data" href="#open-data"><small>Ver más</small></a>
+                </div>
+            </div>
             </div>
         </div>
-        <!--
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <a href="#" class="btn btn-primary">Ver todos</a>
-            </div>
-        </div>
-        -->
-
     </div>
 </section>
 
@@ -994,6 +1064,359 @@ if(isset($_GET["lang"])){
         </div>
     </div>
 </section>
+
+
+<!-- DETECTANDO PERSONAS -->
+<div class="modal fade" id="deep-learning" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_4">Detectando personas en imágenes usando deep learning</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Erik Zamora</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_4">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: ezamora1981@gmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_4">Saber programar, en particular en python, y haber cursado matemáticas básicas de la ingeniería (primeros 2 semestres).</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_4">1 día, 4 horas</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- REALIDAD AUMENTADA -->
+<div class="modal fade" id="augmented-reality" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_3">Introducción al desarrollo de aplicaciones móviles con realidad aumentada</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Amadeo José Argüelles Cruz</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_3">Recibió el título de Ingeniero en Comunicaciones y Electrónica de la Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME) del Instituto Politécnico Nacional (IPN), en 1992, el grado de Maestro en Ciencias en Ingeniería de Cómputo y Doctor en Ciencias de la Computación en el Centro de Investigación en Computación (CIC), en 1997 y 2007, respectivamente. Actualmente, se desempeña como Profesor Investigador, Coordinador de Programa y Jefe del Departamento de Investigación en Ciencias de la Computación en el Centro de Investigación en Computación (CIC-IPN), desde marzo del 2010.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: jamadeo@cic.ipn.mx</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_3">Programación básica, de preferencia C#, Programación orientada a objetos.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_3">3 días, 3 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- EXPLOITS -->
+<div class="modal fade" id="exploits" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_2">Introducción al desarrollo de exploits</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>M. en C. Florencio Javier González Rodríguez</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_2"> Estudiante de doctorado en Ciberseguridad en el CIC del IPN. Cuenta con una Maestría en Ciencias de la Computación con especialidad en Ciberseguridad y ha realizado una estancia de investigación de seguridad en redes en la universidad de Osaka en Japón. Durante varios años ha sido consultor en seguridad informática para empresas privadas, así como para organizaciones gubernamentales, del lado ofensivo y defensivo. Formación en donde ha adquirió certificaciones de empresas como IBM y Microsoft. También ha impartido diversas conferencias, cursos y talleres relacionados con la seguridad Informática.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-6">
+              <p>Contacto: fjgonzalezr@newbiegeek.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_2">Conocimientos básicos de programación en lenguaje C.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_2">1 día, 6 horas</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- BIG DATA -->
+<div class="modal fade" id="big-data" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_6">Big Data en la Ciencia de datos</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Jesús Manuel Olivares Ceja</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_6">El Dr. Jesús Manuel Olivares Ceja obtuvo su doctorado en Ciencias de la Computación  en el CIC–IPN en 2002. En 1996 concluyó la Maestría en Ciencias de la Computación en el CINVESTAV, México. En 1991 obtuvo el título de Licenciado en Ciencias de la Computación en la UPIICSA–IPN. Ha publicado en revistas y memorias de congresos nacionales e internacionales en sus líneas de investigación; presentando algunos de estos trabajos en foros nacionales e internacionales. Además de su actividad en investigación y docencia, se desempeñó como consultor independiente entre 1985 y 2005.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: jesusoc@hotmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_6">Conocimientos básicos de programación, Linux y base de datos Interés por conocer el área de Ciencia de Datos</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_6">5 días, 3 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- LAGARTO -->
+<div class="modal fade" id="lagarto" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_1">Diseño de la arquitectura del procesador lagarto RISC-V</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Marco Antonio Ramírez Salinas</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_1">Marco Antonio Ramirez Salinas, Doctor en ciencias de la computacion (Tecnologia Arquitectura de las computadoras). Profesor a tiempo completo en el centro de Investigación en computación y colabora en el laboratorio de Microtecnologia y sistemas embebidos. Interesado en el desarrollo de sistemas embebidos, diseño de arquitectura de computadoras y computo paralelo para HPC.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: hdzces@gmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_1">Conocimiento de circuitos digitales.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_1">5 días, 4 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- DOCKER -->
+<div class="modal fade" id="docker" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_5">Entrega de aplicaciones con Docker</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Ing. Alejandro López Hernández</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_5">Maestria en ciberseguridad en la Universidad Autonoma de Barcelona, Licenciatura en Ciencias de la computacion en el Insituto Politecnico Nacional.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: alejandro@ulfix.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_5">Alguna experiencia en la entrega de software. Familiaridad con el uso de la línea de comandos en Linux.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_5">2 días, 2.5 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- PRIMEROS PASOS EN R.O.S -->
+<div class="modal fade" id="ros-first-steps" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_7">Primeros pasos en R.O.S</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>M. en C. José Ángel Martínez Navarro</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_7">Maestría en ciencias en el CIC con la tesis “Desarrollo de un robot de dos ruedas dinámicamente estable”. Graduado en la Ingenieria en comuniacaciones y electronica en el Instituto Politecnico Nacional en Mexico.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-7">
+              <p>Contacto: josekun13@gmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_7">Una computadora con S.O. Ubuntu por estudiante, la cual tiene que tener instalado ROS Melodic Morenia, el ide geany y Jupyter notebook.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_7">2 días, 4 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- DATOS ABIERTOS -->
+<div class="modal fade" id="open-data" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_8">Exploración para el descubrimiento de conocimiento en datos abiertos</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Gilberto L. Martínez Luna</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="challenges.ponente_8"> Estudió en la Escuela Superior de Física y Matemáticas, el grado de Maestría lo obtuvo en la Sección de Computación (hoy Departamento) del CINVESTAV-IPN y el grado de Doctor en Ciencias de la Computación lo obtuvo en el Centro de Investigación en Computación del I.P.N. (CIC-IPN) con el trabajo titulado “Latices y otras estructuras para acelerar las búsquedas en Minería de Datos” Desde 1996 trabaja en el CIC-IPN, y actualmente en el, es el jefe del Laboratorio de Bases de Datos y Tecnología de Software.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-6">
+              <p>Contacto: yyadira.hhernandez@gmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.requerimientos_8">Equipo de cómputo con al menos 8GB de RAM, espacio en disco de al menos medio terabyte y monitores de 32 pulgadas (deseable 2 monitores por persona). Internet con ancho de banda o una velocidad aceptable para descarga de archivos mayores a 1GB. Dispositivos de almacenamiento para el respaldo de datos. Editores de texto: Notepad++ o Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Hoja de cálculo, Apache Tomcat.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="challenges.duracion_8">5 días, 4 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
