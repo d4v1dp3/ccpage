@@ -16,18 +16,12 @@ if (!empty($_POST)) {
         $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
     } elseif (!isset($_SESSION['id'])) {
         $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
+    } elseif ($consultar->validaInscripcion($_SESSION['id'], base64_decode($datos[0])) == 'true') {
+        $_SESSION['toastr'] = 'toastr.warning("", "Ya te estabas inscrito en el taller <i>' . $datos[1] . '</i>");';
+    } elseif ($consultar->inscribirTaller($_SESSION['id'], base64_decode($datos[0])) == 'false') {
+        $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
     } else {
-        $validaInscripcion = $consultar->validaInscripcion($_SESSION['id'], base64_decode($datos[0]));
-        if ($validaInscripcion == 'true') {
-            $_SESSION['toastr'] = 'toastr.warning("", "Ya te estabas inscrito en el taller <i>' . $datos[1] . '</i>");';
-        } else {
-            $registro = $consultar->inscribirTaller($_SESSION['id'], base64_decode($datos[0]));
-            if ($registro == 'true') {
-                $_SESSION['toastr'] = 'toastr.success("", "Se ha inscrito al taller <i>' . $datos[1] . '</i>");';
-            } else {
-                $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
-            }
-        }
+        $_SESSION['toastr'] = 'toastr.success("", "Se ha inscrito al taller <i>' . $datos[1] . '</i>");';
     }
 } else {
     $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';

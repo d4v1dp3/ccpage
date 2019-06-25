@@ -66,7 +66,7 @@ if (!($_SESSION['logged_in'])) {
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="undatobase64" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>|<?= $col['descripcion']?>|<?= $col['nombre_ponente']?>|<?= $col['lugar']?>|<?= $col['fecha']?>|<?= $col['cupo_maximo']?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
                                                                     <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar</button>
                                                                 </div>
                                                             </td>
@@ -114,7 +114,7 @@ if (!($_SESSION['logged_in'])) {
                                     <div class="row form-group">
                                         <div class="col-sm-5">
                                             <div class="form-group">
-                                                <input type="text" id="inputFecha" class="form-control" name="fecha_evento" placeholder="Fecha y hora" required=""/>
+                                                <input type="text" id="inputFecha" class="form-control fecha-evento" name="fecha_evento" placeholder="Fecha y hora" required=""/>
                                             </div>
                                         </div>
                                         <div class="col-sm-7">
@@ -131,11 +131,60 @@ if (!($_SESSION['logged_in'])) {
                     </div>
                 </div>
                 <!-- fin modal -->
+                
+                <!-- ModalEditar -->
+                <div class="modal fade" id="modalEditar" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <form method="post" data-toggle="validator" action="../classes/editarTaller.php">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Editar información del taller</h4>
+                                    <small> * Todos los campos son obligatorios</small>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="hidden" value="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control capitalize-text" id="nombreE" name="nombre" value="" maxlength="99" placeholder="Nombre del taller" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control capitalize-text" id="descripcionE" name="descripcion" value="" maxlength="1024" placeholder="Descripción" required="">
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control capitalize-text" id="ponenteE" name="ponente" value="" placeholder="Nombre de ponente/expositor" required="">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <input type="text" id="cupoE" class="touchspin" name="cupo" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <input type="text" id="fechaE" class="form-control fecha-evento" name="fecha_evento" value="" placeholder="Fecha y hora" required=""/>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <input type="text" id="lugarE" class="form-control capitalize-text" name="lugar" value="" placeholder="Ubicación" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> &nbsp;Guardar cambios</button>
+                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- fin modal -->
 
                 <!-- ModalEliminar -->
                 <div class="modal fade" id="modalEliminar" role="dialog">
                     <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="classes/eliminarTaller.php">
+                        <form method="post" data-toggle="validator" action="../classes/eliminarTaller.php">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -188,8 +237,19 @@ if (!($_SESSION['logged_in'])) {
                     $('#modalEliminar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
                     $('#modalEliminar #hidden').val($(e.relatedTarget).data('id'));
                 });
+                
+                $('#modalEditar').on('show.bs.modal', function (e) {
+                    $('#modalEditar #nombreE').val($(e.relatedTarget).data('id').split('|')[1]);
+                    $('#modalEditar #descripcionE').val($(e.relatedTarget).data('id').split('|')[2]);
+                    $('#modalEditar #ponenteE').val($(e.relatedTarget).data('id').split('|')[3]);
+                    $('#modalEditar #lugarE').val($(e.relatedTarget).data('id').split('|')[4]);
+                    $('#modalEditar #fechaE').val($(e.relatedTarget).data('id').split('|')[5]);
+                    $('#modalEditar #cupoE').val($(e.relatedTarget).data('id').split('|')[6]);
+                    $('#modalEditar #cupoE').trigger("touchspin.updatesettings", {initval: $(e.relatedTarget).data('id').split('|')[6]});
+                    $('#modalEditar #hidden').val($(e.relatedTarget).data('id'));
+                });
 
-                $('#inputFecha').daterangepicker({
+                $('.fecha-evento').daterangepicker({
                     singleDatePicker: true,
                     timePicker: true,
                     timePicker24Hour: true,

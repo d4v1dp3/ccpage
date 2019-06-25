@@ -84,7 +84,8 @@ GROUP BY id, nombre, apellido, correo, procedencia, tipo, telefono, usuario, fec
 DROP VIEW IF EXISTS lista_talleres; 
 CREATE VIEW lista_talleres AS 
 SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, 
-DATE_FORMAT(fecha_curso, '%H:%i') hora, estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo, 
+DATE_FORMAT(fecha_curso, '%H:%i') hora, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, estatus, lugar, 
+CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo, 
 CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge' 
 WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info' 
 WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success' 
