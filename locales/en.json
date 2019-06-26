@@ -13,7 +13,9 @@
     "comite": "Committee"
   },
   "words": {
-    "requirements": "Requirements"
+    "requirements": "Requirements: ",
+    "see-more": "See more",
+    "close": "Close"
   },
   "carousel":{
     "titulo": "International Congress",
@@ -115,53 +117,79 @@
     "duration": "Workshop duration",
     "subtitle_1":"Architecture design of processor Lagarto RISC-V",
     "parrafo_1":"The course is oriented to development and understanding of the Lagarto I architecture developed by the CIC IPN. The participant will apply his knowledge in computer architecture, Verilog among others.",
-    "ponente_1": "Marco Antonio Ramírez Salinas Doctor in Computer Science (Technology and Computer Architecture). Is a full Professor at the Computing Research Center and collaborate in the laboratory of Microtechnology and Embedded Systems. He is interested in the development of embedded systems, computer architecture design and parallel computing for HPC.",
-    "duracion_1": "5 days, 4 hours each",
-    "requerimientos_1": "Knowledge on digital circuits.",
     "subtitle_2":"Introduction to the development of exploits",
     "parrafo_2":"The main objective is that the student acquire the knowledge and necessary skills to be able to identify and exploit basic vulnerabilities in the software programming. Coming from bad practices of programming, making a software vulnerable to buffer overflow, heap overflow and format string attacks.",
-    "ponente_2": "PHD student in Cybersecurity in The CIC -IPN.Has a master's degree in computer science with a specialty in Cybersecurity and has made a internship of Network security research at Osaka University in Japan. For several years has been a consultant in computer security for Private companies, as well as for governmental organizations, of the offensive and defensive side. Has acquired Certifications of companies such as IBM and Microsoft. Has also taught in various conferences, courses and workshops related to cyber security.",
-    "duracion_2": "1 day, 6 hours",
-    "requerimientos_2": "Basic programming knowledge in C language.",
     "subtitle_3":"Introduction to the development of mobile apps with augmented reality.",
     "parrafo_3":"Give the basics in the use of Unity and Vuforia, for the development of mobile apps on Android using AR.",
-    "ponente_3": "Received the degree in Communications and Electronics Engineering from the School of Mechanical and Electrical Engineering (ESIME) of the National Polytechnic Institute (IPN), in 1992, the degree of Master in Computer Science Engineering and Doctor in Computer Science in the computing Research Center (CIC), in 1997 and 2007, respectively. Currently, he is a Research Professor, Program Coordinator and Head of the Research Department in Computer Science at the Computing Research Center (CIC-IPN), since March 2010.",
-    "duracion_3": "3 days, 3 hours each",
-    "requerimientos_3": "Basic programming knowledge, particularly in C#, object oriented programming.",
     "subtitle_4":"Detecting people in images using deep learning.",
     "parrafo_4":"In this 4 hours workshop, you'll re-train the neural model YOLO to recognize People, vehicles and other objects in the picture using COLAB. We Will explain the neural architecture YOLO wich is one of the Best ones to detect objects, you'll get to know the métricas used for the performance evaluación of detectors. You'll use a tool to tag your own pictures and get a rought understanding of how to train a deep neural network.",
-    "ponente_4": "He is a teacher, researcher, scientist and enthusiast for spreading useful knowledge. Graduated by CINVESTAV-IPN as doctor (2015) and master in science (2007). Has 11 years of experience in teaching at a higher level, 4 years in research: has published 22 articles in conferences and international journals; Has directed more than 20 undergraduate, 6 master's and 7 doctoral students. His lines of research are artificial neural networks and autonomous mobile robot navigation.",
-    "duracion_4": "1 day, 4 hours",
-    "requerimientos_4": "Programming knowledge, particularly in python and have completed basic engineering math (first 2 semesters).",
     "subtitle_5":"Applications with Docker",
     "parrafo_5":"In this introductory course to Docker students will learn how to create, deploy and manage images and Docker containers. At the end of the course you will know how to use Docker to build applications quickly and execute them anywhere.",
-    "ponente_5": "Masters in Cybersecurity at the Autonomous University of Barcelona, Bachelor in Computer Science at the National Polytechnic Institute.",
-    "duracion_5": "2 days, 2.5 hours each",
-    "requerimientos_5": "Experience in software delivery. Familiarity with the command line on Linux.",
     "subtitle_6":"Big Data in data science",
     "parrafo_6":"The participants will acquire the bases to continue his study in the field of data science and have opportunities in the development of projects in this area that currently has  great income offers for who those who know how to solve problems in this field",
-    "ponente_6": "Dr. Jesus Manuel Olivares Ceja obtained his PhD in Computer Science in the CIC-IPN in 2002. In 1996 the Master's Degree in Computer Science at CINVESTAV, Mexico. In 1991 he obtained the title of Bachelor of Computer Science at the UPIICSA-IPN. Has published in magazines and memories of national and international congresses in their lines of Research. In addition to its activity in research and teaching, he worked as an independent consultant between 1985 and 2005.",
-    "duracion_6": "5 days, 3 hours each",
-    "requerimientos_6": "Basic programming, linux and database knowledge. Interest on Data Science area.",
     "subtitle_7":"First steps in R.O.S",
     "parrafo_7":"The participants become familiar with R.O.S and be able to create their own nodes. The benefit for the participants is to learn to use a tool that facilitates the development of prototypes in robotics which is used by most importante research centers in this area and which is shaping up to become an industry standard.",
-    "ponente_7": "Master of Science at CIC, with the thesis \"Development of a dynamically stable Two-wheel robot\" Undergraduate Degree in Communications and Electronics Engineering at National Polytechnic Institute of México.",
-    "duracion_7": "2 days, 4 hours each",
-    "requerimientos_7": "A computer with Ubuntu O.S installed per student, which has to has installed ROS Melodic Morenia, Geany IDE and Jupyter Notebook.",
     "subtitle_8":"Exploration for the Knowledge Discovery in Open Data",
     "parrafo_8":"Provide participants with a methodology within the Data Science for the analysis of information and make the discovery of knowledge through ETL and visualization tools, using open databases which can be of public or private domain.",
-    "ponente_8": "Studied at the School of Physics and Mathematics(ESFM), obtained the Master's degree in the Computer Section (now Department) of the CINVESTAV-IPN and obtained his PHD in Computer Science in the Computer Research Center of the I.P.N. (CIC-IPN) with the work entitled \"Latices and other structures to accelerate searches in Data Mining\" Since 1996 works in the CIC-IPN, and currently is the head of the Laboratory of Databases and Software Technology.",
-    "duracion_8": "5 days, 4 hours each",
-    "requerimientos_8": "Computer with at least 8GB of RAM, disk space of at least half terabyte and 32-inch monitors (2 monitors desirable per person). Internet with bandwidth or an acceptable speed for downloading files larger than 1GB. Storage devices for data backup. Text editors: Notepad ++ or Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Spreadsheet, Apache Tomcat.",
     "subtitle_9":"Deep analysis of Digital documents 2.0",
     "parrafo_9":"Human language is the most effective and complex means of communication. One of the challenges to be solved in this age of information and knowledge is the automatic treatment of language. The general objective of this workshop is to provide attendees with an intensive and accessible introduction to Artificial Intelligence, Computational Linguistics and related topics currently available. Using this concepts appropriately represents an opportunity niche for development of high-impact multidisciplinary works.",
     "ponente_9": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico."
   },
   "deep-learning":{
-    "subtitle_4":"Detecting people in images using deep learning.",
-    "ponente_4": "He is a teacher, researcher, scientist and enthusiast for spreading useful knowledge. Graduated by CINVESTAV-IPN as doctor (2015) and master in science (2007). Has 11 years of experience in teaching at a higher level, 4 years in research: has published 22 articles in conferences and international journals; Has directed more than 20 undergraduate, 6 master's and 7 doctoral students. His lines of research are artificial neural networks and autonomous mobile robot navigation.",
-    "duration": "Workshop duration",
-    "duracion_4": "1 day, 4 hours"
+    "subtitle":"Detecting people in images using deep learning.",
+    "ponente": "He is a teacher, researcher, scientist and enthusiast for spreading useful knowledge. Graduated by CINVESTAV-IPN as doctor (2015) and master in science (2007). Has 11 years of experience in teaching at a higher level, 4 years in research: has published 22 articles in conferences and international journals; Has directed more than 20 undergraduate, 6 master's and 7 doctoral students. His lines of research are artificial neural networks and autonomous mobile robot navigation.",
+    "duration": "1 day, 4 hours",
+    "requirements": "Programming knowledge, particularly in python and have completed basic engineering math (first 2 semesters).",
+    "workshop-duration": "Workshop duration: "
+  },
+  "augmented-reality":{
+    "subtitle": "Introduction to the development of mobile apps with augmented reality.",
+    "ponente": "Received the degree in Communications and Electronics Engineering from the School of Mechanical and Electrical Engineering (ESIME) of the National Polytechnic Institute (IPN), in 1992, the degree of Master in Computer Science Engineering and Doctor in Computer Science in the computing Research Center (CIC), in 1997 and 2007, respectively. Currently, he is a Research Professor, Program Coordinator and Head of the Research Department in Computer Science at the Computing Research Center (CIC-IPN), since March 2010.",
+    "duration": "3 days, 3 hours each",
+    "requirements": "Basic programming knowledge, particularly in C#, object oriented programming.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "exploits":{
+    "subtitle": "Introduction to the development of exploits",
+    "ponente": "PHD student in Cybersecurity in The CIC -IPN.Has a master's degree in computer science with a specialty in Cybersecurity and has made a internship of Network security research at Osaka University in Japan. For several years has been a consultant in computer security for Private companies, as well as for governmental organizations, of the offensive and defensive side. Has acquired Certifications of companies such as IBM and Microsoft. Has also taught in various conferences, courses and workshops related to cyber security.",
+    "duration": "1 day, 6 hours",
+    "requirements": "Basic programming knowledge in C language.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "big-data":{
+    "subtitle": "Big Data in data science",
+    "ponente": "Dr. Jesus Manuel Olivares Ceja obtained his PhD in Computer Science in the CIC-IPN in 2002. In 1996 the Master's Degree in Computer Science at CINVESTAV, Mexico. In 1991 he obtained the title of Bachelor of Computer Science at the UPIICSA-IPN. Has published in magazines and memories of national and international congresses in their lines of Research. In addition to its activity in research and teaching, he worked as an independent consultant between 1985 and 2005.",
+    "duration": "5 days, 3 hours each",
+    "requirements": "Basic programming, linux and database knowledge. Interest on Data Science area.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "lagarto":{
+    "subtitle": "Architecture design of processor Lagarto RISC-V",
+    "ponente": "Marco Antonio Ramírez Salinas Doctor in Computer Science (Technology and Computer Architecture). Is a full Professor at the Computing Research Center and collaborate in the laboratory of Microtechnology and Embedded Systems. He is interested in the development of embedded systems, computer architecture design and parallel computing for HPC.",
+    "duration": "5 days, 4 hours each",
+    "requirements": "Knowledge on digital circuits.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "docker":{
+    "subtitle": "Applications with Docker",
+    "ponente": "Masters in Cybersecurity at the Autonomous University of Barcelona, Bachelor in Computer Science at the National Polytechnic Institute.",
+    "duration": "2 days, 2.5 hours each",
+    "requirements": "Experience in software delivery. Familiarity with the command line on Linux.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "ros-first-steps":{
+    "subtitle": "First steps in R.O.S",
+    "ponente": "Master of Science at CIC, with the thesis \"Development of a dynamically stable Two-wheel robot\" Undergraduate Degree in Communications and Electronics Engineering at National Polytechnic Institute of México.",
+    "duration": "2 days, 4 hours each",
+    "requirements": "A computer with Ubuntu O.S installed per student, which has to has installed ROS Melodic Morenia, Geany IDE and Jupyter Notebook.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "open-data":{
+    "subtitle": "Exploration for the Knowledge Discovery in Open Data",
+    "ponente": "Studied at the School of Physics and Mathematics(ESFM), obtained the Master's degree in the Computer Section (now Department) of the CINVESTAV-IPN and obtained his PHD in Computer Science in the Computer Research Center of the I.P.N. (CIC-IPN) with the work entitled \"Latices and other structures to accelerate searches in Data Mining\" Since 1996 works in the CIC-IPN, and currently is the head of the Laboratory of Databases and Software Technology.",
+    "duration": "5 days, 4 hours each",
+    "requirements": "Computer with at least 8GB of RAM, disk space of at least half terabyte and 32-inch monitors (2 monitors desirable per person). Internet with bandwidth or an acceptable speed for downloading files larger than 1GB. Storage devices for data backup. Text editors: Notepad ++ or Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Spreadsheet, Apache Tomcat.",
+    "workshop-duration": "Workshop duration: "
   },
   "comite":{
     "title":"Local Committee",

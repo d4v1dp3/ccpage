@@ -467,7 +467,7 @@ if(isset($_GET["lang"])){
                         <small>Dr. Erik Zamora</small>
                     </div>
                     <div class="col-lg-3 col-lg-offset-2">
-                        <a data-toggle="modal" data-target="#deep-learning" href="#deep-learning"><small>Ver más</small></a>
+                        <a data-toggle="modal" data-target="#deep-learning" href="#deep-learning"><small data-i18n="words.see-more">Ver más</small></a>
                     </div>
                 </div>
             </div>
@@ -481,7 +481,7 @@ if(isset($_GET["lang"])){
                     <small>Dr. Amadeo José Argüelles Cruz</small>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
-                    <a data-toggle="modal" data-target="#augmented-reality" href="#augmented-reality"><small>Ver más</small></a>
+                    <a data-toggle="modal" data-target="#augmented-reality" href="#augmented-reality"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -497,7 +497,7 @@ if(isset($_GET["lang"])){
                     <small>M. en C. Florencio Javier González Rodríguez</small>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
-                    <a data-toggle="modal" data-target="#exploits" href="#exploits"><small>Ver más</small></a>
+                    <a data-toggle="modal" data-target="#exploits" href="#exploits"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -511,7 +511,7 @@ if(isset($_GET["lang"])){
                     <small>Dr. Jesús Manuel Olivares Ceja</small>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
-                    <a data-toggle="modal" data-target="#big-data" href="#big-data"><small>Ver más</small></a>
+                    <a data-toggle="modal" data-target="#big-data" href="#big-data"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -530,7 +530,7 @@ if(isset($_GET["lang"])){
                         <small>Dr. Marco Antonio Ramírez Salinas</small>
                     </div>
                     <div class="col-lg-3 col-lg-offset-2">
-                        <a data-toggle="modal" data-target="#lagarto" href="#lagarto"><small>Ver más</small></a>
+                        <a data-toggle="modal" data-target="#lagarto" href="#lagarto"><small data-i18n="words.see-more">Ver más</small></a>
                     </div>
                 </div>
             </div>
@@ -544,7 +544,7 @@ if(isset($_GET["lang"])){
                     <small>Ing. Alejandro López Hernández</small>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
-                    <a data-toggle="modal" data-target="#docker" href="#docker"><small>Ver más</small></a>
+                    <a data-toggle="modal" data-target="#docker" href="#docker"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -560,7 +560,7 @@ if(isset($_GET["lang"])){
                         <small>M. en C. José Ángel Martínez Navarro</small>
                     </div>
                     <div class="col-lg-3 col-lg-offset-2">
-                        <a data-toggle="modal" data-target="#ros-first-steps" href="#ros-first-steps"><small>Ver más</small></a>
+                        <a data-toggle="modal" data-target="#ros-first-steps" href="#ros-first-steps"><small data-i18n="words.see-more">Ver más</small></a>
                     </div>
                 </div>
             </div>
@@ -574,7 +574,7 @@ if(isset($_GET["lang"])){
                     <small>Dr. Gilberto L. Martínez Luna</small>
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
-                    <a data-toggle="modal" data-target="#open-data" href="#open-data"><small>Ver más</small></a>
+                    <a data-toggle="modal" data-target="#open-data" href="#open-data"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -1071,7 +1071,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="deep-learning.subtitle_4">Detectando personas en imágenes usando deep learning</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="deep-learning.subtitle">Detectando personas en imágenes usando deep learning</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1079,7 +1079,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Erik Zamora</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="deep-learning.ponente_4">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
+              <p data-i18n="deep-learning.ponente">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: ezamora1981@gmail.com</p><br>
@@ -1089,21 +1089,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="deep-learning.requerimientos_4">Saber programar, en particular en python, y haber cursado matemáticas básicas de la ingeniería (primeros 2 semestres).</p>
+                    <p data-i18n="deep-learning.requirements">Saber programar, en particular en python, y haber cursado matemáticas básicas de la ingeniería (primeros 2 semestres).</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="deep-learning.duration">Duración del taller: </h4>
+                    <h4 data-i18n="deep-learning.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="deep-learning.duracion_4">1 día, 4 horas</p>
+                    <p data-i18n="deep-learning.duration">1 día, 4 horas</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1115,7 +1115,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_3">Introducción al desarrollo de aplicaciones móviles con realidad aumentada</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="augmented-reality.subtitle">Introducción al desarrollo de aplicaciones móviles con realidad aumentada</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1123,7 +1123,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Amadeo José Argüelles Cruz</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_3">Recibió el título de Ingeniero en Comunicaciones y Electrónica de la Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME) del Instituto Politécnico Nacional (IPN), en 1992, el grado de Maestro en Ciencias en Ingeniería de Cómputo y Doctor en Ciencias de la Computación en el Centro de Investigación en Computación (CIC), en 1997 y 2007, respectivamente. Actualmente, se desempeña como Profesor Investigador, Coordinador de Programa y Jefe del Departamento de Investigación en Ciencias de la Computación en el Centro de Investigación en Computación (CIC-IPN), desde marzo del 2010.</p><br>
+              <p data-i18n="augmented-reality.ponente">Recibió el título de Ingeniero en Comunicaciones y Electrónica de la Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME) del Instituto Politécnico Nacional (IPN), en 1992, el grado de Maestro en Ciencias en Ingeniería de Cómputo y Doctor en Ciencias de la Computación en el Centro de Investigación en Computación (CIC), en 1997 y 2007, respectivamente. Actualmente, se desempeña como Profesor Investigador, Coordinador de Programa y Jefe del Departamento de Investigación en Ciencias de la Computación en el Centro de Investigación en Computación (CIC-IPN), desde marzo del 2010.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: jamadeo@cic.ipn.mx</p><br>
@@ -1133,21 +1133,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_3">Programación básica, de preferencia C#, Programación orientada a objetos.</p>
+                    <p data-i18n="augmented-reality.requirements">Programación básica, de preferencia C#, Programación orientada a objetos.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="augmented-reality.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_3">3 días, 3 horas cada uno</p>
+                    <p data-i18n="augmented-reality.duration">3 días, 3 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1159,7 +1159,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_2">Introducción al desarrollo de exploits</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="exploits.subtitle">Introducción al desarrollo de exploits</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1167,7 +1167,7 @@ if(isset($_GET["lang"])){
               <h3>M. en C. Florencio Javier González Rodríguez</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_2"> Estudiante de doctorado en Ciberseguridad en el CIC del IPN. Cuenta con una Maestría en Ciencias de la Computación con especialidad en Ciberseguridad y ha realizado una estancia de investigación de seguridad en redes en la universidad de Osaka en Japón. Durante varios años ha sido consultor en seguridad informática para empresas privadas, así como para organizaciones gubernamentales, del lado ofensivo y defensivo. Formación en donde ha adquirió certificaciones de empresas como IBM y Microsoft. También ha impartido diversas conferencias, cursos y talleres relacionados con la seguridad Informática.</p><br>
+              <p data-i18n="exploits.ponente"> Estudiante de doctorado en Ciberseguridad en el CIC del IPN. Cuenta con una Maestría en Ciencias de la Computación con especialidad en Ciberseguridad y ha realizado una estancia de investigación de seguridad en redes en la universidad de Osaka en Japón. Durante varios años ha sido consultor en seguridad informática para empresas privadas, así como para organizaciones gubernamentales, del lado ofensivo y defensivo. Formación en donde ha adquirió certificaciones de empresas como IBM y Microsoft. También ha impartido diversas conferencias, cursos y talleres relacionados con la seguridad Informática.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-6">
               <p>Contacto: fjgonzalezr@newbiegeek.com</p><br>
@@ -1177,21 +1177,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_2">Conocimientos básicos de programación en lenguaje C.</p>
+                    <p data-i18n="exploits.requirements">Conocimientos básicos de programación en lenguaje C.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="exploits.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_2">1 día, 6 horas</p>
+                    <p data-i18n="exploits.duration">1 día, 6 horas</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1203,7 +1203,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_6">Big Data en la Ciencia de datos</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="big-data.subtitle">Big Data en la Ciencia de datos</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1211,7 +1211,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Jesús Manuel Olivares Ceja</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_6">El Dr. Jesús Manuel Olivares Ceja obtuvo su doctorado en Ciencias de la Computación  en el CIC–IPN en 2002. En 1996 concluyó la Maestría en Ciencias de la Computación en el CINVESTAV, México. En 1991 obtuvo el título de Licenciado en Ciencias de la Computación en la UPIICSA–IPN. Ha publicado en revistas y memorias de congresos nacionales e internacionales en sus líneas de investigación; presentando algunos de estos trabajos en foros nacionales e internacionales. Además de su actividad en investigación y docencia, se desempeñó como consultor independiente entre 1985 y 2005.</p><br>
+              <p data-i18n="big-data.ponente">El Dr. Jesús Manuel Olivares Ceja obtuvo su doctorado en Ciencias de la Computación  en el CIC–IPN en 2002. En 1996 concluyó la Maestría en Ciencias de la Computación en el CINVESTAV, México. En 1991 obtuvo el título de Licenciado en Ciencias de la Computación en la UPIICSA–IPN. Ha publicado en revistas y memorias de congresos nacionales e internacionales en sus líneas de investigación; presentando algunos de estos trabajos en foros nacionales e internacionales. Además de su actividad en investigación y docencia, se desempeñó como consultor independiente entre 1985 y 2005.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: jesusoc@hotmail.com</p><br>
@@ -1221,21 +1221,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_6">Conocimientos básicos de programación, Linux y base de datos Interés por conocer el área de Ciencia de Datos</p>
+                    <p data-i18n="big-data.requirements">Conocimientos básicos de programación, Linux y base de datos Interés por conocer el área de Ciencia de Datos</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="big-data.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_6">5 días, 3 horas cada uno</p>
+                    <p data-i18n="big-data.duration">5 días, 3 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1247,7 +1247,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_1">Diseño de la arquitectura del procesador lagarto RISC-V</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="lagarto.subtitle">Diseño de la arquitectura del procesador lagarto RISC-V</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1255,7 +1255,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Marco Antonio Ramírez Salinas</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_1">Marco Antonio Ramirez Salinas, Doctor en ciencias de la computacion (Tecnologia Arquitectura de las computadoras). Profesor a tiempo completo en el centro de Investigación en computación y colabora en el laboratorio de Microtecnologia y sistemas embebidos. Interesado en el desarrollo de sistemas embebidos, diseño de arquitectura de computadoras y computo paralelo para HPC.</p><br>
+              <p data-i18n="lagarto.ponente">Marco Antonio Ramirez Salinas, Doctor en ciencias de la computacion (Tecnologia Arquitectura de las computadoras). Profesor a tiempo completo en el centro de Investigación en computación y colabora en el laboratorio de Microtecnologia y sistemas embebidos. Interesado en el desarrollo de sistemas embebidos, diseño de arquitectura de computadoras y computo paralelo para HPC.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: hdzces@gmail.com</p><br>
@@ -1265,21 +1265,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_1">Conocimiento de circuitos digitales.</p>
+                    <p data-i18n="lagarto.requirements">Conocimiento de circuitos digitales.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="lagarto.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_1">5 días, 4 horas cada uno</p>
+                    <p data-i18n="lagarto.duration">5 días, 4 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1291,7 +1291,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_5">Entrega de aplicaciones con Docker</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="docker.subtitle">Entrega de aplicaciones con Docker</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1299,7 +1299,7 @@ if(isset($_GET["lang"])){
               <h3>Ing. Alejandro López Hernández</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_5">Maestria en ciberseguridad en la Universidad Autonoma de Barcelona, Licenciatura en Ciencias de la computacion en el Insituto Politecnico Nacional.</p><br>
+              <p data-i18n="docker.ponente">Maestria en ciberseguridad en la Universidad Autonoma de Barcelona, Licenciatura en Ciencias de la computacion en el Insituto Politecnico Nacional.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: alejandro@ulfix.com</p><br>
@@ -1309,21 +1309,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_5">Alguna experiencia en la entrega de software. Familiaridad con el uso de la línea de comandos en Linux.</p>
+                    <p data-i18n="docker.requirements">Alguna experiencia en la entrega de software. Familiaridad con el uso de la línea de comandos en Linux.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="docker.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_5">2 días, 2.5 horas cada uno</p>
+                    <p data-i18n="docker.duration">2 días, 2.5 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1335,7 +1335,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_7">Primeros pasos en R.O.S</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="ros-first-steps.subtitle">Primeros pasos en R.O.S</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1343,7 +1343,7 @@ if(isset($_GET["lang"])){
               <h3>M. en C. José Ángel Martínez Navarro</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_7">Maestría en ciencias en el CIC con la tesis “Desarrollo de un robot de dos ruedas dinámicamente estable”. Graduado en la Ingenieria en comuniacaciones y electronica en el Instituto Politecnico Nacional en Mexico.</p><br>
+              <p data-i18n="ros-first-steps.ponente">Maestría en ciencias en el CIC con la tesis “Desarrollo de un robot de dos ruedas dinámicamente estable”. Graduado en la Ingenieria en comuniacaciones y electronica en el Instituto Politecnico Nacional en Mexico.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-7">
               <p>Contacto: josekun13@gmail.com</p><br>
@@ -1353,21 +1353,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_7">Una computadora con S.O. Ubuntu por estudiante, la cual tiene que tener instalado ROS Melodic Morenia, el ide geany y Jupyter notebook.</p>
+                    <p data-i18n="ros-first-steps.requirements">Una computadora con S.O. Ubuntu por estudiante, la cual tiene que tener instalado ROS Melodic Morenia, el ide geany y Jupyter notebook.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="ros-first-steps.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_7">2 días, 4 horas cada uno</p>
+                    <p data-i18n="ros-first-steps.duration">2 días, 4 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1379,7 +1379,7 @@ if(isset($_GET["lang"])){
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="challenges.subtitle_8">Exploración para el descubrimiento de conocimiento en datos abiertos</h1>
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="open-data.subtitle">Exploración para el descubrimiento de conocimiento en datos abiertos</h1>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -1387,7 +1387,7 @@ if(isset($_GET["lang"])){
               <h3>Dr. Gilberto L. Martínez Luna</h3><br>
             </div>
             <div class="col-lg-12">
-              <p data-i18n="challenges.ponente_8"> Estudió en la Escuela Superior de Física y Matemáticas, el grado de Maestría lo obtuvo en la Sección de Computación (hoy Departamento) del CINVESTAV-IPN y el grado de Doctor en Ciencias de la Computación lo obtuvo en el Centro de Investigación en Computación del I.P.N. (CIC-IPN) con el trabajo titulado “Latices y otras estructuras para acelerar las búsquedas en Minería de Datos” Desde 1996 trabaja en el CIC-IPN, y actualmente en el, es el jefe del Laboratorio de Bases de Datos y Tecnología de Software.</p><br>
+              <p data-i18n="open-data.ponente"> Estudió en la Escuela Superior de Física y Matemáticas, el grado de Maestría lo obtuvo en la Sección de Computación (hoy Departamento) del CINVESTAV-IPN y el grado de Doctor en Ciencias de la Computación lo obtuvo en el Centro de Investigación en Computación del I.P.N. (CIC-IPN) con el trabajo titulado “Latices y otras estructuras para acelerar las búsquedas en Minería de Datos” Desde 1996 trabaja en el CIC-IPN, y actualmente en el, es el jefe del Laboratorio de Bases de Datos y Tecnología de Software.</p><br>
             </div>
             <div class="col-lg-12 col-lg-offset-6">
               <p>Contacto: yyadira.hhernandez@gmail.com</p><br>
@@ -1397,21 +1397,21 @@ if(isset($_GET["lang"])){
                     <h4 data-i18n="words.requirements">Requisitos: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.requerimientos_8">Equipo de cómputo con al menos 8GB de RAM, espacio en disco de al menos medio terabyte y monitores de 32 pulgadas (deseable 2 monitores por persona). Internet con ancho de banda o una velocidad aceptable para descarga de archivos mayores a 1GB. Dispositivos de almacenamiento para el respaldo de datos. Editores de texto: Notepad++ o Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Hoja de cálculo, Apache Tomcat.</p>
+                    <p data-i18n="open-data.requirements">Equipo de cómputo con al menos 8GB de RAM, espacio en disco de al menos medio terabyte y monitores de 32 pulgadas (deseable 2 monitores por persona). Internet con ancho de banda o una velocidad aceptable para descarga de archivos mayores a 1GB. Dispositivos de almacenamiento para el respaldo de datos. Editores de texto: Notepad++ o Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Hoja de cálculo, Apache Tomcat.</p>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-lg-3 col-lg-offset-1">
-                    <h4 data-i18n="challenges.duration">Duración del taller: </h4>
+                    <h4 data-i18n="open-data.workshop-duration">Duración del taller: </h4>
                 </div>
                 <div class="col-lg-8">
-                    <p data-i18n="challenges.duracion_8">5 días, 4 horas cada uno</p>
+                    <p data-i18n="open-data.duration">5 días, 4 horas cada uno</p>
                 </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
         </div>
     </div>
   </div>
@@ -1465,6 +1465,13 @@ if(isset($_GET["lang"])){
             $('#about').i18n();
             $('#map').i18n();
             $('#deep-learning').i18n();
+            $('#augmented-reality').i18n();
+            $('#exploits').i18n();
+            $('#big-data').i18n();
+            $('#lagarto').i18n();
+            $('#docker').i18n();
+            $('#ros-first-steps').i18n();
+            $('#open-data').i18n();
         });
 
         $('.set_en').on('click', function () {
@@ -1484,6 +1491,13 @@ if(isset($_GET["lang"])){
                 $('#map').i18n();
                 $('#contact').i18n();
                 $('#deep-learning').i18n();
+                $('#augmented-reality').i18n();
+                $('#exploits').i18n();
+                $('#big-data').i18n();
+                $('#lagarto').i18n();
+                $('#docker').i18n();
+                $('#ros-first-steps').i18n();
+                $('#open-data').i18n();
                 $('.set_en').addClass('active');
                 $('.set_es').removeClass('active');
             });
