@@ -2513,6 +2513,9 @@ label.error {
 .toast-warning {
     background-color: #f8ac59;
 }
+.toast-thanos {
+    background-color: #b9aaca;
+}
 .toast-top-full-width {
     margin-top: 20px;
 }

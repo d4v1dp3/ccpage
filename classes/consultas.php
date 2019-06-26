@@ -256,6 +256,23 @@ class consultas {
             throw new Exception(LOGIN_FIELDS_MISSING);
         }
     }
+    
+    public function eliminarUsuario($idUsuario) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("DELETE FROM usuario WHERE id=?;");
+        $statement->bind_param("s", $idUsuario);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
 
     public function redirecciona($url) {
         echo '<script language="javascript">window.location.href ="' . $url . '"</script>';

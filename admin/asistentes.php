@@ -66,8 +66,8 @@ if (!($_SESSION['logged_in'])) {
                                                             <td><span class="badge badge-primary"><?= $col['talleres'] ?> inscritos</span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="undatobase64" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<undatobase64" data-target="#modalEstatus"><i class="fa fa-trash"></i> Eliminar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id'])?>|<?= $col['contacto'] ?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id'])?>|<?= $col['contacto'] ?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar</button>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -84,65 +84,17 @@ if (!($_SESSION['logged_in'])) {
                     </div>
                 </div>
 
-                <!-- ModalAgregar -->
-                <div class="modal fade" id="modalAdd" role="dialog">
+                <!-- ModalEliminar -->
+                <div class="modal fade" id="modalEliminar" role="dialog">
                     <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="../classes/registroTaller.php">
+                        <form method="post" data-toggle="validator" action="../classes/eliminarAsistente.php">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Registrar nuevo taller</h4>
-                                    <small> * Todos los campos son obligatorios</small>
+                                    <h4 class="modal-title">Eliminar asistente</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control capitalize-text" id="inputNombre" name="nombre" maxlength="99" placeholder="Nombre del taller" required="">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control capitalize-text" name="descripcion" maxlength="1024" placeholder="Descripción" required="">
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control capitalize-text" name="ponente" placeholder="Nombre de ponente/expositor" required="">
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <input type="text" id="inputCupo" class="touchspin" name="cupo" placeholder="Cupo máximo">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row form-group">
-                                        <div class="col-sm-5">
-                                            <div class="form-group">
-                                                <input type="text" id="inputFecha" class="form-control" name="fecha_evento" placeholder="Fecha y hora" required=""/>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-7">
-                                            <input type="text" id="inputLugar" class="form-control capitalize-text" name="lugar" placeholder="Ubicación" required="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> &nbsp;Registrar</button>
-                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- fin modal -->
-
-                <!-- ModalEstatus -->
-                <div class="modal fade" id="modalEstatus" role="dialog">
-                    <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="${pageContext.servletContext.contextPath}/editar/estatus">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Eliminar un taller</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>¿Está seguro de eliminar el taller <label id="nombreTaller"></label>?</strong> Todos los asistentes inscritos serán removidos del taller.</p>
+                                    <p>¿Está seguro de eliminar a <strong><label id="nombre"></label></strong> de la lista de asistentes? Sus datos serán eliminados de los registros.</p>
                                     <input type="hidden" id="hidden" name="hidden" value="">
                                 </div>
                                 <div class="modal-footer">
@@ -173,19 +125,11 @@ if (!($_SESSION['logged_in'])) {
                     responsive: true,
                     dom: 'lTfgtp'
                 });
-
-                /* $.base64.utf8decode = true;
-                 $('#modalEstatus').on('show.bs.modal', function (e) {
-                 var c = ($.base64.atob($(e.relatedTarget).data('id'))).split('|')[0];
-                 var l = ($.base64.atob($(e.relatedTarget).data('id'))).split('|')[1].replace('&nbsp;', '');
-                 $('#pLabel').css({'color': '#ed5565'});
-                 if (l == 'Habilitar') {
-                 $('#pLabel').css({'color': '#1ab394'});
-                 }
-                 $('#modalEstatus #pLabel').text(l);
-                 $('#modalEstatus #rfc').text(c);
-                 $('#modalEstatus #hidden').val(c);
-                 }); */
+                
+                $('#modalEliminar').on('show.bs.modal', function (e) {
+                    $('#modalEliminar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
+                    $('#modalEliminar #hidden').val($(e.relatedTarget).data('id'));
+                });
 
                 setTimeout(function () {
                     toastr.options = {

@@ -2,7 +2,6 @@
 
 session_start();
 include 'conexion.php';
-
 $datos = explode("|", $_POST['hidden']);
 if (!empty($_POST)) {
     extract($_POST);

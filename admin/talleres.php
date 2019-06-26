@@ -143,7 +143,7 @@ if (!($_SESSION['logged_in'])) {
                                     <small> * Todos los campos son obligatorios</small>
                                 </div>
                                 <div class="modal-body">
-                                    <input type="hidden" name="hidden" value="">
+                                    <input type="hidden" id="hidden" name="hidden" value="">
                                     <div class="form-group">
                                         <input type="text" class="form-control capitalize-text" id="nombreE" name="nombre" value="" maxlength="99" placeholder="Nombre del taller" required="">
                                     </div>
