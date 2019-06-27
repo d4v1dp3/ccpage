@@ -9,6 +9,8 @@
     "talleres": "Workshops",
     "comite": "Local Committee",
     "contacto": "Contact",
+    "signIn": "Sign In",
+    "myAccount": "My Account",
     "ubicacion": "Location",
     "comite": "Committee"
   },
@@ -133,7 +135,8 @@
     "parrafo_8":"Provide participants with a methodology within the Data Science for the analysis of information and make the discovery of knowledge through ETL and visualization tools, using open databases which can be of public or private domain.",
     "subtitle_9":"Deep analysis of Digital documents 2.0",
     "parrafo_9":"Human language is the most effective and complex means of communication. One of the challenges to be solved in this age of information and knowledge is the automatic treatment of language. The general objective of this workshop is to provide attendees with an intensive and accessible introduction to Artificial Intelligence, Computational Linguistics and related topics currently available. Using this concepts appropriately represents an opportunity niche for development of high-impact multidisciplinary works.",
-    "ponente_9": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico."
+    "subtitle_10":"IoT - Artificial Intelligence in Embedded systems",
+    "parrafo_10":"It exists a great interest in the convergence between internet of things (IoT) and artificial intelligence (AI) in the industrial sector. In this workshop you will develop a solution with machine learning in hardware plattforms dedicated to IoT (Raspberry PI).",
   },
   "deep-learning":{
     "subtitle":"Detecting people in images using deep learning.",
@@ -189,6 +192,20 @@
     "ponente": "Studied at the School of Physics and Mathematics(ESFM), obtained the Master's degree in the Computer Section (now Department) of the CINVESTAV-IPN and obtained his PHD in Computer Science in the Computer Research Center of the I.P.N. (CIC-IPN) with the work entitled \"Latices and other structures to accelerate searches in Data Mining\" Since 1996 works in the CIC-IPN, and currently is the head of the Laboratory of Databases and Software Technology.",
     "duration": "5 days, 4 hours each",
     "requirements": "Computer with at least 8GB of RAM, disk space of at least half terabyte and 32-inch monitors (2 monitors desirable per person). Internet with bandwidth or an acceptable speed for downloading files larger than 1GB. Storage devices for data backup. Text editors: Notepad ++ or Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Spreadsheet, Apache Tomcat.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "digital-documents":{
+    "subtitle": "Deep analysis of Digital documents 2.0",
+    "ponente": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico.",
+    "duration": "2 days, 5 hours each",
+    "requirements": "Python programming, handling of libraries in Python, use of Jupyter Notebook.",
+    "workshop-duration": "Workshop duration: "
+  },
+  "embedded-systems":{
+    "subtitle": "IoT - Artificial Intelligence in Embedded systems",
+    "ponente": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico.",
+    "duration": "1 day, 4 hours",
+    "requirements": "Knowledge on basic electronics and programming.",
     "workshop-duration": "Workshop duration: "
   },
   "comite":{

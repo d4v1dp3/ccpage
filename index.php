@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 $lang = "es";
+session_start();
 if(isset($_GET["lang"])){
     if($_GET["lang"] == "en"){
         $lang = "en";
@@ -46,6 +47,15 @@ if(isset($_GET["lang"])){
                     <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
                     <li><a class="page-scroll" data-i18n="nav.comite" href="#comite">Comité</a></li>
                     <li><a class="page-scroll" data-i18n="nav.contacto" href="#contact">Contacto</a></li>
+                    <li>
+                    <?php
+                    	if(isset($_SESSION['nombre'])) {
+                    		echo "<a class='page-scroll' data-i18n='nav.myAccount' href='login.php'>Mi cuenta</a>";
+                    	}else {
+                    		echo "<a class='page-scroll' data-i18n='nav.signIn' href='login.php'>Iniciar Sesión</a>";
+                    	}
+                    ?>
+                    </li>
                     <li><a class="page-scroll visible-md-*" href="#"><img src="img/flags/24/Mexico.png" class="set_es" alt="ES">&nbsp;&nbsp;<img class="set_en" src="img/flags/24/United-States.png" alt="EN"></a></li>
                 </ul>
             </div>
@@ -575,6 +585,36 @@ if(isset($_GET["lang"])){
                 </div>
                 <div class="col-lg-3 col-lg-offset-2">
                     <a data-toggle="modal" data-target="#open-data" href="#open-data"><small data-i18n="words.see-more">Ver más</small></a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_9">Análisis profundo de Documentos digitales 2.0</h2>
+                <i class="fa fa-file big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_9">El lenguaje humano es el medio de comunicación existente más eficaz, y a su vez el más complejo. Uno de los retos a resolver en esta era de la información y del conocimiento es el tratamiento automático del lenguaje. El objetivo general de este taller es proporcionar a los asistentes una introducción, intensiva y accesible, a la Inteligencia Artificial, a la Lingüística Computacional y a las herramientas relacionadas existentes actualmente. Usar de forma apropiada estos conceptos representan un nicho de oportunidad para el desarrollo de trabajos multidisciplinarios de alto impacto.</p>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <small>Dr. Hiram Calvo</small>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <a data-toggle="modal" data-target="#digital-documents" href="#digital-documents"><small data-i18n="words.see-more">Ver más</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 features-text">
+                <small data-i18n="challenges.subtitle">Taller</small>
+                <h2 data-i18n="challenges.subtitle_10">IoT - Inteligencia Artificial en Sistemas Embebidos</h2>
+                <i class="fa fa-wifi big-icon pull-right"></i>
+                <p data-i18n="challenges.parrafo_10">Existe un gran interés en la convergencia entre el internet de las cosas (IoT) y la inteligencia artificial (AI) en el sector industrial. En este taller desarrollarás una solución con machine learning en plataformas de hardware dedicadas al IoT (Raspberry PI).</p>
+                <div class="row">
+                <div class="col-lg-7">
+                    <small>M. en C. Joel García Velasco</small>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2">
+                    <a data-toggle="modal" data-target="#embedded-systems" href="#embedded-systems"><small data-i18n="words.see-more">Ver más</small></a>
                 </div>
             </div>
             </div>
@@ -1418,6 +1458,94 @@ if(isset($_GET["lang"])){
 </div>
 
 
+<!-- DOCUMENTOS DIGITALES -->
+<div class="modal fade" id="digital-documents" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="digital-documents.subtitle">Análisis profundo de Documentos digitales 2.0</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>Dr. Hiram Calvo</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="digital-documents.ponente">Profesor a tiempo completo, miembro del sistema nacional de investigadores, CONACYT, nivel 2. Trabaja en el laboratorio de inteligencia artificial en el centro de investifacion en computacion del intistuto politecnico nacional.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-6">
+              <p>Contacto: hcalvo@cic.ipn.mx</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="digital-documents.requirements">Programación en Python, manejo de bibliotecas de Python, uso de Jupyter Notebook.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="digital-documents.workshop-duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="digital-documents.duration">2 días, 5 horas cada uno</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- IOT -->
+<div class="modal fade" id="embedded-systems" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title m-l-xl" id="titulo-modal" data-i18n="embedded-systems.subtitle">IoT - Inteligencia Artificial en Sistemas Embebidos</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-10">
+              <h3>M. en C. Joel García Velasco</h3><br>
+            </div>
+            <div class="col-lg-12">
+              <p data-i18n="embedded-systems.ponente">Profesor a tiempo completo, miembro del sistema nacional de investigadores, CONACYT, nivel 2. Trabaja en el laboratorio de inteligencia artificial en el centro de investifacion en computacion del intistuto politecnico nacional.</p><br>
+            </div>
+            <div class="col-lg-12 col-lg-offset-6">
+              <p>Contacto: joelgarciavel@gmail.com</p><br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="words.requirements">Requisitos: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="embedded-systems.requirements">Conocimientos de electrónica básica y programación.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <h4 data-i18n="embedded-systems.workshop-duration">Duración del taller: </h4>
+                </div>
+                <div class="col-lg-8">
+                    <p data-i18n="embedded-systems.duration">1 día, 4 horas</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
@@ -1472,6 +1600,8 @@ if(isset($_GET["lang"])){
             $('#docker').i18n();
             $('#ros-first-steps').i18n();
             $('#open-data').i18n();
+            $('#digital-documents').i18n();
+            $('#embedded-systems').i18n();
         });
 
         $('.set_en').on('click', function () {
@@ -1498,6 +1628,8 @@ if(isset($_GET["lang"])){
                 $('#docker').i18n();
                 $('#ros-first-steps').i18n();
                 $('#open-data').i18n();
+                $('#digital-documents').i18n();
+                $('#embedded-systems').i18n();
                 $('.set_en').addClass('active');
                 $('.set_es').removeClass('active');
             });
