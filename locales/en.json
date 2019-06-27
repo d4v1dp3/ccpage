@@ -111,7 +111,8 @@
     "mesg2": "Present a copy of a valid IPN credential.",
     "mesg3": "Payments",
     "mesg4": "should be made directly to the bank with the account number and references.",
-    "mesg5": "Cash payments will not be accepted on the days of the event."
+    "mesg5": "Cash payments will not be accepted on the days of the event.",
+    "mesg6": "* IPN community cannot receive any invoice from the IPN, if you require invoice you must pay as general public, otherwise you will only receive a note."
   },
   "challenges":{
     "title":"Previous Workshops",

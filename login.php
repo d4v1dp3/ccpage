@@ -3,7 +3,7 @@ ob_start();
 session_start();
 $message = "";
 if(isset($_SESSION['usuario'])) {
-    if($_SESSION['usuario'] == 'administrador') {
+    if($_SESSION['tipo'] == '3') {
         header('Location: ./admin/inicio.php');
     }else {
         header('Location: ./users/inicio.php');

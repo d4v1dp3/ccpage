@@ -49,7 +49,7 @@ if(isset($_GET["lang"])){
                     <li><a class="page-scroll" data-i18n="nav.contacto" href="#contact">Contacto</a></li>
                     <li>
                     <?php
-                    	if(isset($_SESSION['nombre'])) {
+                    	if(isset($_SESSION['usuario'])) {
                     		echo "<a class='page-scroll' data-i18n='nav.myAccount' href='login.php'>Mi cuenta</a>";
                     	}else {
                     		echo "<a class='page-scroll' data-i18n='nav.signIn' href='login.php'>Iniciar Sesión</a>";
@@ -123,7 +123,7 @@ if(isset($_GET["lang"])){
                     <h1 data-i18n="carousel.attend">Asiste a las conferencias</h1>
                     <p></p>
                     <p>
-                        <a class="btn btn-lg btn-primary" href="#" role="button" data-i18n="carousel.coming">Proximamente</a>
+                        <a class="btn btn-lg btn-primary" href="#" role="button" data-i18n="carousel.coming">Próximamente</a>
                     </p>
                 </div>
             </div>
@@ -135,7 +135,7 @@ if(isset($_GET["lang"])){
                     <h1 data-i18n="carousel.algoritmo">Competencia de algoritmia</h1>
                     <p></p>
                     <p>
-                        <a class="btn btn-lg btn-primary" href="#challenges" data-i18n="carousel.enroll" role="button">Inscribete</a>
+                        <a class="btn btn-lg btn-primary" href="#challenges" data-i18n="carousel.enroll" role="button">Inscríbete</a>
                     </p>
                 </div>
             </div>
@@ -399,17 +399,15 @@ if(isset($_GET["lang"])){
                     una personalidad propia al cambiar los miembros del comité organizador quienes imprimen su
                     propio sello a este ahora reconocido evento.</p><br/>
                 <p data-i18n="about.texto_2">A lo largo de la historia de este congreso se han presentado decenas
-                    conferencistas de talla
-                    internacional quienes conviven con los noveles y experimentados investigadores que presentan sus
-                    trabajos a la comunidad científica a través de este lugar de encuentro.</p></br>
-                <p data-i18n="about.texto_3">Como sabemos el mundo académico requiere de espacios para presentar los
+                    conferencistas de talla internacional quienes conviven con los noveles y experimentados investigadores que presentan sus trabajos a la comunidad científica a través de este lugar de encuentro.</p></br>
+                <p data-i18n="about.texto_3">Como sabemos, el mundo académico requiere de espacios para presentar los
                     avances en las distintas
                     áreas del conocimiento; ya sean investigaciones que mejoran métodos previos, que presenten
                     nuevos problemas donde aplicar conocimientos existentes, nuevas formas de resolver problemas o
-                    bien áreas nuevas a explorar.</p><br/>
-                <p data-i18n="about.texto_4">Es precisamente esta necesidad la que ha cubierto exitosamente, año con
-                    año, este reconocido
-                    congreso y la cual en la presente edición se busca llenar a cabalidad a través de un congreso de
+                    bien, áreas nuevas a explorar.</p><br/>
+                <p data-i18n="about.texto_4">Es precisamente esta necesidad la que ha cubierto exitosamente año con
+                    año este reconocido
+                    congreso y la cual, en la presente edición se busca llenar a cabalidad a través de un congreso de
                     alto nivel que vincule conferencistas magistrales de talla internacional, investigadores
                     jóvenes, industria, y asistentes de nivel universitario y posgrado. Así como la publicación de
                     los artículos que pasen el escrutinio científico y editorial en la revista indexada Research in
@@ -870,9 +868,12 @@ if(isset($_GET["lang"])){
         <div class="row m-t-lg">
             <div class="col-lg-12 text-center m-t-lg">
                 <p>
-                    <strong><span data-i18n="pricing.publico" class="navy">Público general</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
-                    <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
-                    <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong>
+                    <strong><span data-i18n="pricing.publico" class="navy">Público en general:</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
+                    <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica:</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
+                    <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br><br><br>
+                </p>
+                <p style="width: 50%;" class="col-lg-offset-3">
+                	<strong data-i18n="pricing.mesg6">* La comunidad politécnica no puede recibir factura por parte del politécnico, si requieren factura deben de pagar como externos, de lo contrario solo recibirán una nota.</strong><br>
                 </p>
             </div>
         </div>
@@ -1072,7 +1073,7 @@ if(isset($_GET["lang"])){
                     <i class="fa fa-envelope"></i><span data-i18n="contacto.boton"> core@cic.ipn.mx</span>
                 </a>
                 <p class="m-t-sm" data-i18n="contacto.redes">
-                    Siguenos en
+                    Síguenos en
                 </p>
                 <ul class="list-inline social-icon">
                     <li><a href="https://twitter.com/core_congress" target="_blank"><i class="fa fa-twitter"></i></a>
