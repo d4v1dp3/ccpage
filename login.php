@@ -3,7 +3,11 @@ ob_start();
 session_start();
 $message = "";
 if(isset($_SESSION['usuario'])) {
-    header('Location: ./users/inicio.php');
+    if($_SESSION['usuario'] == 'administrador') {
+        header('Location: ./admin/inicio.php');
+    }else {
+        header('Location: ./users/inicio.php');
+    }
 }
 if (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
     $message = "<p class='text-danger text-center'><strong>Usuario y/o contraseña incorrectos</strong></p>";
@@ -45,6 +49,7 @@ if (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
                             <p class="text-muted text-center">
                             </p>
                             <a class="btn btn-sm btn-white btn-block" href="index.php">Ir a inicio</a>
+                            <a class="btn btn-sm btn-white btn-block" href="registro.php">Aún no tengo una cuenta</a>
                         </form>
                         <br><br><br>
                     </div>

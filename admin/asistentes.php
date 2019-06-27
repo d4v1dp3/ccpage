@@ -59,11 +59,11 @@ if (!($_SESSION['logged_in'])) {
                                                     foreach ($data as $col) {
                                                         ?>
                                                         <tr>
-                                                            <td><?= $col['usuario'] ?></td>
+                                                            <td><?= utf8_encode($col['usuario']) ?></td>
                                                             <td><strong><?= $col['contacto'] ?></strong><br><small class="minimal"><i class="fa fa-envelope"></i>&emsp;<?= $col['correo'] ?><br><i class="fa fa-phone"></i>&emsp;<?= $col['telefono'] ?></small></td>
-                                                            <td><?= $col['procedencia'] ?></td>
+                                                            <td><?= utf8_encode($col['procedencia']) ?></td>
                                                             <td><?= $col['alta'] ?></td>
-                                                            <td><span class="badge badge-primary"><?= $col['talleres'] ?> inscritos</span></td>
+                                                            <td><span class="badge badge-primary"><?= utf8_encode($col['talleres']) ?> inscritos</span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
                                                                     <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id'])?>|<?= $col['contacto'] ?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>

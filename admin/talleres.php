@@ -60,13 +60,13 @@ if (!($_SESSION['logged_in'])) {
                                                     foreach ($data as $col) {
                                                         ?>
                                                         <tr>
-                                                            <td><strong><?= $col['nombre_taller'] ?></strong></td>
-                                                            <td><?= $col['nombre_ponente'] ?></td>
-                                                            <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
+                                                            <td><strong><?= utf8_encode($col['nombre_taller']) ?></strong></td>
+                                                            <td><?= utf8_encode($col['nombre_ponente']) ?></td>
+                                                            <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= utf8_encode($col['lugar']) ?></span><small><br><?= utf8_encode($col['descripcion']) ?></small></td>
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>|<?= $col['descripcion']?>|<?= $col['nombre_ponente']?>|<?= $col['lugar']?>|<?= $col['fecha']?>|<?= $col['cupo_maximo']?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= utf8_encode($col['nombre_taller'])?>|<?= utf8_encode($col['descripcion'])?>|<?= utf8_encode($col['nombre_ponente'])?>|<?= utf8_encode($col['lugar'])?>|<?= $col['fecha']?>|<?= $col['cupo_maximo']?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
                                                                     <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar</button>
                                                                 </div>
                                                             </td>

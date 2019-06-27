@@ -114,7 +114,7 @@ class consultas {
     public function consultaTalleres() {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("SELECT * FROM lista_talleres;");
+        $statement = $conexion->prepare("SELECT * FROM lista_talleres ORDER BY id;");
         $statement->execute();
         $rs = $statement->get_result();
         $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
@@ -125,7 +125,7 @@ class consultas {
     public function consultaTalleresDisponibles($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario <> ? OR id_usuario IS NULL");
+        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario <> ? OR id_usuario IS NULL ORDER BY id");
         $statement->bind_param("s", $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
@@ -137,7 +137,7 @@ class consultas {
     public function consultaTalleresInscritos($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario = ?");
+        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario = ? ORDER BY id");
         $statement->bind_param("s", $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
