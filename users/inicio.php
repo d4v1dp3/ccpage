@@ -14,7 +14,7 @@ if (!($_SESSION['logged_in'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@ if (!($_SESSION['logged_in'])) {
                                             <hr>
                                         <?php } else {
                                             ?>
-                                            <span style="font-size: 16px; font-weight: 300;">Estás inscrito en los siguientes talles. </span><p><strong>** No olvides enviar tu ficha de depósito para asegurar tu lugar. Cuentas con dos días hábiles para confirmar tu asistencia.</strong></p>
+                                            <span style="font-size: 16px; font-weight: 300;">Estás inscrito en los siguientes talles. </span><p><strong>** No olvides enviar tu ficha de depósito para asegurar tu lugar. Pronto tendremos la información de los pagos.</strong></p>
                                             <hr>
                                             <div class="table-responsive">
                                                 <table class="table table-striped table-hover dataTables-view" >

@@ -11,7 +11,7 @@ if (!($_SESSION['logged_in'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +37,9 @@ if (!($_SESSION['logged_in'])) {
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">
                                     <span style="font-size: 16px; font-weight: 300;">Ponemos nuestros datos de contacto para proporcionarte más información.<br/>
-                                        <i class="fa fa-envelope"></i> mail@mail.com <br/>
-                                        <i class="fa fa-phone"></i> 35246478646 <br/>
-                                        <i class="fa fa-user-o"></i> Licenciado Valeriano<br/>
-                                        Tambien ponerle un manual
+                                        <i class="fa fa-envelope"></i> corecongresscs@gmail.com <br/>
+                                        <i class="fa fa-user-o"></i>Ing. David Pérez Martínez<br/>
+                                        Asunto: PAGINA CORE
                                     </span>
                                 </div>
                             </div>

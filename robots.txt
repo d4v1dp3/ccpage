@@ -1,2 +1,11 @@
 User-agent: Googlebot-Image
 Disallow: /img/landing/comite/*.png
+
+User-agent: Googlebot-Image
+Disallow: /img/landing/comite/
+
+User-agent: Googlebot
+Disallow: /img/landing/comite/
+
+User-agent: *
+Disallow: /img/landing/comite/
