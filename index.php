@@ -229,7 +229,8 @@ if(isset($_GET["lang"])){
                             <p data-i18n="date.fecha_1">1 de Mayo del 2019</p>
                             <h2 data-i18n="date.tl_2">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
-                            <p data-i18n="date.fecha_2a">30 de Junio del 2019</p>
+                            <p class="cross-text" data-i18n="date.fecha_2a">30 de Junio del 2019</p>
+                            <p data-i18n="date.fecha_2b">12 de Julio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
                             <p data-i18n="date.fecha_3">12 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
@@ -247,7 +248,7 @@ if(isset($_GET["lang"])){
                             <h2 data-i18n="date.tl_2a">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_5">5 de Junio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
-                            <p data-i18n="date.fecha_6">20 de Junio del 2019</p>
+                            <p class="cross-text" data-i18n="date.fecha_6">20 de Junio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_10"> Abril 17 </span>| <strong
                                     data-i18n="date.evento_2">Recepción de propuestas de talleres (finalizada)</strong></span>
                         </div>
@@ -744,7 +745,8 @@ if(isset($_GET["lang"])){
                 <ul>
                     <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
                     <li class="cross-text" data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
+                    <li class="cross-text" data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_2b">Fin de recepción: 12 de Julio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_3">Resultados: 12 de Julio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                 </ul>
@@ -791,7 +793,7 @@ if(isset($_GET["lang"])){
                 <ul>
                     <li class="cross-text" data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
                     <li class="cross-text"  data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
-                    <li data-i18n="calls.workshop_li_3">Resultados : 20 de Junio del 2019</li>
+                    <li class="cross-text" data-i18n="calls.workshop_li_3">Resultados : 20 de Junio del 2019</li>
                     <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Julio al 5 Agosto del 2019</li>
                 </ul>
             </div>
