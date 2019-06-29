@@ -230,9 +230,9 @@ if(isset($_GET["lang"])){
                             <h2 data-i18n="date.tl_2">Fin de recepción</h2>
                             <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
                             <p class="cross-text" data-i18n="date.fecha_2a">30 de Junio del 2019</p>
-                            <p data-i18n="date.fecha_2b">12 de Julio del 2019</p>
+                            <p data-i18n="date.fecha_2b">19 de Julio del 2019</p>
                             <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
-                            <p data-i18n="date.fecha_3">12 de Julio del 2019</p>
+                            <p data-i18n="date.fecha_3">22 de Julio del 2019</p>
                             <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
                                     data-i18n="date.evento_1">Recepción de artículos</strong></span>
                         </div>
@@ -394,11 +394,7 @@ if(isset($_GET["lang"])){
         </div>
         <div class="container">
             <div class="row">
-                <p data-i18n="about.texto_1">El CORE inicia su larga tradición hace 18 años con la idea de ser un
-                    congreso de corte científico
-                    dirigido por estudiantes del Centro de Investigación en Computación. Cada edición presentando
-                    una personalidad propia al cambiar los miembros del comité organizador quienes imprimen su
-                    propio sello a este ahora reconocido evento.</p><br/>
+                <p data-i18n="about.texto_1">El CORE es un congreso internacional en ciencias de la computación, que durante los últimos 19 años, tradicionalmente, ha sido organizado por estudiantes del Centro de Investigación en Computación (CIC-IPN) en la Ciudad de México. A partir de este año, el comité organizador esta formado por miembros de otras unidades académicas del Instituto Politécnico Nacional y ha abierto sus puertas a estudiantes nacionales e internacionales, quiénes trabajan en algún área afin a las ciencias computacionales. Teniendo como finalidad, ser un evento en que reúna y exponga los trabajos de investigación que se desarrollan dentro del instituto, así como de otras instituciones acádemicas a lo largo del país y el mundo.</p><br/>
                 <p data-i18n="about.texto_2">A lo largo de la historia de este congreso se han presentado decenas
                     conferencistas de talla internacional quienes conviven con los noveles y experimentados investigadores que presentan sus trabajos a la comunidad científica a través de este lugar de encuentro.</p></br>
                 <p data-i18n="about.texto_3">Como sabemos, el mundo académico requiere de espacios para presentar los
@@ -425,7 +421,7 @@ if(isset($_GET["lang"])){
             <div class="col-sm-3 features-text wow text-center">
                 <div>
                     <i class="fa fa-bullhorn big-icon"></i>
-                    <h2 data-i18n="general.titulo_1">49 Ponencias</h2>
+                    <h2 data-i18n="general.titulo_1">30 Ponencias</h2>
                 </div>
                 <div class="m-t-lg">
                     <i class="fa fa-clock-o big-icon"></i>
@@ -746,8 +742,8 @@ if(isset($_GET["lang"])){
                     <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
                     <li class="cross-text" data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
                     <li class="cross-text" data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_2b">Fin de recepción: 12 de Julio del 2019</li>
-                    <li data-i18n="calls.articulos_fechas_3">Resultados: 12 de Julio del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_2b">Fin de recepción: 19 de Julio del 2019</li>
+                    <li data-i18n="calls.articulos_fechas_3">Resultados a partir del: 22 de Julio del 2019</li>
                     <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                 </ul>
                 <h3 data-i18n="calls.articulos_titulo_2">Presentación de artículos</h3>
@@ -793,7 +789,7 @@ if(isset($_GET["lang"])){
                 <ul>
                     <li class="cross-text" data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
                     <li class="cross-text"  data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
-                    <li class="cross-text" data-i18n="calls.workshop_li_3">Resultados : 20 de Junio del 2019</li>
+                    <li class="cross-text" data-i18n="calls.workshop_li_3">Resultados a partir del : 20 de Junio del 2019</li>
                     <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Julio al 5 Agosto del 2019</li>
                 </ul>
             </div>

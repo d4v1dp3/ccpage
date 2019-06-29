@@ -125,8 +125,8 @@ class consultas {
     public function consultaTalleresDisponibles($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario <> ? OR id_usuario IS NULL ORDER BY id");
-        $statement->bind_param("s", $idUsuario);
+        $statement = $conexion->prepare("CALL lista_taller_disponible( ? );" );
+        $statement->bind_param("i", $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
         $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);

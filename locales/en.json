@@ -65,10 +65,10 @@
   },
   "about":{
     "titulo": "About CORE",
-    "texto_1": "The CORE began its long tradition 19 years ago with the idea of ​​being a scientific congress led by students of the Computing Research Center. Each edition, presenting its own personality by changing the members of the organizing committee who print their own stamp to this now recognized event.",
-    "texto_2": "Throughout the history of this congress, students, researchers and dozens of international speakers have been presented their work to our attendees.",
-    "texto_3":"As we know the academic world requires spaces to present the advances in the different areas of knowledge; whether in they are research that improves previous methods, in new ways of solving problems or new areas to be explored, etc.",
-    "texto_4":"Precisely, this congress has been  trying to cover this necessity with success year after year, connecting international keynote speakers, young researchers, industry and university-level and post-graduate attendees. As well as the publication of the articles that pass the scientific and editorial scrutiny in the indexed journal Research in Computing Science ISSN 1870-4069."
+    "texto_1": "CORE is an International Congress on Computing Science traditionally organized by students from the Computer Research Center (CIC-IPN) in Mexico City. This year the organizing committee is formed by members from others academic centers from the IPN and it has its doors open for national and international students who work in any computing area.",
+    "texto_2": "Throughout the history of this congress, dozens of speakers of international stature have been presented, who coexist with experienced researchers who present their work to the scientific community through this meeting place.",
+    "texto_3": "As we know the academic world requires spaces to present the advances in the different areas of knowledge; whether they are research that improves previous methods, that present new problems in which to apply existing knowledge, new ways of solving problems or new areas to be explored.",
+    "texto_4": "It is precisely this need that has successfully covered, year after year, this recognized congress and which in the present edition seeks to fully fill through a high level congress that connects international keynote speakers, young researchers, industry, and university-level and post-graduate assistants. As well as the publication of the articles that pass the scientific and editorial scrutiny in the indexed journal Research in Computing Science ISSN 1870-4069."
   },
   "general":{
     "titulo_1":"49 Conferences",
@@ -137,7 +137,7 @@
     "subtitle_9":"Deep analysis of Digital documents 2.0",
     "parrafo_9":"Human language is the most effective and complex means of communication. One of the challenges to be solved in this age of information and knowledge is the automatic treatment of language. The general objective of this workshop is to provide attendees with an intensive and accessible introduction to Artificial Intelligence, Computational Linguistics and related topics currently available. Using this concepts appropriately represents an opportunity niche for development of high-impact multidisciplinary works.",
     "subtitle_10":"IoT - Artificial Intelligence in Embedded systems",
-    "parrafo_10":"It exists a great interest in the convergence between internet of things (IoT) and artificial intelligence (AI) in the industrial sector. In this workshop you will develop a solution with machine learning in hardware plattforms dedicated to IoT (Raspberry PI).",
+    "parrafo_10":"It exists a great interest in the convergence between internet of things (IoT) and artificial intelligence (AI) in the industrial sector. In this workshop you will develop a solution with machine learning in hardware plattforms dedicated to IoT (Raspberry PI)."
   },
   "deep-learning":{
     "subtitle":"Detecting people in images using deep learning.",

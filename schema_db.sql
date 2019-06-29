@@ -113,6 +113,25 @@ FROM taller t
 LEFT JOIN usuario_taller r ON r.id_taller = t.id 
 GROUP BY id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar, id_usuario, estatus_inscripcion, es_activo;
 
+
+DROP PROCEDURE IF EXISTS lista_taller_disponible;
+
+DELIMITER //
+CREATE PROCEDURE lista_taller_disponible(IN user int unsigned)
+	 select id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, 
+	 DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, DATE_FORMAT(fecha_curso, '%H:%i') hora,
+	  estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+	   CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge' 
+	   WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info' 
+	   WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success' 
+	   WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary' 
+	   WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm' 
+	   ELSE 'badge-danger'  END badge_color
+	   from taller t LEFT JOIN usuario_taller r ON r.id_taller = t.id  where t.id NOT IN (select id_taller from usuario_taller where id_usuario = user) 
+	   GROUP BY id, nombre_taller;
+END //
+DELIMITER ;
+
 SET FOREIGN_KEY_CHECKS=0;
 INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('1','Administrador','','','','administrador','2000-01-01','3');
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('1','Detectando personas en imágenes usando deep learning','En este taller de 4 horas, tu vas re-entrenar el modelo neuronal YOLO (You only look once) para localizar personas, vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usarás una herramienta para etiquetar tus propias imágenes y entendederas a groso modo como debe hacer el entrenamiento de los modelos neuronales profundos.','Dr. Erik Zamora','29','2019-08-01','Abierto','1','CIC',CURDATE());
