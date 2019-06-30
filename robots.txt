@@ -2,6 +2,9 @@ User-agent: Googlebot-Image
 Disallow: /img/landing/comite/*.png
 
 User-agent: Googlebot-Image
+Disallow: /img/landing/comite/*.png$
+
+User-agent: Googlebot-Image
 Disallow: /img/landing/comite/
 
 User-agent: Googlebot

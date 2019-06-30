@@ -167,13 +167,19 @@ class consultas {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $resultado = 'false';
-        $statement = $conexion->prepare("INSERT INTO usuario_taller VALUES(?,?,NOW(),'Pendiente','1','');");
+        $statement = $conexion->prepare("call inscribe_taller(?,?);");
         $statement->bind_param("ss", $idUsuario, $idTaller);
         $statement->execute();
-        if ($statement->affected_rows === 0) {
-            $resultado = 'false';
-        } else {
+
+        $rs = $statement->get_result();
+        while ($columna = mysqli_fetch_array($rs)) {
+            $var = $columna['result'];
+        }
+        $rs->close();
+        if (!empty($var) &&  $var === 1) {
             $resultado = 'true';
+        } else {
+            $resultado = 'false';
         }
         $statement->close();
         $conexion->close();
@@ -196,7 +202,7 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-    
+
     public function eliminarTaller($idTaller) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -256,7 +262,7 @@ class consultas {
             throw new Exception(LOGIN_FIELDS_MISSING);
         }
     }
-    
+
     public function eliminarUsuario($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();

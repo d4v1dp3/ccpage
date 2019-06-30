@@ -69,48 +69,48 @@ ON DELETE CASCADE
 ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP VIEW IF EXISTS lista_asistentes; 
-CREATE VIEW lista_asistentes AS 
-SELECT id, UPPER(CONCAT(nombre, ' ', apellido)) contacto, correo, procedencia, telefono, usuario, DATE_FORMAT(fecha_alta, '%d/%m/%Y %H:%i') alta, 
-es_ponente, paper, 
-CASE WHEN COUNT(id_taller) = 1 THEN CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' taller') 
-WHEN COUNT(id_taller) > 1 THEN CONCAT(CAST(COUNT(id_taller) AS CHAR(6)) , ' talleres') 
-ELSE CONCAT(CAST(COUNT(id_taller) AS CHAR(6)) , ' talleres') END talleres 
+DROP VIEW IF EXISTS lista_asistentes;
+CREATE VIEW lista_asistentes AS
+SELECT id, UPPER(CONCAT(nombre, ' ', apellido)) contacto, correo, procedencia, telefono, usuario, DATE_FORMAT(fecha_alta, '%d/%m/%Y %H:%i') alta,
+es_ponente, paper,
+CASE WHEN COUNT(id_taller) = 1 THEN CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' taller')
+WHEN COUNT(id_taller) > 1 THEN CONCAT(CAST(COUNT(id_taller) AS CHAR(6)) , ' talleres')
+ELSE CONCAT(CAST(COUNT(id_taller) AS CHAR(6)) , ' talleres') END talleres
 FROM usuario u
-LEFT JOIN usuario_taller r ON r.id_usuario = u.id 
-WHERE tipo = '1' 
+LEFT JOIN usuario_taller r ON r.id_usuario = u.id
+WHERE tipo = '1'
 GROUP BY id, nombre, apellido, correo, procedencia, tipo, telefono, usuario, fecha_alta, id_usuario, es_ponente, paper;
 
-DROP VIEW IF EXISTS lista_talleres; 
-CREATE VIEW lista_talleres AS 
-SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, 
-DATE_FORMAT(fecha_curso, '%H:%i') hora, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, estatus, lugar, 
-CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo, 
-CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary' 
-WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm' 
-ELSE 'badge-danger'  END badge_color 
-FROM taller t 
-LEFT JOIN usuario_taller r ON r.id_taller = t.id 
+DROP VIEW IF EXISTS lista_talleres;
+CREATE VIEW lista_talleres AS
+SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia,
+DATE_FORMAT(fecha_curso, '%H:%i') hora, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, estatus, lugar,
+CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge'
+WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info'
+WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success'
+WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary'
+WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm'
+ELSE 'badge-danger'  END badge_color
+FROM taller t
+LEFT JOIN usuario_taller r ON r.id_taller = t.id
 GROUP BY id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar;
 
-DROP VIEW IF EXISTS lista_talleres_disponibles; 
-CREATE VIEW lista_talleres_disponibles AS 
-SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, 
-DATE_FORMAT(fecha_curso, '%H:%i') hora, estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo, 
-CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success' 
-WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary' 
-WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm' 
-ELSE 'badge-danger'  END badge_color, 
+DROP VIEW IF EXISTS lista_talleres_disponibles;
+CREATE VIEW lista_talleres_disponibles AS
+SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia,
+DATE_FORMAT(fecha_curso, '%H:%i') hora, estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge'
+WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info'
+WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success'
+WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary'
+WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm'
+ELSE 'badge-danger'  END badge_color,
 IF(estatus_inscripcion = 'Confirmado', 'badge-confirm', 'badge') badge_estatus,
 IF(estatus_inscripcion = 'Confirmado', 'fa-check', 'fa-exclamation') icon_estatus,
-id_usuario, estatus_inscripcion, r.es_activo 
-FROM taller t 
-LEFT JOIN usuario_taller r ON r.id_taller = t.id 
+id_usuario, estatus_inscripcion, r.es_activo
+FROM taller t
+LEFT JOIN usuario_taller r ON r.id_taller = t.id
 GROUP BY id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar, id_usuario, estatus_inscripcion, es_activo;
 
 
@@ -118,22 +118,60 @@ DROP PROCEDURE IF EXISTS lista_taller_disponible;
 
 DELIMITER //
 CREATE PROCEDURE lista_taller_disponible(IN user int unsigned)
-	 select id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, 
-	 DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, DATE_FORMAT(fecha_curso, '%H:%i') hora,
-	  estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
-	   CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge' 
-	   WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info' 
-	   WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success' 
-	   WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary' 
-	   WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm' 
-	   ELSE 'badge-danger'  END badge_color
-	   from taller t LEFT JOIN usuario_taller r ON r.id_taller = t.id  where t.id NOT IN (select id_taller from usuario_taller where id_usuario = user) 
-	   GROUP BY id, nombre_taller;
+BEGIN
+     select id, nombre_taller, descripcion, nombre_ponente, cupo_maximo,
+     DATE_FORMAT(fecha_curso, '%W %d de %M, %Y') dia, DATE_FORMAT(fecha_curso, '%H:%i') hora,
+      estatus, lugar, CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+       CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge'
+       WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info'
+       WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success'
+       WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary'
+       WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm'
+       ELSE 'badge-danger'  END badge_color
+       from taller t LEFT JOIN usuario_taller r ON r.id_taller = t.id  where t.id NOT IN (select id_taller from usuario_taller where id_usuario = user)
+       GROUP BY id, nombre_taller;
 END //
 DELIMITER ;
 
-SET FOREIGN_KEY_CHECKS=0;
-INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('1','Administrador','','','','administrador','2000-01-01','3');
+DROP PROCEDURE IF EXISTS inscribe_taller;
+
+DELIMITER //
+CREATE PROCEDURE inscribe_taller(IN iuser int unsigned, IN italler int unsigned)
+BEGIN
+
+LOCK TABLES usuario_taller WRITE, user READ, taller READ;
+IF (select count(*) as cupo from usuario_taller where id_taller = italler) < (select cupo_maximo from taller where id = italler) THEN
+    IF (select count(id_usuario) from usuario_taller where id_usuario = iuser and id_taller = italler) > 0 THEN
+        select 0 as result;
+    ELSEIF (select count(id) from usuario where id = iuser) < 0 THEN
+        select 0 as result;
+    ELSEIF (select count(id) from taller where id = italler) < 0 THEN
+        select 0 as result;
+    ELSE
+        INSERT INTO usuario_taller VALUES(iuser,italler,NOW(),'Pendiente','1','');
+        select 1 as result;
+    END IF;
+ELSE
+    select 0 as result;
+END IF;
+
+UNLOCK TABLES;
+
+END //
+DELIMITER ;
+
+INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('1','Administrador','','administrador','','administrador','2000-01-01','3');
+INSERT INTO `login` VALUES('1','administrador','1',AES_ENCRYPT('Core.2019','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
+
+INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('2','test','','test','','test','2000-01-01','1');
+INSERT INTO `login` VALUES('2','user','2',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
+
+INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('3','test2','','test2','','test2','2000-01-01','1');
+INSERT INTO `login` VALUES('3','test2','3',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
+
+INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('4','test3','','test3','','test3','2000-01-01','1');
+INSERT INTO `login` VALUES('4','test3','4',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
+
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('1','Detectando personas en imágenes usando deep learning','En este taller de 4 horas, tu vas re-entrenar el modelo neuronal YOLO (You only look once) para localizar personas, vehículos u otro objeto en imágenes usando Colab. Te explicaremos la arquitectura neuronal YOLO la cual es una de las mejores para detectar objetos, conocerás las métricas para evaluar el desempeño del detector, usarás una herramienta para etiquetar tus propias imágenes y entendederas a groso modo como debe hacer el entrenamiento de los modelos neuronales profundos.','Dr. Erik Zamora','29','2019-08-01','Abierto','1','CIC',CURDATE());
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('2','Introducción al desarrollo de aplicaciones móviles con realidad aumentada','Proporcionar los conocimientos básicos en el manejo de Unity y Vuforia para el desarrollo de aplicaciones móviles en Android implementando realidad aumentada.','Dr. Amadeo José Argüelles Cruz','15','2019-07-31','Abierto','1','CIC',CURDATE());
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('3','Introducción al desarrollo de exploits','El objetivo principal es que el alumno adquiera los conocimientos y las habilidades necesarias para ser capaz de identificar y explotar vulnerabilidades básicas en la programación de software. Provenientes de malas prácticas de programación, provocando que un software sea vulnerable a ataques de tipo Buffer overflow, Heap overflow y Format string.','M. en C. Florencio Javier González Rodríguez','15','2019-07-30','Abierto','1','CIC',CURDATE());
@@ -144,7 +182,4 @@ INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_m
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('8','Exploración para el descubrimiento de conocimiento en datos abiertos','Proporcionar a los participantes una metodología dentro de la Ciencia de Datos para el análisis de información y realizar el descubrimiento de conocimiento por medio de herramientas ETL y de visualización, haciendo uso de bases de datos abiertas, las cuales pueden ser del dominio público o privado.','Dr. Gilberto L. Martínez Luna','20','2019-07-31','Abierto','1','CIC',CURDATE());
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('9','Análisis profundo de Documentos digitales 2.0','El lenguaje humano es el medio de comunicación existente más eficaz, y a su vez el más complejo. Uno de los retos a resolver en esta era de la información y del conocimiento es el tratamiento automático del lenguaje. El objetivo general de este taller es proporcionar a los asistentes una introducción, intensiva y accesible, a la Inteligencia Artificial, a la Lingüística Computacional y a las herramientas relacionadas existentes actualmente. Usar de forma apropiada estos conceptos representan un nicho de oportunidad para el desarrollo de trabajos multidisciplinarios de alto impacto.','Dr. Hiram Calvo','30','2019-07-31','Abierto','1','CIC',CURDATE());
 INSERT INTO `taller`(`id`,`nombre_taller`,`descripcion`,`nombre_ponente`,`cupo_maximo`,`fecha_curso`,`estatus`,`es_activo`,`lugar`,`fecha_alta`) VALUES('10','IoT - Inteligencia Artificial en Sistemas Embebidos','Existe un gran interés en la convergencia entre el internet de las cosas (IoT) y la inteligencia artificial (AI) en el sector industrial. En este taller desarrollarás una solución con machine learning en plataformas de hardware dedicadas al IoT (Raspberry PI).','M. en C. Joel García Velasco','9','2019-07-30','Abierto','1','CIC',CURDATE());
-INSERT INTO `login` VALUES('1','administrador','1',AES_ENCRYPT('Core.2019','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
-SET FOREIGN_KEY_CHECKS=1;
-
 
