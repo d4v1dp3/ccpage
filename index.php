@@ -963,6 +963,24 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 </div>
                 <div class="col-sm-4 col-md-3 col-xs-6">
                     <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/staff_valeria_karina_legaria_santiago.png">
+                        <div class="media-body">
+                            <div class="commens-name">Valeria Karina Legaria Santiago</div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/staff_diana_vergara.png">
+                        <div class="media-body">
+                            <div class="commens-name">Diana Vergara</div>
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
                         <img class="pull-left" alt="image" src="img/landing/comite/comite_maaz_amjad.png">
                         <div class="media-body">
                             <div class="commens-name">Amjad Maaz</div>

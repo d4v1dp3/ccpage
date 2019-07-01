@@ -59,7 +59,6 @@ if (!($_SESSION['logged_in'])) {
                                                         <tr>
                                                             <th>Taller | Ponente</th>
                                                             <th>Detalles</th>
-                                                            <th>Cupo</th>
                                                             <th>Estatus</th>
                                                             <th></th>
                                                         </tr>
@@ -71,7 +70,7 @@ if (!($_SESSION['logged_in'])) {
                                                             <tr>
                                                                 <td><strong><?= $col['nombre_taller'] ?></strong><br><span class="minimal"><i class="fa fa-user"></i> <?= $col['nombre_ponente'] ?></span></td>
                                                                 <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
-                                                                <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
+                                                                
                                                                 <td><span class="badge <?= $col['badge_estatus'] ?>"><i class="fa <?= $col['icon_estatus'] ?>"></i> <?= $col['estatus_inscripcion'] ?></span></td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">

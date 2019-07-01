@@ -164,6 +164,10 @@ class consultas {
     }
 
     public function inscribirTaller($idUsuario, $idTaller) {
+        $sem_key = 12;
+        $sem_id = sem_get($sem_key, 1);
+        if (! sem_acquire($sem_id)) die ('Error esperando al semaforo.');
+
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $resultado = 'false';
@@ -183,6 +187,9 @@ class consultas {
         }
         $statement->close();
         $conexion->close();
+
+        if (! sem_release($sem_id)) die ('Error liberando el semaforo');
+
         return $resultado;
     }
 

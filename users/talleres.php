@@ -133,10 +133,10 @@ if (!($_SESSION['logged_in'])) {
                         showMethod: 'slideDown',
                         timeOut: 10000
                     };<?php
-                                                if (isset($_SESSION["toastr"])) {
-                                                    echo $_SESSION["toastr"];
-                                                    unset($_SESSION["toastr"]);
-                                                }
+                    if (isset($_SESSION["toastr"])) {
+                        echo $_SESSION["toastr"];
+                        unset($_SESSION["toastr"]);
+                    }
                                                 ?>
                 }, 400);
             });
