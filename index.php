@@ -39,7 +39,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li><a class="page-scroll" data-i18n="nav.fechas" href="#date">Fechas</a></li>
                             <li><a class="page-scroll" data-i18n="nav.acerca" href="#about">Acerca de</a></li>
                             <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
-                            <li><a class="page-scroll" data-i18n="nav.ponencias" href="#conference">Ponencias</a></li>
+                            <li><a class="page-scroll" data-i18n="nav.ponencias" href="#presentations">Ponencias</a></li>
                             <li><a class="page-scroll" data-i18n="nav.calls" href="#calls">Calls</a></li>
                             <li><a class="page-scroll" data-i18n="nav.precios" href="#pricing">Costos</a></li>
                             <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
@@ -551,86 +551,68 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </div>
         </section>
 
-        <section id="conference" class="container services">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h2 data-i18n="conference.titulo_1">Magistral - Modelado y Control basado en Quaterniones (2017)</h2>
-                    <p data-i18n="conference.descripcion_1">Dr Pedro Castillo de la Universidad de Tecnología de Compiègne,
-                        Francia presento sus mas recientes
-                        investigaciones en control sobre cuadricópteros.
-                    </p>
-                    <!--<p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>-->
-                </div>
-                <div class="col-sm-3">
-                    <h2 data-i18n="conference.titulo_2">Primera competencia de programación (2014)</h2>
-                    <p data-i18n="conference.descripcion_2">Se escoge un conjunto de problemas para desafiar y desarrollar las
-                        habilidades de los concursantes.</p>
-                    <!--<p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>-->
-                </div>
-                <div class="col-sm-3">
-                    <h2 data-i18n="conference.titulo_3">Microarquitectura del procesador Lagarto I (2018)</h2>
-                    <p data-i18n="conference.descripcion_3">Taller impartido por el laboratorio de MICROSE con el propósito de
-                        dar una introducción al procesador
-                        Lagarto, desarrollado por el CIC IPN.</p>
-                    <!--<p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>-->
-                </div>
-                <div class="col-sm-3">
-                    <h2 data-i18n="conference.titulo_4">Ciberseguridad: Captura la bandera (2016)</h2>
-                    <p data-i18n="conference.descripcion_4">Torneo que pone a prueba las habilidades de hacking mediante
-                        diferentes pruebas o retos.</p>
-                    <!--<p><a class="navy-link" href="#" role="button">Detalles &raquo;</a></p>-->
-                </div>
-            </div>
-        </section>
-
         <section id="presentations" class="team">
             <div class="container">
                 <div class="row m-b-lg">
                     <div class="col-lg-12 text-center">
                         <div class="navy-line"></div>
-                        <h1 data-i18n="presentations.titulo">Ponencias anteriores</h1>
+                        <h1 data-i18n="presentations.titulo">Ponencias 2019</h1>
                         <p></p>
                     </div>
                 </div>
                 <div class="row m-b-lg">
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_andrei_g.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dr. Andrei Gheata</span></h4>
-                            <p>Challenges in high-energy physics computing (2018)</p>
+                            <img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dra. Svetlana Toldova</span></h4>
+                            <p>Por confirmar</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_karinne_r.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dra. Karinne Ramírez Amaro</span></h4>
-                            <p>A Novel Method for Inferring Human Activities from Observation via Semantic Reasoning (2016)</p>
+                            <img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dr. Marco Körner</span></h4>
+                            <p>Por confirmar</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_carlos_c.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dr. Carlos A. Coello Coello</span></h4>
-                            <p>Multi-Objective Particle Swarm optimizers: Past, Present and Future (2016)</p>
+                            <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dr. Humberto Díaz Pando</span></h4>
+                            <p>Por confirmar</p>
                         </div>
                     </div>
                 </div>
                 <br/>
                 <div class="row m-b-lg">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_vladimir_k.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dr. Vladimir Kreinovich</span></h4>
-                            <p>Bounded rationality in decision making under uncertainty: <br/>towards optimal granularity (2017)
-                            </p>
+                            <img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dra. Martha Belem Saldivar Márquez</span></h4>
+                            <p>Por confirmar</p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                </div>
+                <div class="row m-b-lg">
+                    <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_victor_l.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dr. Víctor Manuel Landassuri Moreno</span></h4>
-                            <p data-i18n="presentations.investigacion">Modularidad en cerebros biológicos artificiales
-                                (2015)</p>
+                            <img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dr. Adolfo Guzmán Arenas</span></h4>
+                            <p>Por confirmar</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member wow zoomIn">
+                            <img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dr. José Manuel Jiménez Lizárraga</span></h4>
+                            <p>Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member wow zoomIn">
+                            <img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle" alt="">
+                            <h4><span class="navy">Dr. Thilo Pionteck</span></h4>
+                            <p>Networks design for heterogeneous 3D SOC</p>
                         </div>
                     </div>
                 </div>
@@ -1042,7 +1024,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
     <div>
         <!-- DETECTANDO PERSONAS -->
         <div class="modal fade" id="deep-learning" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="deep-learning.subtitle">Detectando personas en imágenes usando deep learning</h2>
@@ -1050,6 +1032,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Erik Zamora</h3><br>
                                 <p class="text-justify" data-i18n="deep-learning.ponente">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
                             </div>
@@ -1084,7 +1067,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- REALIDAD AUMENTADA -->
         <div class="modal fade" id="augmented-reality" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="augmented-reality.subtitle">Introducción al desarrollo de aplicaciones móviles con realidad aumentada</h2>
@@ -1092,6 +1075,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_amadeo_a.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Amadeo José Argüelles Cruz</h3><br>
                                 <p class="text-justify" data-i18n="augmented-reality.ponente">Recibió el título de Ingeniero en Comunicaciones y Electrónica de la Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME) del Instituto Politécnico Nacional (IPN), en 1992, el grado de Maestro en Ciencias en Ingeniería de Cómputo y Doctor en Ciencias de la Computación en el Centro de Investigación en Computación (CIC), en 1997 y 2007, respectivamente. Actualmente, se desempeña como Profesor Investigador, Coordinador de Programa y Jefe del Departamento de Investigación en Ciencias de la Computación en el Centro de Investigación en Computación (CIC-IPN), desde marzo del 2010.</p><br>
                             </div>
@@ -1112,8 +1096,28 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div>
                                 <div class="col-lg-8">
                                     <p data-i18n="augmented-reality.duration">3 días, 3 horas cada uno</p>
-                                </div>
+                                </div><br><br><br>
                             </div>
+                            <div class="row m-b-lg">
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_elias_p.jpg" class="img-responsive img-circle" alt="">
+                            			<small>Octavio Elías Piñal Ramírez</small>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_david_c.jpg" class="img-responsive img-circle" alt="">
+                            			<small>Hiram David Cortés Díaz</small>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_alfredo_c.jpg" class="img-responsive img-circle" alt="">
+                            			<small>Oscar Alfredo Bustamante Campos</small>
+                        			</div>
+                    			</div>
+                			</div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1126,7 +1130,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- EXPLOITS -->
         <div class="modal fade" id="exploits" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="exploits.subtitle">Introducción al desarrollo de exploits</h2>
@@ -1134,6 +1138,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_florencio_g.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Florencio Javier González Rodríguez</h3><br>
                                 <p class="text-justify" data-i18n="exploits.ponente"> Estudiante de doctorado en Ciberseguridad en el CIC del IPN. Cuenta con una Maestría en Ciencias de la Computación con especialidad en Ciberseguridad y ha realizado una estancia de investigación de seguridad en redes en la universidad de Osaka en Japón. Durante varios años ha sido consultor en seguridad informática para empresas privadas, así como para organizaciones gubernamentales, del lado ofensivo y defensivo. Formación en donde ha adquirió certificaciones de empresas como IBM y Microsoft. También ha impartido diversas conferencias, cursos y talleres relacionados con la seguridad Informática.</p><br>
                             </div>
@@ -1168,7 +1173,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- BIG DATA -->
         <div class="modal fade" id="big-data" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="big-data.subtitle">Big Data en la Ciencia de datos</h2>
@@ -1176,6 +1181,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_jesus_o.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Jesús Manuel Olivares Ceja</h3><br>
                                 <p class="text-justify" data-i18n="big-data.ponente">El Dr. Jesús Manuel Olivares Ceja obtuvo su doctorado en Ciencias de la Computación  en el CIC–IPN en 2002. En 1996 concluyó la Maestría en Ciencias de la Computación en el CINVESTAV, México. En 1991 obtuvo el título de Licenciado en Ciencias de la Computación en la UPIICSA–IPN. Ha publicado en revistas y memorias de congresos nacionales e internacionales en sus líneas de investigación; presentando algunos de estos trabajos en foros nacionales e internacionales. Además de su actividad en investigación y docencia, se desempeñó como consultor independiente entre 1985 y 2005.</p><br>
                             </div>
@@ -1210,7 +1216,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- LAGARTO -->
         <div class="modal fade" id="lagarto" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="lagarto.subtitle">Diseño de la arquitectura del procesador lagarto RISC-V</h2>
@@ -1218,6 +1224,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_marco_r.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Marco Antonio Ramírez Salinas</h3><br>
                                 <p class="text-justify" data-i18n="lagarto.ponente">Doctor en Ciencias de la Computación (Tecnología Arquitectura de las computadoras). Profesor a tiempo completo en el Centro de Investigación en Computación y colabora en el laboratorio de Microtecnología y Sistemas embebidos. Interesado en el desarrollo de sistemas embebidos, diseño de arquitectura de computadoras y cómputo paralelo para HPC.</p><br>
                             </div>
@@ -1238,8 +1245,28 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div>
                                 <div class="col-lg-8">
                                     <p data-i18n="lagarto.duration">5 días, 4 horas cada uno</p>
-                                </div>
+                                </div><br><br><br>
                             </div>
+                            <div class="row m-b-lg">
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_cesar_h.jpg" class="img-responsive img-circle" alt="">
+                            			<small>César A. Hernández Calderón</small>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_israel_l.jpg" class="img-responsive img-circle" alt="">
+                            			<small>Neiel Israel Leyva Santes</small>
+                        			</div>
+                    			</div>
+                    			<div class="col-sm-4">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_antonio_f.jpg" class="img-responsive img-circle" alt="">
+                            			<small>José Antonio Flores Escobar</small>
+                        			</div>
+                    			</div>
+                			</div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1252,7 +1279,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- DOCKER -->
         <div class="modal fade" id="docker" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="docker.subtitle">Entrega de aplicaciones con Docker</h2>
@@ -1260,6 +1287,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_alejandro_l.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Ing. Alejandro López Hernández</h3><br>
                                 <p class="text-justify" data-i18n="docker.ponente">Maestria en Ciberseguridad en la Universidad Autónoma de Barcelona, Licenciatura en Ciencias de la computación en el Insituto Politécnico Nacional.</p><br>
                             </div>
@@ -1294,7 +1322,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- PRIMEROS PASOS EN R.O.S -->
         <div class="modal fade" id="ros-first-steps" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="ros-first-steps.subtitle">Primeros pasos en R.O.S</h2>
@@ -1302,6 +1330,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_jose_n.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3>M. en C. José Ángel Martínez Navarro</h3><br>
                                 <p class="text-justify" data-i18n="ros-first-steps.ponente">Maestría en ciencias en el CIC con la tesis “Desarrollo de un robot de dos ruedas dinámicamente estable”. Graduado en la Ingeniería en comuniacaciones y electrónica en el Instituto Politécnico Nacional en México.</p><br>
                             </div>
@@ -1336,7 +1365,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- DATOS ABIERTOS -->
         <div class="modal fade" id="open-data" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="open-data.subtitle">Exploración para el descubrimiento de conocimiento en datos abiertos</h2>
@@ -1344,6 +1373,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_gilberto_m.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Gilberto L. Martínez Luna</h3><br>
                                 <p class="text-justify" data-i18n="open-data.ponente">Estudió en la Escuela Superior de Física y Matemáticas, el grado de Maestría lo obtuvo en la Sección de Computación (hoy Departamento) del CINVESTAV-IPN y el grado de Doctor en Ciencias de la Computación lo obtuvo en el Centro de Investigación en Computación del I.P.N. (CIC-IPN) con el trabajo titulado “Latices y otras estructuras para acelerar las búsquedas en Minería de Datos” Desde 1996 trabaja en el CIC-IPN, y actualmente es jefe del Laboratorio de Bases de Datos y Tecnología de Software.</p><br>
                             </div>
@@ -1364,8 +1394,16 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div>
                                 <div class="col-lg-8">
                                     <p data-i18n="open-data.duration">5 días, 4 horas cada uno</p>
-                                </div>
+                                </div><br><br><br>
                             </div>
+                            <div class="row m-b-lg">
+                    			<div class="col-sm-12">
+                        			<div class="team-member">
+                            			<img src="img/landing/avatar_yadira_h.jpg" class="img-responsive img-circle" alt="">
+                            			<small>Yadira Hernández</small>
+                        			</div>
+                    			</div>
+                			</div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1378,7 +1416,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- DOCUMENTOS DIGITALES -->
         <div class="modal fade" id="digital-documents" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="digital-documents.subtitle">Análisis profundo de Documentos digitales 2.0</h2>
@@ -1386,6 +1424,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Hiram Calvo</h3><br>
                                 <p class="text-justify" data-i18n="digital-documents.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
                             </div>
@@ -1420,7 +1459,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!-- IOT -->
         <div class="modal fade" id="embedded-systems" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2 class="modal-title" id="titulo-modal" data-i18n="embedded-systems.subtitle">IoT - Inteligencia Artificial en Sistemas Embebidos</h2>
@@ -1428,6 +1467,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
+                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Joel García Velasco</h3><br>
                                 <p class="text-justify" data-i18n="embedded-systems.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
                             </div>
