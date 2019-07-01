@@ -2,13 +2,6 @@
 ob_start();
 session_start();
 $message = "";
-if(isset($_SESSION['usuario'])) {
-    if($_SESSION['tipo'] == '3') {
-        header('Location: ./admin/inicio.php');
-    }else {
-        header('Location: ./users/inicio.php');
-    }
-}
 if (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
     $message = "<p class='text-danger text-center'><strong>Usuario y/o contraseña incorrectos</strong></p>";
 } else {
