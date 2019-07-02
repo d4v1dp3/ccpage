@@ -105,6 +105,7 @@ if (!($_SESSION['logged_in'])) {
             </div>
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
@@ -115,13 +116,6 @@ if (!($_SESSION['logged_in'])) {
         <script src="../js/plugins/dataTables/date-eu.js"></script>
         <script>
             $(document).ready(function () {
-                $('.dataTables-view').DataTable({
-                    columnDefs: [{targets: [4], orderable: false, searchable: false}],
-                    pageLength: 25,
-                    responsive: true,
-                    dom: 'lTfgtp',
-                });
-
                 $('#modalInscribir').on('show.bs.modal', function (e) {
                     $('#modalInscribir #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
                     $('#modalInscribir #hidden').val($(e.relatedTarget).data('id'));
@@ -139,6 +133,14 @@ if (!($_SESSION['logged_in'])) {
                     }
                                                 ?>
                 }, 400);
+
+                $('.dataTables-view').DataTable({
+                    columnDefs: [{targets: [4], orderable: false, searchable: false}],
+                    pageLength: 25,
+                    responsive: true,
+                    dom: 'lTfgtp',
+                });
+
             });
         </script>
     </body>

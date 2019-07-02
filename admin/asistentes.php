@@ -109,8 +109,10 @@ if (!($_SESSION['logged_in'])) {
             </div>
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/validator/validator-0.9.0.js"></script>
@@ -119,12 +121,6 @@ if (!($_SESSION['logged_in'])) {
         <script src="../js/plugins/dataTables/date-eu.js"></script>
         <script>
             $(document).ready(function () {
-                $('.dataTables-view').DataTable({
-                    columnDefs: [{targets: [5], orderable: false, searchable: false}],
-                    pageLength: 25,
-                    responsive: true,
-                    dom: 'lTfgtp'
-                });
                 
                 $('#modalEliminar').on('show.bs.modal', function (e) {
                     $('#modalEliminar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
@@ -136,13 +132,21 @@ if (!($_SESSION['logged_in'])) {
                         closeButton: true,
                         showMethod: 'slideDown',
                         timeOut: 10000
-                    };<?php
-                                                if (isset($_SESSION["toastr"])) {
-                                                    echo $_SESSION["toastr"];
-                                                    unset($_SESSION["toastr"]);
-                                                }
-                                                ?>
+                    };
+                    <?php
+                        if (isset($_SESSION["toastr"])) {
+                            echo $_SESSION["toastr"];
+                            unset($_SESSION["toastr"]);
+                        }
+                        ?>
                 }, 400);
+
+                $('.dataTables-view').DataTable({
+                    columnDefs: [{targets: [5], orderable: false, searchable: false}],
+                    pageLength: 25,
+                    responsive: true,
+                    dom: 'lTfgtp'
+                });
             });
         </script>
 

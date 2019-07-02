@@ -572,7 +572,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt="">
                             <h4><span class="navy">Dr. Marco Körner</span></h4>
-                            <p>Por confirmar</p>
+                            <p>Machine Learning and Computer Vision in Remote Sensing and Earth Observation</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -589,7 +589,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt="">
                             <h4><span class="navy">Dra. Martha Belem Saldivar Márquez</span></h4>
-                            <p>Por confirmar</p>
+                            <p>Retos de la ingeniería y soluciones del Control Automático</p>
                         </div>
                     </div>
                 </div>
@@ -598,13 +598,13 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt="">
                             <h4><span class="navy">Dr. Adolfo Guzmán Arenas</span></h4>
-                            <p>Por confirmar</p>
+                            <p>Presente y futuro de la ciencia de datos y su tecnología</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt="">
-                            <h4><span class="navy">Dr. José Manuel Jiménez Lizárraga</span></h4>
+                            <h4><span class="navy">Dr. Manuel Alejandro Jiménez Lizárraga</span></h4>
                             <p>Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados</p>
                         </div>
                     </div>
@@ -1442,7 +1442,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
+                            	<img src="img/landing/avatar_hiram.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Hiram Calvo</h3><br>
                                 <p class="text-justify" data-i18n="digital-documents.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
                             </div>
@@ -1485,7 +1485,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
+                            	<img src="img/landing/avatar_joel.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Joel García Velasco</h3><br>
                                 <p class="text-justify" data-i18n="embedded-systems.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
                             </div>

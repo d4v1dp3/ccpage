@@ -36,7 +36,8 @@ if (!($_SESSION['logged_in'])) {
                         <div class="col-lg-12">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">
-                                    <span style="font-size: 16px; font-weight: 300;">Ponemos nuestros datos de contacto para proporcionarte más información.<br/>
+                                    <span style="font-size: 16px; font-weight: 300;">Ponemos nuestros datos de contacto para proporcionarte más información.
+                                        <br/>
                                         <i class="fa fa-envelope"></i> corecongresscs@gmail.com <br/>
                                         <i class="fa fa-user-o"></i>Ing. David Pérez Martínez<br/>
                                         Asunto: PAGINA CORE
@@ -48,9 +49,10 @@ if (!($_SESSION['logged_in'])) {
                 </div>
             </div>
         </div>
-        <script src="../js/jquery-3.1.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
     </body>

@@ -29,8 +29,13 @@ if (!($_SESSION['logged_in'])) {
         <div id="wrapper">
             <?php include_once '../templates/navigator-users.php' ?>
             <div id="page-wrapper" class="gray-bg">
+
                 <div class="row wrapper border-bottom white-bg page-heading">
+
                     <div class="col-lg-10">
+                        <!--
+                            <button type="button" id="sidebarCollapse" class="btn btn-info"><i class="fa fa-align-left"></i></button>
+                        -->
                         <h2><i class="fa fa-home"></i> &nbsp;Inicio</h2>
                     </div>
                     <div class="col-lg-2">
@@ -120,24 +125,20 @@ if (!($_SESSION['logged_in'])) {
             </div>
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="../js/plugins/dataTables/datatables.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/validator/validator-0.9.0.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
-        <script src="../js/plugins/dataTables/datatables.min.js"></script>
+        
         <script src="../js/plugins/dataTables/date-eu.js"></script>
         <script>
             $(document).ready(function () {
-                $('.dataTables-view').DataTable({
-                    columnDefs: [{targets: [4], orderable: false, searchable: false}],
-                    pageLength: 25,
-                    responsive: true,
-                    dom: 'lTfgtp',
-                });
 
                 $('#modalAbandonar').on('show.bs.modal', function (e) {
-                    $('#modalAbandonar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
+                    $('#modalAbandonar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
                     $('#modalAbandonar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
@@ -146,14 +147,25 @@ if (!($_SESSION['logged_in'])) {
                         closeButton: true,
                         showMethod: 'slideDown',
                         timeOut: 10000
-                    };<?php
-                                    if (isset($_SESSION["toastr"])) {
-                                        echo $_SESSION["toastr"];
-                                        unset($_SESSION["toastr"]);
-                                    }
-                                    ?>
+                    };
+                    <?php
+                        if (isset($_SESSION["toastr"])) {
+                            echo $_SESSION["toastr"];
+                            unset($_SESSION["toastr"]);
+                        }
+                        ?>
                 }, 400);
+
+                $('.dataTables-view').DataTable({
+                    columnDefs: [{targets: [4], orderable: false, searchable: false}],
+                    pageLength: 25,
+                    responsive: true,
+                    dom: 'lTfgtp'
+                });
+
             });
+
+            
         </script>
     </body>
 </html>

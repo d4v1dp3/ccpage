@@ -53,11 +53,12 @@
         "fecha_1": "May 1, 2019",
         "fecha_2": "May 31, 2019",
         "fecha_2a": "Jun 30, 2019",
+        "fecha_2b": "Jul 19, 2019",
         "fecha_3": "July 12, 2019",
         "fecha_4": "April 17, 2019",
         "fecha_5": "June 5, 2019",
         "fecha_6": "June 20, 2019",
-        "fecha_7": "June 30 to August 5, 2019",
+        "fecha_7": "July 30 to August 5, 2019",
         "fecha_8": "August 6 to August 9, 2019",
         "fecha_9": "April 17",
         "fecha_10": "April 17",
@@ -71,7 +72,7 @@
         "texto_4": "It is precisely this need that has successfully covered, year after year, this recognized congress and which in the present edition seeks to fully fill through a high level congress that connects international keynote speakers, young researchers, industry, and university-level and post-graduate assistants. As well as the publication of the articles that pass the scientific and editorial scrutiny in the indexed journal Research in Computing Science ISSN 1870-4069."
     },
     "general": {
-        "titulo_1": "49 Conferences",
+        "titulo_1": "30 Conferences",
         "titulo_2": "150 Hours of content",
         "titulo_3": "+500 Attendees",
         "titulo_4": "7 Competences and challenges",
@@ -89,7 +90,7 @@
         "descripcion_4": "Tournament that tests hacking skills through different tests or challenges."
     },
     "presentations": {
-        "titulo": "Previous conferences",
+        "titulo": "Keynote Speakers 2019",
         "investigacion": "Modularity in artificial biological brains (2015)"
     },
     "frase": {
@@ -238,7 +239,7 @@
         "articulos_fechas_1": "Call for papers open: May 01, 2019",
         "articulos_fechas_2": "Paper submission deadline: May 31, 2019",
         "articulos_fechas_2a": "Paper submission deadline: Jun 30, 2019",
-        "articulos_fechas_2b": "Paper submission deadline: Jul 12, 2019",
+        "articulos_fechas_2b": "Paper submission deadline: Jul 192, 2019",
         "articulos_fechas_3": "Results: July 12, 2019",
         "articulos_fechas_4": "Conferences: 6 - 9 August 2019",
         "articulos_titulo_2": "Submission of papers",

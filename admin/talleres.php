@@ -206,8 +206,9 @@ if (!($_SESSION['logged_in'])) {
             </div>
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/validator/validator-0.9.0.js"></script>
