@@ -139,7 +139,6 @@ DELIMITER //
 CREATE PROCEDURE inscribe_taller(IN iuser int unsigned, IN italler int unsigned)
 BEGIN
 
-LOCK TABLES usuario_taller WRITE, user READ, taller READ;
 IF (select count(*) as cupo from usuario_taller where id_taller = italler) < (select cupo_maximo from taller where id = italler) THEN
     IF (select count(id_usuario) from usuario_taller where id_usuario = iuser and id_taller = italler) > 0 THEN
         select 0 as result;
@@ -154,8 +153,6 @@ IF (select count(*) as cupo from usuario_taller where id_taller = italler) < (se
 ELSE
     select 0 as result;
 END IF;
-
-UNLOCK TABLES;
 
 END //
 DELIMITER ;

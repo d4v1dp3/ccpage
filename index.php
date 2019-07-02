@@ -1487,7 +1487,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <div class="row">
                             	<img src="img/landing/avatar_joel.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Joel García Velasco</h3><br>
-                                <p class="text-justify" data-i18n="embedded-systems.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
+                                <p class="text-justify" data-i18n="embedded-systems.ponente">Maestria en Ingeniería en Ciencias de la Computación en el Centro de Investigación en Computación, Ingeniero en Mecatronica en la Unidad Profecional Interdisiplinaria en Ingeniería y Tecnologías Avanzadas - Instituto Politecnico Nacional. Instructor en Dive in Learning.</p><br>
                             </div>
                             <div class="row">
                                 <p class="text-right"><span data-i18n="embedded-systems.contact">Contacto:</span> joelgarciavel@gmail.com</p><br>

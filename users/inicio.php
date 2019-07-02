@@ -56,7 +56,7 @@ if (!($_SESSION['logged_in'])) {
                                             <hr>
                                         <?php } else {
                                             ?>
-                                            <span style="font-size: 16px; font-weight: 300;">Estás inscrito en los siguientes talles. </span><p><strong>** No olvides enviar tu ficha de depósito para asegurar tu lugar. Pronto tendremos la información de los pagos.</strong></p>
+                                            <span style="font-size: 16px; font-weight: 300;">Estás pre-registrado en los siguientes talles. </span><p><strong>** Proximamente se te enviará los datos de pago para la confirmación.** Mantente al pendiente </strong></p>
                                             <hr>
                                             <div class="table-responsive">
                                                 <table class="table table-striped table-hover dataTables-view" >
