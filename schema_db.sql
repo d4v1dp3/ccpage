@@ -161,7 +161,7 @@ INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fe
 INSERT INTO `login` VALUES('1','administrador','1',AES_ENCRYPT('Core.2019','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
 
 INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('2','test','','test','','test','2000-01-01','1');
-INSERT INTO `login` VALUES('2','user','2',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
+INSERT INTO `login` VALUES('2','test','2',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
 
 INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('3','test2','','test2','','test2','2000-01-01','1');
 INSERT INTO `login` VALUES('3','test2','3',AES_ENCRYPT('test','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
