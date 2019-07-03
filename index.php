@@ -106,8 +106,8 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 data-i18n="carousel.taller_interes">¿Interesado en impartir un taller?</h1>
-                            <p data-i18n="carousel.calls">Consulta las fechas para la recepción de propuestas de talleres (finalizado)</p>
+                            <h1 data-i18n="carousel.taller_interes">Aviso</h1>
+                            <p data-i18n="carousel.calls">Si eres parte del politécnico y eres alumno de posgrado o formas parte de alguna SEPI y quieres ser parte el comité organizador envia un correo a corecongresscs@gmail.com</p>
                             <p>
                                 <!--<a class="btn btn-lg btn-primary" href="#calls" role="button" data-i18n="carousel.callw">Convocatoria para workshops</a>-->
                             </p>

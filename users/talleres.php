@@ -40,6 +40,8 @@ if (!($_SESSION['logged_in'])) {
                         <div class="col-lg-12">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">
+                                    <h2>Horarios</h2>
+                                    <img class="centering img-responsive" src="../img/landing/taller_dos.png">
                                     <h2>Puedes pre-registrarte en los siguientes talleres:</h2>
                                     <div class="table-responsive">
                                         <table class="table table-striped table-hover dataTables-view" >
