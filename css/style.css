@@ -1681,6 +1681,13 @@ div.dt-button-info {
 .img-circle {
     border-radius: 50%;
 }
+.conference-member {
+    transition: transform .5s;
+}
+.conference-member:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -5520,6 +5527,11 @@ table.issue-tracker tbody tr td {
 /* TEAMS */
 .team-members {
     margin: 10px 0;
+}
+.team-members img.img-circle {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
 }
 .team-members img.img-circle {
     width: 42px;

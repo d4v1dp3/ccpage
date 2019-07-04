@@ -563,21 +563,21 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="row m-b-lg">
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#svetlana-toldova" href="#svetlana-toldova">
                             <h4><span class="navy">Dra. Svetlana Toldova</span></h4>
                             <p>Por confirmar</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#marco-korner" href="#marco-korner">
                             <h4><span class="navy">Dr. Marco Körner</span></h4>
                             <p>Machine Learning and Computer Vision in Remote Sensing and Earth Observation</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#humberto-diaz" href="#humberto-diaz">
                             <h4><span class="navy">Dr. Humberto Díaz Pando</span></h4>
                             <p>Por confirmar</p>
                         </div>
@@ -587,7 +587,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="row m-b-lg">
                     <div class="col-sm-12">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#martha-saldivar" href="#martha-saldivar">
                             <h4><span class="navy">Dra. Martha Belem Saldivar Márquez</span></h4>
                             <p>Retos de la ingeniería y soluciones del Control Automático</p>
                         </div>
@@ -596,21 +596,21 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="row m-b-lg">
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#adolfo-guzman" href="#adolfo-guzman">
                             <h4><span class="navy">Dr. Adolfo Guzmán Arenas</span></h4>
                             <p>Presente y futuro de la ciencia de datos y su tecnología</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#manuel-jimenez" href="#manuel-jimenez">
                             <h4><span class="navy">Dr. Manuel Alejandro Jiménez Lizárraga</span></h4>
                             <p>Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="team-member wow zoomIn">
-                            <img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle" alt="">
+                            <img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#thilo-pionteck" href="#thilo-pionteck">
                             <h4><span class="navy">Dr. Thilo Pionteck</span></h4>
                             <p>Networks design for heterogeneous 3D SOC</p>
                         </div>
@@ -1038,7 +1038,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
         </div>
     </section>
 
-
+    <!-- MODALS TALLERES -->
     <div>
         <!-- DETECTANDO PERSONAS -->
         <div class="modal fade" id="deep-learning" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
@@ -1516,6 +1516,198 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- MODALS PONENCIAS -->
+    <div>
+    	<!-- SVETLANA -->
+        <div class="modal fade" id="svetlana-toldova" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Svetlana Toldova</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dra. Svetlana Toldova</h3><br>
+                                <p class="text-justify" data-i18n="svetlana-toldova.about">Tiene un doctorado</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="svetlana-toldova.conference">Va a ser impresionante</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KÖRNER -->
+        <div class="modal fade" id="marco-korner" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Marco Körner</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dr. Marco Körner</h3><br>
+                                <p class="text-justify" data-i18n="marco-korner.about">Tiene un doctorado</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="marco-korner.conference">Para la investigación y el desarrollo de métodos de aprendizaje automático, la disponibilidad de datos en gran cantidad y calidad es clave. Se necesitan datos para entrenar modelos complejos, así como para su evaluación y análisis. El dominio de la visión por computadora proporciona problemas desafiantes y conjuntos de datos a la comunidad de aprendizaje automático, lo que permite el desarrollo de sistemas que muestran un rendimiento excelente, a menudo incluso superando a los expertos humanos. Mientras tanto, la comunidad de sensores remotos, especialmente la observación de la Tierra, se convirtió en un actor importante para los métodos de aprendizaje automático, ya que más y más fuentes de datos se pusieron en funcionamiento recientemente. La flota de satélites de la ESA Copérnico, por ejemplo, proporciona datos ópticos de forma continua con una resolución geométrica, espectral y temporal alta, así como datos de otras modalidades ortogonales, como mediciones de radar o lidar. En mi conferencia, describiré la tríada de aprendizaje automático, visión por computadora y detección remota y motivaré cómo se benefician mutuamente. Para este propósito, presentaré de manera ejemplar las últimas investigaciones llevadas a cabo en la Universidad Técnica de Munich (TUM) y en el Centro Aeroespacial Alemán (DLR).</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HUMBERTO -->
+        <div class="modal fade" id="humberto-diaz" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Humberto Díaz Pando</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dr. Humberto Díaz Pando</h3><br>
+                                <p class="text-justify" data-i18n="humberto-diaz.about">Tiene un doctorado</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="humberto-diaz.conference">Va a ser impresionante</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MARTHA -->
+        <div class="modal fade" id="martha-saldivar" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Martha Belem Saldivar Márquez</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dra. Martha Belem Saldivar Márquez</h3><br>
+                                <p class="text-justify" data-i18n="martha-saldivar.about">Tiene un doctorado en Ciencia, con especialidad en Control Automático e Informática y sus aplicaciones</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="martha-saldivar.conference">El control automático tiene como origen la evolución de las diversas herramientas tecnológicas para la adquisición, procesamiento y transmisión de datos. Su estudio y aplicación ha contribuido al reconocimiento universal de sus ventajas y beneficios asociados a la ingeniería, que es donde tiene una de sus mayores aplicaciones debido a la necesidad de controlar un gran número de variables de sistemas cada vez más complejos. En esta presentación hablaré sobre algunos de los retos de la ingeniería que he estudiado y para los cuales se han propuesto soluciones a partir de la teoría de control. Entre ellos están la eliminación de vibraciones en sistemas de perforación de pozos petroleros, la evasión del chattering regenerativo en el proceso de fresado y el seguimiento del punto de máxima potencia en sistemas fotovoltaicos. Cabe destacar que el análisis de sistemas para el diseño y aplicación de las leyes de control automático no sería posible sin el desarrollo de las tecnologías de la información.</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADOLFO -->
+        <div class="modal fade" id="adolfo-guzman" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Adolfo Guzmán Arenas</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dr. Adolfo Guzmán Arenas</h3><br>
+                                <p class="text-justify" data-i18n="adolfo-guzman.about">Tiene un doctorado</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="adolfo-guzman.conference">Ante la presión del mundo globalizado y con el acceso a cada vez mayor cantidad de datos y documentos, ha surgido la Ciencia de Datos, una disciplina de la Computación que cada vez cobra mayor fuerza. Analiza grandes conjuntos de datos (por ejemplo, noticias en la prensa; resultados de exámenes de conocimentos versus condición socio-económica y familiar del estudiante; delitos cometidos en una zona durante varios años; compras en establecimientos comerciales; epidemias, con sus muertos, enfermos, vacunados y restablecidos; mensajes de twitter, trabajos típicos de los migrantes que se reincorporan al país; preferencias de películas, de bebidas, de comida chatarra; anuncios en canales de TV e internet versus compras por los televidentes usuarios...) para extraer conclusiones útiles. Hallar tendencias, desviaciones, anomalías, situaciones interesantes, comportamientos típicos, en un mar de datos. ¿Qué nos dicen los datos?  "Torturar los datos hasta que confiesen". La ciencia de datos explota extensamente las herramientas de la Inteligencia Artificial (aprendizaje mecánico; clasificadores; análisis de tendencias), pero requiere conocimientos sólidos de bases de datos y de confección de aplicaciones informáticas. Usa también la probabilidad y la estadística. Las personas que terminan una licenciatura o ingeniería en computación o informática y estudian esta disciplina emergente, tendrán un futuro prometedor conforme crezca el número y diversidad de aplicaciones y fenómenos.</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MANUEL -->
+        <div class="modal fade" id="manuel-jimenez" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Manuel Alejandro Jiménez Lizárraga</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dr. Manuel Alejandro Jiménez Lizárraga</h3><br>
+                                <p class="text-justify" data-i18n="manuel-jimenez.about">Tiene un doctorado</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="manuel-jimenez.conference">Va a ser impresionante</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THILO -->
+        <div class="modal fade" id="thilo-pionteck" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="titulo-modal">Thilo Pionteck</h2>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                            	<img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle" alt=""><br>
+                                <h3 class="features-color-p">Dr. Thilo Pionteck</h3><br>
+                                <p class="text-justify" data-i18n="thilo-pionteck.about">Thilo Pioneck es profesor asociado que ocupa la cátedra de informática orientada al hardware en la Otto-von-Guericke-Universität Magdeburg, Alemania. Recibió su título en 1999 y su Ph.D. (Dr.-Ing.) Licenciado en Ingeniería Eléctrica por la Technische Universität Darmstadt, Alemania. En 2008, fue nombrado profesor asistente de Circuitos y Sistemas Integrados en la Universität zu Lübeck. De 2012 a 2014, fue suplente de la materia de Sistemas Embebidos en la Technische Universität Dresden y de la materia de Ingeniería Informática de la Technische Universität en Hamburgo-Harburg. Su trabajo de investigación se centra en Network-on-Chips, diseño de sistema adaptativo, reconfiguración de tiempo de ejecución y co-diseño de hardware / software. En 2015 fue nombrado profesor de la cátedra de computación orgánica en la Universität zu Lübeck con investigación centrada en sistemas digitales adaptativos. En 2016 fue nombrado para la Otto-von-Guericke Universität Magdeburg.dyna</p><br>
+                            </div>
+                            <div class="row">
+                                <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
+                                <p class="text-justify" data-i18n="thilo-pionteck.conference">Va a ser impresionante</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-default" data-dismiss="modal" data-i18n="words.close">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -1575,6 +1767,13 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 $('#open-data').i18n();
                 $('#digital-documents').i18n();
                 $('#embedded-systems').i18n();
+                $('#svetlana-toldova').i18n();
+                $('#marco-korner').i18n();
+                $('#humberto-diaz').i18n();
+                $('#martha-saldivar').i18n();
+                $('#adolfo-guzman').i18n();
+                $('#manuel-jimenez').i18n();
+                $('#thilo-pionteck').i18n();
             });
 
             $('.set_en').on('click', function () {
@@ -1603,6 +1802,13 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     $('#open-data').i18n();
                     $('#digital-documents').i18n();
                     $('#embedded-systems').i18n();
+                    $('#svetlana-toldova').i18n();
+					$('#marco-korner').i18n();
+					$('#humberto-diaz').i18n();
+					$('#martha-saldivar').i18n();
+					$('#adolfo-guzman').i18n();
+					$('#manuel-jimenez').i18n();
+					$('#thilo-pionteck').i18n();
                     $('.set_en').addClass('active');
                     $('.set_es').removeClass('active');
                 });

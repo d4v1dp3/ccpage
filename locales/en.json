@@ -17,7 +17,8 @@
     "words": {
         "requirements": "Requirements: ",
         "see-more": "See more",
-        "close": "Close"
+        "close": "Close",
+        "about-conference": "About the conference"
     },
     "carousel": {
         "titulo": "International Congress",
@@ -78,16 +79,6 @@
         "titulo_4": "7 Competences and challenges",
         "titulo_5": "12 Workshops",
         "titulo_6": "80 Research works"
-    },
-    "conference": {
-        "titulo_1": "Magistral - Modeling and Control based on Quaternions (2017)",
-        "descripcion_1": "Dr Pedro Castillo from the University of Technology of Compiègne, France presented his most recent research on quadripopter control.",
-        "titulo_2": "First Algorithm Competition (2014)",
-        "descripcion_2": "A set of problems is chosen to challenge and develop the skills of the contestants.",
-        "titulo_3": "Microarchitecture of the processor Lagarto I (2018)",
-        "descripcion_3": "Workshop given by the MICROSE laboratory with the purpose of giving an instruction to the Lagarto processor, developed by the CIC IPN.",
-        "titulo_4": "Cybersecurity: Capture the flag (2016)",
-        "descripcion_4": "Tournament that tests hacking skills through different tests or challenges."
     },
     "presentations": {
         "titulo": "Keynote Speakers 2019",
@@ -219,6 +210,34 @@
         "requirements": "Knowledge on basic electronics and programming.",
         "workshop-duration": "Workshop duration: ",
         "contact": "Contact:"
+    },
+    "svetlana-toldova": {
+        "about": "She has a PhD",
+        "conference": "It will be amazing"
+    },
+    "marco-korner": {
+        "about": "He has a PhD",
+        "conference": "For research and development of machine learning methods, the availability of data in high quantity and quality is absolutely key. Data is needed for training complex models, as well as for their evaluation and analysis. The domain of computer vision does provide challenging problems and datasets to the machine learning community, enabling the development of systems showing excellent performance, often even outperforming human experts. Meanwhile, the remote sensing community, especially Earth observation, became an important stakeholder for machine learning methods, as more and more data sources became operational recently. The ESA Copernicus fleet of satellites, for instance, continuously provides optical data at a high geometric, spectral, and temporal resolution, as well as data of further orthogonal modalities, like radar or lidar measurements. In my talk, I will outline the triad of machine learning, computer vision, and remote sensing and motivate how they mutually benefit each other. For this purpose, I will exemplarily present latest research carried out at the Technical University of Munich (TUM) and the German Aerospace Center (DLR)."
+    },
+    "humberto-diaz": {
+        "about": "He has a PhD",
+        "conference": "It will be amazing"
+    },
+    "martha-saldivar": {
+        "about": "She has a PhD in Science, in specialities of Automatic Control and Informatic and its aplications",
+        "conference": "The automatic control has as its origin the evolution of various technological tools for the acquisition, processing and transmission of data. Its study and application has contributed to universal recognition of its advantages and benefits associated with engineering, which is where it has one of its greatest applications due to the need to control a large number of variables of increasingly complex systems. In this presentation I will talk about some of the engineering challenges I have studied and for which solutions have been proposed based on control theory. Among them are the elimination of vibrations in oil well drilling systems, the evasion of regenerative chattering in the milling process and the monitoring of the point of maximum power in photovoltaic systems. It should be noted that the analysis of systems for the design and application of automatic control laws would not be possible without the development of information technologies."
+    },
+    "adolfo-guzman": {
+        "about": "He has a PhD",
+        "conference": "Faced with the pressure of the globalized world and with access to an increasing amount of data and documents, Data Science has emerged, a discipline of computing that is becoming stronger. Analyze large data sets (for example, news in the press, results of knowledge tests versus socio-economic and family status of the student, crimes committed in an area for several years, purchases in commercial establishments, epidemics, with their dead, sick , vaccinated and restored, twitter messages, typical jobs of migrants who return to the country, preferences of movies, drinks, junk food, ads on TV channels and internet versus purchases by viewers users ...) to extract useful conclusions. Find trends, deviations, anomalies, interesting situations, typical behaviors, in a sea of ​​data. What do the data tell us? \"Torture the data until they confess.\" Data science extensively exploits the tools of Artificial Intelligence (mechanical learning, classifiers, trend analysis), but requires solid knowledge of databases and the preparation of computer applications. Use also probability and statistics. People who finish a degree or computer or computer engineering and study this emerging discipline, will have a promising future as the number and diversity of applications and phenomena grows."
+    },
+    "manuel-jimenez": {
+        "about": "He has a PhD",
+        "conference": "It will be amazing"
+    },
+    "thilo-pionteck": {
+        "about": "Thilo Pionteck is associate professor holding the chair for hardware-oriented computer science at the Otto-von-Guericke-Universität Magdeburg, Germany. He received his Diploma degree in 1999 and his Ph.D. (Dr.-Ing.) degree in Electrical Engineering from the Technische Universität Darmstadt, Germany. In 2008, he was appointed as assistant professor for Integrated Circuits and Systems at the Universität zu Lübeck. From 2012 to 2014, he was substitute of the Chair of Embedded Systems at the Technische Universität Dresden and of the Chair of Computer Engineering at the Technische Universität at  Hamburg-Harburg. His research work focuses on Network-on-Chips, adaptive system design, runtime reconfiguration, and hardware/software co-design. In 2015 he was appointed as professor of the Chair of Organic Computing at the Universität zu Lübeck with research focus on adaptive digital systems. In 2016 he was appointed to the Otto-von-Guericke Universität Magdeburg.dyna",
+        "conference": "It will be amazing"
     },
     "comite": {
         "title": "Local Committee",
