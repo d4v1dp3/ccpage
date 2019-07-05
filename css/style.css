@@ -4803,6 +4803,11 @@ body.mini-navbar.fixed-sidebar .logo-element {
     margin: 0 auto;
     padding: 100px 20px 20px 20px;
 }
+.large-box {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 100px 20px 20px 20px;
+}
 .logo-name {
     color: #e6e6e6;
     font-size: 180px;
@@ -8740,7 +8745,10 @@ body.md-skin {
 .minimal-clock {
     color: #000;
 }
-
 .minimal-map {
     color: #d9534f;
+}
+.info-contact-icon {
+    font-size: 26px !important;
+    color: #e5e6e7 !important;
 }

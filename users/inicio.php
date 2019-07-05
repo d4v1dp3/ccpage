@@ -81,8 +81,8 @@ if (!($_SESSION['logged_in'])) {
                                                                     <div class="btn-group">
                                                                         <?php if ($col['estatus_inscripcion'] == "Pendiente") { ?>
                                                                             <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalAbandonar"><i class="fa fa-sign-out"></i> Abandonar</button>
+                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button>
                                                                         <?php } ?>
-                                                                    <!--    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button> -->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -122,6 +122,30 @@ if (!($_SESSION['logged_in'])) {
                         </form>
                     </div>
                 </div>
+                
+                <div class="modal fade" id="modalConfirmar" role="dialog">
+                    <div class="modal-dialog modal-md">
+                        <form method="post" data-toggle="validator" action="../classes/confirmarAsistencia.php">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Confirmar asistencia al taller</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Carga tu comprobante de pago en <strong>formato pdf</strong> para confirmar la asistencia al taller <strong><label id="nombre"></label></strong></p>
+                                    <input type="hidden" id="hidden" name="hidden" value="">
+                                    <div class="form-control">
+                                        <input type="file" name="comprobante" accept="application/pdf" required="">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary btn-sm"><i class="fa fa-upload"></i> &nbsp;Cargar mi comprobante</button>
+                                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
@@ -140,6 +164,11 @@ if (!($_SESSION['logged_in'])) {
                 $('#modalAbandonar').on('show.bs.modal', function (e) {
                     $('#modalAbandonar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
                     $('#modalAbandonar #hidden').val($(e.relatedTarget).data('id'));
+                });
+                
+                $('#modalConfirmar').on('show.bs.modal', function (e) {
+                    $('#modalConfirmar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
+                    $('#modalConfirmar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
                 setTimeout(function () {
