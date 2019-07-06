@@ -59,6 +59,7 @@ CREATE TABLE `usuario_taller` (
 `fecha_inscripcion` datetime default null,
 `estatus_inscripcion`  varchar(32) default '',
 `es_activo` boolean default false,
+`comprobante` text,
 `nota` text,
 KEY `pkey`(`id_taller`),
 FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`)
@@ -106,8 +107,12 @@ WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success'
 WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary'
 WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm'
 ELSE 'badge-danger'  END badge_color,
-IF(estatus_inscripcion = 'Confirmado', 'badge-confirm', 'badge') badge_estatus,
-IF(estatus_inscripcion = 'Confirmado', 'fa-check', 'fa-exclamation') icon_estatus,
+CASE WHEN estatus_inscripcion = 'Confirmado' THEN 'badge-confirm' 
+WHEN estatus_inscripcion = 'Validando' THEN 'badge-info' 
+ELSE 'badge' END badge_estatus,
+CASE WHEN estatus_inscripcion = 'Confirmado' THEN 'fa-check' 
+WHEN estatus_inscripcion = 'Validando' THEN 'fa-eye' 
+ELSE 'fa-exclamation' END icon_estatus,
 id_usuario, estatus_inscripcion, r.es_activo
 FROM taller t
 LEFT JOIN usuario_taller r ON r.id_taller = t.id
@@ -147,7 +152,7 @@ IF (select count(*) as cupo from usuario_taller where id_taller = italler) < (se
     ELSEIF (select count(id) from taller where id = italler) < 0 THEN
         select 0 as result;
     ELSE
-        INSERT INTO usuario_taller VALUES(iuser,italler,NOW(),'Pendiente','1','');
+        INSERT INTO usuario_taller VALUES(iuser,italler,NOW(),'Pendiente','1','','');
         select 1 as result;
     END IF;
 ELSE

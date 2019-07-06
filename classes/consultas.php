@@ -125,7 +125,7 @@ class consultas {
     public function consultaTalleresDisponibles($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("CALL lista_taller_disponible( ? );" );
+        $statement = $conexion->prepare("CALL lista_taller_disponible( ? );");
         $statement->bind_param("i", $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
@@ -166,7 +166,8 @@ class consultas {
     public function inscribirTaller($idUsuario, $idTaller) {
         $sem_key = 12;
         $sem_id = sem_get($sem_key, 1);
-        if (! sem_acquire($sem_id)) die ('Error esperando al semaforo.');
+        if (!sem_acquire($sem_id))
+            die('Error esperando al semaforo.');
 
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -180,7 +181,7 @@ class consultas {
             $var = $columna['result'];
         }
         $rs->close();
-        if (!empty($var) &&  $var === 1) {
+        if (!empty($var) && $var === 1) {
             $resultado = 'true';
         } else {
             $resultado = 'false';
@@ -188,7 +189,8 @@ class consultas {
         $statement->close();
         $conexion->close();
 
-        if (! sem_release($sem_id)) die ('Error liberando el semaforo');
+        if (!sem_release($sem_id))
+            die('Error liberando el semaforo');
 
         return $resultado;
     }
@@ -276,6 +278,23 @@ class consultas {
         $resultado = 'false';
         $statement = $conexion->prepare("DELETE FROM usuario WHERE id=?;");
         $statement->bind_param("s", $idUsuario);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
+
+    public function cargarComprobante($idUsuario, $idTaller, $filepath) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("UPDATE usuario_taller SET comprobante=?, estatus_inscripcion='Validando' WHERE id_usuario=? AND id_taller=?");
+        $statement->bind_param("sss", $filepath, $idUsuario, $idTaller);
         $statement->execute();
         if ($statement->affected_rows === 0) {
             $resultado = 'false';

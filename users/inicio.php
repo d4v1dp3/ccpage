@@ -59,7 +59,7 @@ if (!($_SESSION['logged_in'])) {
                                             <span style="font-size: 16px; font-weight: 300;">Estás pre-registrado en los siguientes talles. </span><p><strong>** Proximamente se te enviará los datos de pago para la confirmación.** Mantente al pendiente </strong></p>
                                             <hr>
                                             <div class="table-responsive">
-                                                <table class="table table-striped table-hover dataTables-view" >
+                                                <table class="table table-striped table-hover dataTables-view">
                                                     <thead>
                                                         <tr>
                                                             <th>Taller | Ponente</th>
@@ -75,7 +75,7 @@ if (!($_SESSION['logged_in'])) {
                                                             <tr>
                                                                 <td><strong><?= $col['nombre_taller'] ?></strong><br><span class="minimal"><i class="fa fa-user"></i> <?= $col['nombre_ponente'] ?></span></td>
                                                                 <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
-                                                                
+
                                                                 <td><span class="badge <?= $col['badge_estatus'] ?>"><i class="fa <?= $col['icon_estatus'] ?>"></i> <?= $col['estatus_inscripcion'] ?></span></td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
@@ -122,10 +122,10 @@ if (!($_SESSION['logged_in'])) {
                         </form>
                     </div>
                 </div>
-                
+
                 <div class="modal fade" id="modalConfirmar" role="dialog">
                     <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="../classes/confirmarAsistencia.php">
+                        <form method="post" data-toggle="validator" action="../classes/confirmarAsistencia.php" enctype="multipart/form-data">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -150,24 +150,23 @@ if (!($_SESSION['logged_in'])) {
         </div>
         <script src="../js/jquery-3.1.1.min.js"></script>
         <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="../js/plugins/dataTables/datatables.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/validator/validator-0.9.0.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
-        
+        <script src="../js/plugins/dataTables/datatables.min.js"></script>
         <script src="../js/plugins/dataTables/date-eu.js"></script>
         <script>
             $(document).ready(function () {
 
                 $('#modalAbandonar').on('show.bs.modal', function (e) {
-                    $('#modalAbandonar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
+                    $('#modalAbandonar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
                     $('#modalAbandonar #hidden').val($(e.relatedTarget).data('id'));
                 });
-                
+
                 $('#modalConfirmar').on('show.bs.modal', function (e) {
-                    $('#modalConfirmar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
+                    $('#modalConfirmar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
                     $('#modalConfirmar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
@@ -177,12 +176,12 @@ if (!($_SESSION['logged_in'])) {
                         showMethod: 'slideDown',
                         timeOut: 10000
                     };
-                    <?php
-                        if (isset($_SESSION["toastr"])) {
-                            echo $_SESSION["toastr"];
-                            unset($_SESSION["toastr"]);
-                        }
-                        ?>
+<?php
+if (isset($_SESSION["toastr"])) {
+    echo $_SESSION["toastr"];
+    unset($_SESSION["toastr"]);
+}
+?>
                 }, 400);
 
                 $('.dataTables-view').DataTable({
@@ -191,10 +190,9 @@ if (!($_SESSION['logged_in'])) {
                     responsive: true,
                     dom: 'lTfgtp'
                 });
-
             });
 
-            
+
         </script>
     </body>
 </html>

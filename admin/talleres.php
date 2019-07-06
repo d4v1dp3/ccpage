@@ -66,8 +66,9 @@ if (!($_SESSION['logged_in'])) {
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>|<?= ($col['descripcion'])?>|<?= $col['nombre_ponente'] ?>|<?= $col['lugar'] ?>|<?= $col['fecha'] ?>|<?= $col['cupo_maximo']?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal"><i class="fa fa-user-plus"></i> Confirmar asistentes</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>|<?= ($col['descripcion'])?>|<?= $col['nombre_ponente'] ?>|<?= $col['lugar'] ?>|<?= $col['fecha'] ?>|<?= $col['cupo_maximo']?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar taller</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller']?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar taller</button>
                                                                 </div>
                                                             </td>
                                                         </tr>
