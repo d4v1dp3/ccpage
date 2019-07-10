@@ -77,8 +77,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="carousel-caption">
                             <div class="header-box">
                                 <h1 data-i18n="carousel.titulo">Congreso Internacional</h1>
-                                <h1><img class="minilogo minilogo-left" src="img/landing/logo_mini_ipn.png" alt="mini-ipn"> Core 2019 <img class="minilogo minilogo-right" src="img/landing/logo_mini_cic.png"
-                                                                                                                                           alt="mini-cic"></h1>
+                                <h1><img class="minilogo minilogo-left" src="img/landing/logo_mini_ipn.png" alt="mini-ipn"> Core 2019 <img class="minilogo minilogo-right" src="img/landing/logo_mini_cic.png" alt="mini-cic"></h1>
                                 <div class="separador"></div>
                                 <h1 data-i18n="carousel.dates" class="color-orange">Agosto 6 - 9, 2019</h1>
                                 <h1 data-i18n="carousel.place">Ciudad de México</h1>
@@ -121,7 +120,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <h1 data-i18n="carousel.attend">Asiste a las conferencias</h1>
                             <p></p>
                             <p>
-                                <a class="btn btn-lg btn-primary" href="#" role="button" data-i18n="carousel.coming">Próximamente</a>
+                                <a class="btn btn-lg btn-primary" href="#presentations" role="button" data-i18n="carousel.coming">Próximamente</a>
                             </p>
                         </div>
                     </div>
@@ -565,7 +564,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#svetlana-toldova" href="#svetlana-toldova">
                             <h4><span class="navy">Dra. Svetlana Toldova</span></h4>
-                            <p>Por confirmar</p>
+                            <p>Discourse analysis: a Rethoric structure theory approach</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -579,7 +578,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#humberto-diaz" href="#humberto-diaz">
                             <h4><span class="navy">Dr. Humberto Díaz Pando</span></h4>
-                            <p>Por confirmar</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -784,10 +783,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <p>
                             <strong><span data-i18n="pricing.publico" class="navy">Público en general:</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
                             <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica:</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
-                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br><br><br>
-                        </p>
-                        <p style="width: 50%;" class="col-lg-offset-3">
-                            <strong data-i18n="pricing.mesg6">* La comunidad politécnica no puede recibir factura por parte del politécnico, si requieren factura deben de pagar como externos, de lo contrario solo recibirán una nota.</strong><br>
+                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br>
                         </p>
                     </div>
                 </div>
