@@ -58,11 +58,16 @@ if (!($_SESSION['logged_in'])) {
                                                 <?php
                                                 if (isset($data) && $data != NULL) {
                                                     foreach ($data as $col) {
+                                                        if($col['dia_inicio'] === $col['dia_termino']) {
+                                                            $fecha = "{$col['dia_inicio']}, 2019";
+                                                        }else {
+                                                            $fecha = "{$col['dia_inicio']} al {$col['dia_termino']}, 2019";
+                                                        }
                                                         ?>
                                                         <tr>
                                                             <td><strong><?= $col['nombre_taller'] ?></strong></td>
                                                             <td><?= $col['nombre_ponente'] ?></td>
-                                                            <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
+                                                            <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $fecha ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora_inicio'] ?> hrs. - <?= $col['hora_termino'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
