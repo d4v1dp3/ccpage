@@ -1063,10 +1063,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>   
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="deep-learning.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="deep-learning.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="deep-learning.duration">1 día, 4 horas</p>
+                                    <p data-i18n="deep-learning.duration">Jueves 1 de Agosto en un horario de 10:00 a 14:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1106,10 +1106,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="augmented-reality.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="augmented-reality.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="augmented-reality.duration">3 días, 3 horas cada uno</p>
+                                    <p data-i18n="augmented-reality.duration">Martes 30 de Julio al Jueves 1 de Agosto en un horario de 10:00 a 13:00</p>
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
@@ -1169,10 +1169,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="exploits.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="exploits.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="exploits.duration">1 día, 6 horas</p>
+                                    <p data-i18n="exploits.duration">Martes 30 de Julio en un horario de 10:00 a 17:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1212,10 +1212,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="big-data.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="big-data.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="big-data.duration">5 días, 3 horas cada uno</p>
+                                    <p data-i18n="big-data.duration">Martes 30 de Julio en un horario de 16:00 - 19:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1255,10 +1255,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="lagarto.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="lagarto.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="lagarto.duration">5 días, 4 horas cada uno</p>
+                                    <p data-i18n="lagarto.duration">Martes 30 de Julio al Viernes 2 de Agosto en un horario de 14:00 a 19:00</p>
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
@@ -1318,10 +1318,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="docker.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="docker.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="docker.duration">2 días, 2.5 horas cada uno</p>
+                                    <p data-i18n="docker.duration">Viernes 2 de Agosto al Lunes 5 de Agosto en un horario de 11:00 a 14:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1361,10 +1361,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="ros-first-steps.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="ros-first-steps.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="ros-first-steps.duration">2 días, 4 horas cada uno</p>
+                                    <p data-i18n="ros-first-steps.duration">Miércoles 31 de Julio al Jueves 1 de Agosto en un horario de 14:00 a 18:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1404,10 +1404,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="open-data.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="open-data.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="open-data.duration">5 días, 4 horas cada uno</p>
+                                    <p data-i18n="open-data.duration">Martes 30 de Julio al Lunes 5 de Agosto en un horario de 08:00 a 12:00</p>
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
@@ -1455,10 +1455,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="digital-documents.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="digital-documents.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="digital-documents.duration">2 días, 5 horas cada uno</p>
+                                    <p data-i18n="digital-documents.duration">Miércoles 31 de Julio en un horario de 09:00 a 18:00 y Jueves 1 de Agosto en un horario de 09:00 a 14:00</p>
                                 </div>
                             </div>
                         </div>
@@ -1498,10 +1498,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div><br>
                             <div class="row">
                                 <div class="col-lg-3 text-right">
-                                    <h4 data-i18n="embedded-systems.workshop-duration">Duración del taller: </h4>
+                                    <h4 data-i18n="embedded-systems.workshop-duration">Horario del taller: </h4>
                                 </div>
                                 <div class="col-lg-8">
-                                    <p data-i18n="embedded-systems.duration">1 día, 4 horas</p>
+                                    <p data-i18n="embedded-systems.duration">Lunes 5 de Agosto en un horario de 09:00 a 13:00</p>
                                 </div>
                             </div>
                         </div>

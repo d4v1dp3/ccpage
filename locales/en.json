@@ -134,81 +134,81 @@
     "deep-learning": {
         "subtitle": "Detecting people in images using deep learning.",
         "ponente": "He is a teacher, researcher, scientist and enthusiast for spreading useful knowledge. Graduated by CINVESTAV-IPN as doctor (2015) and master in science (2007). Has 11 years of experience in teaching at a higher level, 4 years in research: has published 22 articles in conferences and international journals; Has directed more than 20 undergraduate, 6 master's and 7 doctoral students. His lines of research are artificial neural networks and autonomous mobile robot navigation.",
-        "duration": "1 day, 4 hours",
+        "duration": "Thursday, August 1 from 10:00 to 14:00",
         "requirements": "Programming knowledge, particularly in python and have completed basic engineering math (first 2 semesters).",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "augmented-reality": {
         "subtitle": "Introduction to the development of mobile apps with augmented reality.",
         "ponente": "Received the degree in Communications and Electronics Engineering from the School of Mechanical and Electrical Engineering (ESIME) of the National Polytechnic Institute (IPN), in 1992, the degree of Master in Computer Science Engineering and Doctor in Computer Science in the computing Research Center (CIC), in 1997 and 2007, respectively. Currently, he is a Research Professor, Program Coordinator and Head of the Research Department in Computer Science at the Computing Research Center (CIC-IPN), since March 2010.",
-        "duration": "3 days, 3 hours each",
+        "duration": "Tuesday, July 30 to Thursday, August 1 from 10:00 to 13:00",
         "requirements": "Basic programming knowledge, particularly in C#, object oriented programming.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "exploits": {
         "subtitle": "Introduction to the development of exploits",
         "ponente": "PHD student in Cybersecurity in The CIC -IPN.Has a master's degree in computer science with a specialty in Cybersecurity and has made a internship of Network security research at Osaka University in Japan. For several years has been a consultant in computer security for Private companies, as well as for governmental organizations, of the offensive and defensive side. Has acquired Certifications of companies such as IBM and Microsoft. Has also taught in various conferences, courses and workshops related to cyber security.",
-        "duration": "1 day, 6 hours",
+        "duration": "Tuesday, July 30 from 10:00 to 17:00",
         "requirements": "Basic programming knowledge in C language.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "big-data": {
         "subtitle": "Big Data in data science",
         "ponente": "Dr. Jesus Manuel Olivares Ceja obtained his PhD in Computer Science in the CIC-IPN in 2002. In 1996 the Master's Degree in Computer Science at CINVESTAV, Mexico. In 1991 he obtained the title of Bachelor of Computer Science at the UPIICSA-IPN. Has published in magazines and memories of national and international congresses in their lines of Research. In addition to its activity in research and teaching, he worked as an independent consultant between 1985 and 2005.",
-        "duration": "5 days, 3 hours each",
+        "duration": "Tuesday, July 30 from 16:00 to 19:00",
         "requirements": "Basic programming, linux and database knowledge. Interest on Data Science area.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "lagarto": {
         "subtitle": "Architecture design of processor Lagarto RISC-V",
         "ponente": "Marco Antonio Ramírez Salinas Doctor in Computer Science (Technology and Computer Architecture). Is a full Professor at the Computing Research Center and collaborate in the laboratory of Microtechnology and Embedded Systems. He is interested in the development of embedded systems, computer architecture design and parallel computing for HPC.",
-        "duration": "5 days, 4 hours each",
+        "duration": "Tuesday, July 30 to Thursday, August 2 from 14:00 to 19:00",
         "requirements": "Knowledge on digital circuits.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "docker": {
         "subtitle": "Applications with Docker",
         "ponente": "Masters in Cybersecurity at the Autonomous University of Barcelona, Bachelor in Computer Science at the National Polytechnic Institute.",
-        "duration": "2 days, 2.5 hours each",
+        "duration": "Friday, August 2 to Monday, August 5 from 11:00 to 14:00",
         "requirements": "Experience in software delivery. Familiarity with the command line on Linux.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "ros-first-steps": {
         "subtitle": "First steps in R.O.S",
         "ponente": "Master of Science at CIC, with the thesis \"Development of a dynamically stable Two-wheel robot\" Undergraduate Degree in Communications and Electronics Engineering at National Polytechnic Institute of México.",
-        "duration": "2 days, 4 hours each",
+        "duration": "Wednesday, July 31 to Thursday, August 1 from 14:00 to 18:00",
         "requirements": "A computer with Ubuntu O.S installed per student, which has to has installed ROS Melodic Morenia, Geany IDE and Jupyter Notebook.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "open-data": {
         "subtitle": "Exploration for the Knowledge Discovery in Open Data",
         "ponente": "Studied at the School of Physics and Mathematics(ESFM), obtained the Master's degree in the Computer Section (now Department) of the CINVESTAV-IPN and obtained his PHD in Computer Science in the Computer Research Center of the I.P.N. (CIC-IPN) with the work entitled \"Latices and other structures to accelerate searches in Data Mining\" Since 1996 works in the CIC-IPN, and currently is the head of the Laboratory of Databases and Software Technology.",
-        "duration": "5 days, 4 hours each",
+        "duration": "Tuesday, July 30 to Monday, August 5 from 08:00 to 12:00",
         "requirements": "Computer with at least 8GB of RAM, disk space of at least half terabyte and 32-inch monitors (2 monitors desirable per person). Internet with bandwidth or an acceptable speed for downloading files larger than 1GB. Storage devices for data backup. Text editors: Notepad ++ or Sublime Text. XAMMP, MySQLFront, WEKA, Tableau, Knime, Spreadsheet, Apache Tomcat.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "digital-documents": {
         "subtitle": "Deep analysis of Digital documents 2.0",
         "ponente": "Full Time Research Professor,Member of System of National Researchers, CONACyT, Level II. Works at the Artificial Intelligence Laboratory Center for Computing Research National Polytechnic Institute, Mexico.",
-        "duration": "2 days, 5 hours each",
+        "duration": "Wednesday, July 31 from 09:00 to 18:00 and Thursday, August 1 from 09:00 to 14:00",
         "requirements": "Python programming, handling of libraries in Python, use of Jupyter Notebook.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "embedded-systems": {
         "subtitle": "IoT - Artificial Intelligence in Embedded systems",
         "ponente": "Master in Science at the Computer Research Center, Mechatronic Engineering at the Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas - National Polytechnic Institute, Mexico. Instructor in \"Dive in learning\" ",
-        "duration": "1 day, 4 hours",
+        "duration": "Monday, August 5 from 09:00 to 13:00",
         "requirements": "Knowledge on basic electronics and programming.",
-        "workshop-duration": "Workshop duration: ",
+        "workshop-duration": "Workshop schedule: ",
         "contact": "Contact:"
     },
     "svetlana-toldova": {
