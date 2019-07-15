@@ -36,10 +36,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul id="navi18n" class="nav navbar-nav navbar-right">
                             <li><a class="page-scroll" data-i18n="nav.inicio" href="#page-top">Inicio</a></li>
+                            <li><a class="page-scroll" data-i18n="nav.ponencias" href="#presentations">Ponencias</a></li>
                             <li><a class="page-scroll" data-i18n="nav.fechas" href="#date">Fechas</a></li>
                             <li><a class="page-scroll" data-i18n="nav.acerca" href="#about">Acerca de</a></li>
                             <li><a class="page-scroll" data-i18n="nav.talleres" href="#challenges">Talleres</a></li>
-                            <li><a class="page-scroll" data-i18n="nav.ponencias" href="#presentations">Ponencias</a></li>
                             <li><a class="page-scroll" data-i18n="nav.calls" href="#calls">Calls</a></li>
                             <li><a class="page-scroll" data-i18n="nav.precios" href="#pricing">Costos</a></li>
                             <li><a class="page-scroll" data-i18n="nav.ubicacion" href="#map">Ubicación</a></li>
@@ -105,7 +105,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 data-i18n="carousel.taller_interes">Aviso</h1>
+                            <h1 data-i18n="carousel.taller_interes">Invitacíon</h1>
                             <p data-i18n="carousel.calls">Si eres parte del politécnico y eres alumno de posgrado o formas parte de alguna SEPI y quieres ser parte el comité organizador envia un correo a corecongresscs@gmail.com</p>
                             <p>
                                 <!--<a class="btn btn-lg btn-primary" href="#calls" role="button" data-i18n="carousel.callw">Convocatoria para workshops</a>-->
@@ -758,7 +758,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li data-i18n="pricing.publico" class="pricing-title">Público en General</li>
                             <li class="pricing-desc"></li>
                             <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
-                            <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$250.00 MXN</span></li>
+                            <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$300.00 MXN</span></li>
                             <li class="pricing-price"><text data-i18n="pricing.rec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
                             <li class="plan-action">
                                 <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
@@ -783,7 +783,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <p>
                             <strong><span data-i18n="pricing.publico" class="navy">Público en general:</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
                             <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica:</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
-                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br>
+                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br><br><br>
+                        </p>
+                        <p style="width: 50%;" class="col-lg-offset-3">
+                            <strong data-i18n="pricing.mesg6">* La comunidad politécnica no puede recibir factura por parte del politécnico, si requieren factura deben de pagar como externos, de lo contrario solo recibirán una nota.</strong><br>
                         </p>
                     </div>
                 </div>
@@ -804,21 +807,75 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
         </div>
     </section>
 
+    <section class="navy-section testimonials3" style="margin-top: 0">
+            <div class="container testimonials2">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow zoomIn">
+                        <i class="fa fa-bell big-icon"></i>
+                        <h1 id="frase">
+                            <strong data-i18n="frase.frase">Invitacíon</strong>
+                        </h1>
+                        <h3><i>SI ERES PARTE DEL POLITÉCNICO Y ERES ALUMNO DE POSGRADO O FORMAS PARTE DE ALGUNA SEPI Y QUIERES SER PARTE EL COMITÉ ORGANIZADOR ENVIA UN CORREO A CORECONGRESSCS@GMAIL.COM</i></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <section id="comite" class="comite" style="margin-top: 0">
         <div class="container">
             <div class="row m-b-lg">
                 <div class="col-lg-12 text-center">
                     <div class="navy-line"></div>
-                    <h1 data-i18n="contacto.comiteo">Comité Local</h1>
+                    <h1 data-i18n="contacto.comiteo">Comité</h1>
                 </div>
             </div>
+
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:darkgray;">Profesores representantes</h3>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-sm-4 col-md-3 col-xs-6">
                     <div class="comments-avatar">
                         <img class="pull-left" alt="image" src="img/landing/comite/chimal.png">
                         <div class="media-body">
                             <div class="commens-name">Dr. Juan Carlos Chimal</div>
-                            <small class="text-muted"></small>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Dr. Abraham Rodríguez Mota</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Dr. Juan Jose Tapia Higuera</div>
+                            <small class="text-muted">CITEDI</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <h3 style="color:darkgray;">Estudiantes representantes</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Organización principal</div>
                         </div>
                     </div>
                 </div>
@@ -827,7 +884,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/comite_lopez_lozada_elizabeth.png">
                         <div class="media-body">
                             <div class="commens-name">Elizabeth López Lozada</div>
-                            <small class="text-muted">I have a T.V. as monitor</small>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -836,34 +893,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/comite_fernandez_cid_ivan.png">
                         <div class="media-body">
                             <div class="commens-name">Ivan Fernández Cid</div>
-                            <small class="text-muted"></small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_cruz_silva_jacobo_emanuel.png">
-                        <div class="media-body">
-                            <div class="commens-name">Jacobo Emanuel Cruz Silva</div>
-                            <small class="text-muted">I have a Nao</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_perez_martinez_david.png">
-                        <div class="media-body">
-                            <div class="commens-name">David Pérez Martínez</div>
-                            <small class="text-muted">I have a iMac</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_segura_cristino_david_jesus.png">
-                        <div class="media-body">
-                            <div class="commens-name">David Jesús Segura Cristino</div>
-                            <small class="text-muted">I have a Powerwheels</small>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -872,64 +902,25 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/comite_maldonado_romo_alberto.png">
                         <div class="media-body">
                             <div class="commens-name">Alberto Maldonado Romo</div>
-                            <small class="text-muted">Quantum Assistant</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_karen_pamela_lopez_medina.png">
-                        <div class="media-body">
-                            <div class="commens-name">Karen Pamela López Medina</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_medina_cortes_carlos_alonso.png">
-                        <div class="media-body">
-                            <div class="commens-name">Carlos Alonso Medina Cortés</div>
-                            <small class="text-muted"></small>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-sm-4 col-md-3 col-xs-6">
-                             <div class="comments-avatar">
-                                 <img class="pull-left" alt="image" src="img/landing/comite/comite_mendoza_lopez_alberto.png">
-                                 <div class="media-body">
-                                     <div class="commens-name">Alberto López Mendoza</div>
-                                     <small class="text-muted"></small>
-                                 </div>
-                             </div>
-                         </div> -->
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_abdiel_reyes_vera.png">
-                        <div class="media-body">
-                            <div class="commens-name">Abdiel Reyes Vera</div>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row m-b-lg">
-                <div class="col-lg-12 text-center">
-                    <h3 style="color:darkgray;">Staff</h3>
-                </div>
-
+            <div class="row">
                 <div class="col-sm-4 col-md-3 col-xs-6">
                     <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/staff_bustamante_campos_oscar_alfredo.png">
                         <div class="media-body">
-                            <div class="commens-name">Oscar Alfredo Bustamante Campos</div>
+                            <div class="commens-name">Difusión e Imagen</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-3 col-xs-6">
                     <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/comite/comite_cortes_diaz_hiram_david.png">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_cruz_silva_jacobo_emanuel.png">
                         <div class="media-body">
-                            <div class="commens-name">Hiram David Cortes Díaz</div>
-                            <small class="text-muted"></small>
+                            <div class="commens-name">Jacobo Emanuel Cruz Silva</div>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -938,6 +929,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/staff_caballero_ramirez_michelle.png">
                         <div class="media-body">
                             <div class="commens-name">Michelle Caballero Ramírez</div>
+                            <small class="text-muted">ESCOM</small>
                         </div>
                     </div>
                 </div>
@@ -945,7 +937,80 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="comments-avatar">
                         <img class="pull-left" alt="image" src="img/landing/comite/staff_diana_yosenia_campos_tenorio.png">
                         <div class="media-body">
-                            <div class="commens-name">Diana Yosenia Campos Tenorio</div>
+                            <div class="commens-name">Diana Yesenia Campos Tenorio</div>
+                            <small class="text-muted">ESCOM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Alejandra GP</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Desarrollo y sistemas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_perez_martinez_david.png">
+                        <div class="media-body">
+                            <div class="commens-name">David Pérez Martínez</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Francisco Javier Martínez</div>
+                            <small class="text-muted">ESCOM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Joel Romero</div>
+                            <small class="text-muted">ESCOM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Coordinación y logistica</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_segura_cristino_david_jesus.png">
+                        <div class="media-body">
+                            <div class="commens-name">David Jesús Segura Cristino</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_cortes_diaz_hiram_david.png">
+                        <div class="media-body">
+                            <div class="commens-name">Hiram David Cortes Díaz</div>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -954,6 +1019,34 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/staff_pinal_ramirez_octavio_elias.png">
                         <div class="media-body">
                             <div class="commens-name">Octavio Elías Piñal Ramírez</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/staff_bustamante_campos_oscar_alfredo.png">
+                        <div class="media-body">
+                            <div class="commens-name">Oscar Alfredo Bustamante Campos</div>
+                            <small class="text-muted">ESCOM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_abdiel_reyes_vera.png">
+                        <div class="media-body">
+                            <div class="commens-name">Abdiel Reyes Vera</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_medina_cortes_carlos_alonso.png">
+                        <div class="media-body">
+                            <div class="commens-name">Carlos Alonso Medina Cortés</div>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -962,7 +1055,25 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/staff_valeria_karina_legaria_santiago.png">
                         <div class="media-body">
                             <div class="commens-name">Valeria Karina Legaria Santiago</div>
-                            <small class="text-muted"></small>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Articulos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_karen_pamela_lopez_medina.png">
+                        <div class="media-body">
+                            <div class="commens-name">Karen Pamela López Medina</div>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -971,7 +1082,70 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/staff_diana_vergara.png">
                         <div class="media-body">
                             <div class="commens-name">Diana Vergara</div>
-                            <small class="text-muted"></small>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/comite/comite_viridiana.png">
+                        <div class="media-body">
+                            <div class="commens-name">Viridiana Rodriguez</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Odeb Isaí Ríos Orellana</div>
+                            <small class="text-muted">CITEDI</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Edición</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Carlos Vizcaino</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Federico Furlan Colín</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Alejandra Romero</div>
+                            <small class="text-muted">CIC</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <div class="media-body">
+                            <div class="commens-name">Asistente Internacional</div>
                         </div>
                     </div>
                 </div>
@@ -980,7 +1154,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <img class="pull-left" alt="image" src="img/landing/comite/comite_maaz_amjad.png">
                         <div class="media-body">
                             <div class="commens-name">Amjad Maaz</div>
-                            <small class="text-muted"></small>
+                            <small class="text-muted">CIC</small>
                         </div>
                     </div>
                 </div>
@@ -1528,11 +1702,11 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <div class="row">
                             	<img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dra. Svetlana Toldova</h3><br>
-                                <p class="text-justify" data-i18n="svetlana-toldova.about">Tiene un doctorado</p><br>
+                                <p class="text-justify" data-i18n="svetlana-toldova.about">Información proximamente</p><br>
                             </div>
                             <div class="row">
                                 <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
-                                <p class="text-justify" data-i18n="svetlana-toldova.conference">Va a ser impresionante</p><br>
+                                <p class="text-justify" data-i18n="svetlana-toldova.conference">Información proximamente</p><br>
                             </div>
                         </div>
                     </div>
@@ -1586,7 +1760,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>
                             <div class="row">
                                 <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
-                                <p class="text-justify" data-i18n="humberto-diaz.conference">Va a ser impresionante</p><br>
+                                <p class="text-justify" data-i18n="humberto-diaz.conference">Información proximamente</p><br>
                             </div>
                         </div>
                     </div>
@@ -1667,7 +1841,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>
                             <div class="row">
                                 <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
-                                <p class="text-justify" data-i18n="manuel-jimenez.conference">Va a ser impresionante</p><br>
+                                <p class="text-justify" data-i18n="manuel-jimenez.conference">Información proximamente</p><br>
                             </div>
                         </div>
                     </div>
@@ -1694,7 +1868,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             </div>
                             <div class="row">
                                 <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
-                                <p class="text-justify" data-i18n="thilo-pionteck.conference">Va a ser impresionante</p><br>
+                                <p class="text-justify" data-i18n="thilo-pionteck.conference">Información proximamente</p><br>
                             </div>
                         </div>
                     </div>
