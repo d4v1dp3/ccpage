@@ -7376,6 +7376,9 @@ body.landing-page {
     border-radius: 50%;
     margin-right: 10px;
 }
+.logos-comite {
+    max-height: 80px;
+}
 .landing-page .bubble {
     position: relative;
     height: 120px;
