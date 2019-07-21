@@ -24,7 +24,7 @@ if (isset($_SESSION['logged_fail']) && $_SESSION['logged_fail']) {
         <div class="loginColumns animated fadeInDown">
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-responsive" src="img/landing/logo_core_back.png">
+                    <img class="img-responsive" src="img/landing/login_core.png">
                 </div>
                 <div class="col-md-6">
                     <div class="ibox-content">

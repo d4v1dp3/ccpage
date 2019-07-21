@@ -111,6 +111,34 @@ class consultas {
         return $data;
     }
 
+    public function consultaConferencias() {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("SELECT * FROM lista_conferencias ORDER BY id;");
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
+    }
+    
+    public function eliminarConferencia($idConferencia) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("DELETE FROM conferencia WHERE id=?;");
+        $statement->bind_param("s", $idConferencia);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
+
     public function consultaTalleres() {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -162,7 +190,7 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-
+    
     public function inscribirTaller($idUsuario, $idTaller) {
         $sem_key = 12;
         $sem_id = sem_get($sem_key, 1);

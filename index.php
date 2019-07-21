@@ -85,7 +85,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
                         </div>
                         <div class="carousel-image wow zoomIn">
-                            <img src="img/landing/logo_core.png" alt="laptop"/>
+                            <img src="img/landing/logo_core.png"/>
                         </div>
                     </div>
                     <div class="header-back core"></div>
@@ -549,7 +549,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 </div>
 
                 <div class="row text-center m-t-xl" style="margin-top: 60px;">
-                	<img src="img/landing/programa_talleres.png" alt="">
+                    <img src="img/landing/programa_talleres.png" alt="">
                 </div>
 
             </div>
@@ -813,18 +813,18 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
     </section>
 
     <section class="navy-section testimonials3" style="margin-top: 0">
-            <div class="container testimonials2">
-                <div class="row">
-                    <div class="col-lg-12 text-center wow zoomIn">
-                        <i class="fa fa-bell big-icon"></i>
-                        <h1 id="frase">
-                            <strong data-i18n="frase.frase">Invitación</strong>
-                        </h1>
-                        <h3><i>SI ERES PARTE DEL POLITÉCNICO Y ERES ALUMNO DE POSGRADO O FORMAS PARTE DE ALGUNA SEPI Y QUIERES SER PARTE EL COMITÉ ORGANIZADOR ENVIA UN CORREO A CORECONGRESSCS@GMAIL.COM</i></h3>
-                    </div>
+        <div class="container testimonials2">
+            <div class="row">
+                <div class="col-lg-12 text-center wow zoomIn">
+                    <i class="fa fa-bell big-icon"></i>
+                    <h1 id="frase">
+                        <strong data-i18n="frase.frase">Invitación</strong>
+                    </h1>
+                    <h3><i>SI ERES PARTE DEL POLITÉCNICO Y ERES ALUMNO DE POSGRADO O FORMAS PARTE DE ALGUNA SEPI Y QUIERES SER PARTE EL COMITÉ ORGANIZADOR ENVIA UN CORREO A CORECONGRESSCS@GMAIL.COM</i></h3>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <section id="comite" class="comite" style="margin-top: 0">
         <div class="container">
@@ -1199,19 +1199,32 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     </div>
                 </div>
             </div>
+            
+            <div class="row m-b-lg">
+                <div class="col-lg-12 text-center">
+                    <h2 style="color:darkgray;">Instituciones representantes</h2>
+                </div>
+            </div>
 
             <div class="row m-t-xl">
-                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
-                    <img class="logos-comite" alt="image" src="img/landing/comite/logo_cic.png">
+                <div class="col-md-7">
+                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
+                        <img class="logos-comite m-sm" alt="logo_cic" src="img/landing/comite/logo_cic.png">
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
+                        <img class="logos-comite m-sm" alt="logo_upiita" src="img/landing/comite/logo_upiita.png">
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
+                        <img class="logos-comite m-sm" alt="logo_citedi" src="img/landing/comite/logo_citedi.png">
+                    </div>
                 </div>
-                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
-                    <img class="logos-comite" alt="image" src="img/landing/comite/logo_upiita.png">
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
-                    <img class="logos-comite" alt="image" src="img/landing/comite/logo_citedi.png">
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
-                    <img class="logos-comite" alt="image" src="img/landing/comite/logo_cidetec.png">
+                <div class="col-md-5">
+                    <div class="col-sm-4 col-md-6 col-xs-6 text-center">
+                        <img class="logos-comite m-sm" alt="logo_cidetec" src="img/landing/comite/logo_cidetec.png">
+                    </div>
+                    <div class="col-sm-4 col-md-6 col-xs-6 text-center">
+                        <img class="logos-comite m-sm" alt="logo_escom" src="img/landing/comite/logo_escom.png">
+                    </div>
                 </div>
             </div>
 
@@ -1276,7 +1289,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_erik_z.png" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Erik Zamora</h3><br>
                                 <p class="text-justify" data-i18n="deep-learning.ponente">Es docente, investigador, científico y un entusiasta por propagar el conocimiento útil. Graduado por el CINVESTAV-IPN como doctor (2015) y maestro en ciencias (2007). Tiene  11 años de experiencia en la docencia a nivel superior, 4 años en la investigación: ha publicado 22 artículos científicos en conferencias y revistas internacionales; ha dirigido a más 20 estudiantes de licenciatura, 6 de maestría y 7 de doctorado. Sus líneas de investigación son sobre redes neuronales artificiales y navegación autónoma de robot móviles.</p><br>
                             </div>
@@ -1319,7 +1332,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_amadeo_a.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_amadeo_a.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Amadeo José Argüelles Cruz</h3><br>
                                 <p class="text-justify" data-i18n="augmented-reality.ponente">Recibió el título de Ingeniero en Comunicaciones y Electrónica de la Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME) del Instituto Politécnico Nacional (IPN), en 1992, el grado de Maestro en Ciencias en Ingeniería de Cómputo y Doctor en Ciencias de la Computación en el Centro de Investigación en Computación (CIC), en 1997 y 2007, respectivamente. Actualmente, se desempeña como Profesor Investigador, Coordinador de Programa y Jefe del Departamento de Investigación en Ciencias de la Computación en el Centro de Investigación en Computación (CIC-IPN), desde marzo del 2010.</p><br>
                             </div>
@@ -1343,25 +1356,25 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_elias_p.jpg" class="img-responsive img-circle" alt="">
-                            			<small>Octavio Elías Piñal Ramírez</small>
-                        			</div>
-                    			</div>
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_david_c.jpg" class="img-responsive img-circle" alt="">
-                            			<small>Hiram David Cortés Díaz</small>
-                        			</div>
-                    			</div>
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_alfredo_c.jpg" class="img-responsive img-circle" alt="">
-                            			<small>Oscar Alfredo Bustamante Campos</small>
-                        			</div>
-                    			</div>
-                			</div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_elias_p.jpg" class="img-responsive img-circle" alt="">
+                                        <small>Octavio Elías Piñal Ramírez</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_david_c.jpg" class="img-responsive img-circle" alt="">
+                                        <small>Hiram David Cortés Díaz</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_alfredo_c.jpg" class="img-responsive img-circle" alt="">
+                                        <small>Oscar Alfredo Bustamante Campos</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1382,7 +1395,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_florencio_g.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_florencio_g.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Florencio Javier González Rodríguez</h3><br>
                                 <p class="text-justify" data-i18n="exploits.ponente"> Estudiante de doctorado en Ciberseguridad en el CIC del IPN. Cuenta con una Maestría en Ciencias de la Computación con especialidad en Ciberseguridad y ha realizado una estancia de investigación de seguridad en redes en la universidad de Osaka en Japón. Durante varios años ha sido consultor en seguridad informática para empresas privadas, así como para organizaciones gubernamentales, del lado ofensivo y defensivo. Formación en donde ha adquirió certificaciones de empresas como IBM y Microsoft. También ha impartido diversas conferencias, cursos y talleres relacionados con la seguridad Informática.</p><br>
                             </div>
@@ -1425,7 +1438,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_jesus_o.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_jesus_o.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Jesús Manuel Olivares Ceja</h3><br>
                                 <p class="text-justify" data-i18n="big-data.ponente">El Dr. Jesús Manuel Olivares Ceja obtuvo su doctorado en Ciencias de la Computación  en el CIC–IPN en 2002. En 1996 concluyó la Maestría en Ciencias de la Computación en el CINVESTAV, México. En 1991 obtuvo el título de Licenciado en Ciencias de la Computación en la UPIICSA–IPN. Ha publicado en revistas y memorias de congresos nacionales e internacionales en sus líneas de investigación; presentando algunos de estos trabajos en foros nacionales e internacionales. Además de su actividad en investigación y docencia, se desempeñó como consultor independiente entre 1985 y 2005.</p><br>
                             </div>
@@ -1468,7 +1481,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_marco_r.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_marco_r.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Marco Antonio Ramírez Salinas</h3><br>
                                 <p class="text-justify" data-i18n="lagarto.ponente">Doctor en Ciencias de la Computación (Tecnología Arquitectura de las computadoras). Profesor a tiempo completo en el Centro de Investigación en Computación y colabora en el laboratorio de Microtecnología y Sistemas embebidos. Interesado en el desarrollo de sistemas embebidos, diseño de arquitectura de computadoras y cómputo paralelo para HPC.</p><br>
                             </div>
@@ -1492,25 +1505,25 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_cesar_h.jpg" class="img-responsive img-circle" alt="">
-                            			<small>César A. Hernández Calderón</small>
-                        			</div>
-                    			</div>
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_israel_l.jpg" class="img-responsive img-circle" alt="">
-                            			<small>Neiel Israel Leyva Santes</small>
-                        			</div>
-                    			</div>
-                    			<div class="col-sm-4">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_antonio_f.jpg" class="img-responsive img-circle" alt="">
-                            			<small>José Antonio Flores Escobar</small>
-                        			</div>
-                    			</div>
-                			</div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_cesar_h.jpg" class="img-responsive img-circle" alt="">
+                                        <small>César A. Hernández Calderón</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_israel_l.jpg" class="img-responsive img-circle" alt="">
+                                        <small>Neiel Israel Leyva Santes</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_antonio_f.jpg" class="img-responsive img-circle" alt="">
+                                        <small>José Antonio Flores Escobar</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1531,7 +1544,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_alejandro_l.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_alejandro_l.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Ing. Alejandro López Hernández</h3><br>
                                 <p class="text-justify" data-i18n="docker.ponente">Maestria en Ciberseguridad en la Universidad Autónoma de Barcelona, Licenciatura en Ciencias de la computación en el Insituto Politécnico Nacional.</p><br>
                             </div>
@@ -1574,7 +1587,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_jose_n.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_jose_n.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3>M. en C. José Ángel Martínez Navarro</h3><br>
                                 <p class="text-justify" data-i18n="ros-first-steps.ponente">Maestría en ciencias en el CIC con la tesis “Desarrollo de un robot de dos ruedas dinámicamente estable”. Graduado en la Ingeniería en comuniacaciones y electrónica en el Instituto Politécnico Nacional en México.</p><br>
                             </div>
@@ -1617,7 +1630,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_gilberto_m.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_gilberto_m.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Gilberto L. Martínez Luna</h3><br>
                                 <p class="text-justify" data-i18n="open-data.ponente">Estudió en la Escuela Superior de Física y Matemáticas, el grado de Maestría lo obtuvo en la Sección de Computación (hoy Departamento) del CINVESTAV-IPN y el grado de Doctor en Ciencias de la Computación lo obtuvo en el Centro de Investigación en Computación del I.P.N. (CIC-IPN) con el trabajo titulado “Latices y otras estructuras para acelerar las búsquedas en Minería de Datos” Desde 1996 trabaja en el CIC-IPN, y actualmente es jefe del Laboratorio de Bases de Datos y Tecnología de Software.</p><br>
                             </div>
@@ -1641,13 +1654,13 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                                 </div><br><br><br>
                             </div>
                             <div class="row m-b-lg">
-                    			<div class="col-sm-12">
-                        			<div class="team-member">
-                            			<img src="img/landing/avatar_yadira_h.jpg" class="img-responsive img-circle" alt="">
-                            			<small>Yadira Hernández</small>
-                        			</div>
-                    			</div>
-                			</div>
+                                <div class="col-sm-12">
+                                    <div class="team-member">
+                                        <img src="img/landing/avatar_yadira_h.jpg" class="img-responsive img-circle" alt="">
+                                        <small>Yadira Hernández</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -1668,7 +1681,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_hiram.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_hiram.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Hiram Calvo</h3><br>
                                 <p class="text-justify" data-i18n="digital-documents.ponente">Profesor a tiempo completo, miembro del Sistema Nacional de Investigadores, CONACYT, nivel II. Trabaja en el Laboratorio de Inteligencia Artificial en el Centro de Investigación en Computación del Instituto Politécnico Nacional.</p><br>
                             </div>
@@ -1711,7 +1724,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_joel.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_joel.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">M. en C. Joel García Velasco</h3><br>
                                 <p class="text-justify" data-i18n="embedded-systems.ponente">Maestria en Ingeniería en Ciencias de la Computación en el Centro de Investigación en Computación, Ingeniero en Mecatronica en la Unidad Profecional Interdisiplinaria en Ingeniería y Tecnologías Avanzadas - Instituto Politecnico Nacional. Instructor en Dive in Learning.</p><br>
                             </div>
@@ -1746,7 +1759,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
     <!-- MODALS PONENCIAS -->
     <div>
-    	<!-- SVETLANA -->
+        <!-- SVETLANA -->
         <div class="modal fade" id="svetlana-toldova" tabindex="-1" role="dialog" aria-labelledby="titulo-modal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -1756,7 +1769,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_svetlana_t.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dra. Svetlana Toldova</h3><br>
                                 <p class="text-justify" data-i18n="svetlana-toldova.about">Información proximamente</p><br>
                             </div>
@@ -1783,7 +1796,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_marco_k.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Marco Körner</h3><br>
                                 <p class="text-justify" data-i18n="marco-korner.about">Tiene un doctorado</p><br>
                             </div>
@@ -1810,7 +1823,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Humberto Díaz Pando</h3><br>
                                 <p class="text-justify" data-i18n="humberto-diaz.about">Tiene un doctorado</p><br>
                             </div>
@@ -1837,7 +1850,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_martha_b.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dra. Martha Belem Saldivar Márquez</h3><br>
                                 <p class="text-justify" data-i18n="martha-saldivar.about">Tiene un doctorado en Ciencia, con especialidad en Control Automático e Informática y sus aplicaciones</p><br>
                             </div>
@@ -1864,7 +1877,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_adolfo_g.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Adolfo Guzmán Arenas</h3><br>
                                 <p class="text-justify" data-i18n="adolfo-guzman.about">Tiene un doctorado</p><br>
                             </div>
@@ -1891,7 +1904,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_jose_m.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Manuel Alejandro Jiménez Lizárraga</h3><br>
                                 <p class="text-justify" data-i18n="manuel-jimenez.about">Tiene un doctorado</p><br>
                             </div>
@@ -1918,7 +1931,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="row modal-body">
                         <div class="col-md-10 col-md-offset-1">
                             <div class="row">
-                            	<img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle" alt=""><br>
+                                <img src="img/landing/avatar_thilo_p.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Thilo Pionteck</h3><br>
                                 <p class="text-justify" data-i18n="thilo-pionteck.about">Thilo Pioneck es profesor asociado que ocupa la cátedra de informática orientada al hardware en la Otto-von-Guericke-Universität Magdeburg, Alemania. Recibió su título en 1999 y su Ph.D. (Dr.-Ing.) Licenciado en Ingeniería Eléctrica por la Technische Universität Darmstadt, Alemania. En 2008, fue nombrado profesor asistente de Circuitos y Sistemas Integrados en la Universität zu Lübeck. De 2012 a 2014, fue suplente de la materia de Sistemas Embebidos en la Technische Universität Dresden y de la materia de Ingeniería Informática de la Technische Universität en Hamburgo-Harburg. Su trabajo de investigación se centra en Network-on-Chips, diseño de sistema adaptativo, reconfiguración de tiempo de ejecución y co-diseño de hardware / software. En 2015 fue nombrado profesor de la cátedra de computación orgánica en la Universität zu Lübeck con investigación centrada en sistemas digitales adaptativos. En 2016 fue nombrado para la Otto-von-Guericke Universität Magdeburg.dyna</p><br>
                             </div>
@@ -2029,12 +2042,12 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     $('#digital-documents').i18n();
                     $('#embedded-systems').i18n();
                     $('#svetlana-toldova').i18n();
-					$('#marco-korner').i18n();
-					$('#humberto-diaz').i18n();
-					$('#martha-saldivar').i18n();
-					$('#adolfo-guzman').i18n();
-					$('#manuel-jimenez').i18n();
-					$('#thilo-pionteck').i18n();
+                    $('#marco-korner').i18n();
+                    $('#humberto-diaz').i18n();
+                    $('#martha-saldivar').i18n();
+                    $('#adolfo-guzman').i18n();
+                    $('#manuel-jimenez').i18n();
+                    $('#thilo-pionteck').i18n();
                     $('.set_en').addClass('active');
                     $('.set_es').removeClass('active');
                 });
