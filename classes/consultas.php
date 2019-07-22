@@ -369,6 +369,23 @@ class consultas {
         return $resultado;
     }
 
+    public function cargarComprobante($idUsuario, $idTaller, $filepath) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("UPDATE usuario_taller SET comprobante=?, estatus_inscripcion='Validando' WHERE id_usuario=? AND id_taller=?");
+        $statement->bind_param("sss", $filepath, $idUsuario, $idTaller);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
+        $conexion->close();
+        return $resultado;
+    }
+
     public function redirecciona($url) {
         echo '<script language="javascript">window.location.href ="' . $url . '"</script>';
     }

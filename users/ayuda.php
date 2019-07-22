@@ -32,17 +32,17 @@ if (!($_SESSION['logged_in'])) {
                     <div class="col-lg-2">
                     </div>
                 </div>
-                <div class="row wrapper wrapper-content animated fadeInRight">
+                <div class="gray-bg large-box row wrapper wrapper-content animated fadeInRight">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="ibox float-e-margins">
-                                <div class="ibox-content">
-                                    <span style="font-size: 16px; font-weight: 300;">Ponemos nuestros datos de contacto para proporcionarte más información.
-                                        <br/>
-                                        <i class="fa fa-envelope"></i> corecongresscs@gmail.com <br/>
-                                        <i class="fa fa-user-o"></i>Ing. David Pérez Martínez<br/>
-                                        Asunto: PAGINA CORE
-                                    </span>
+                        <div class="col-md-12">
+                            <div class="ibox-content">
+                                <h3>Te brindamos nuestros datos para que te pongas en contacto y proporcionarte mas información</h3>
+                                <div class="row">
+                                    <div class="col-lg-12 m-t-sm">
+                                        <h3><i class="fa fa-envelope info-contact-icon"></i> &emsp;corecongresscs@gmail.com</h3>
+                                        <h3><i class="fa fa-user info-contact-icon"></i> &emsp; Ing. David Pérez Martínez</h3>
+                                        <h3><i class="fa fa-edit info-contact-icon"></i> &emsp;Asunto: Página CORE</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
