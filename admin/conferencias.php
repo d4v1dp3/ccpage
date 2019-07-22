@@ -31,6 +31,7 @@ if (!($_SESSION['logged_in'])) {
         <div id="wrapper">
             <?php include_once '../templates/navigator-admin.php' ?>
             <div id="page-wrapper" class="gray-bg">
+                <?php include_once '../templates/navbar.php' ?>
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
                         <h2><i class="fa fa-slideshare"></i> &nbsp;Conferencias</h2>
@@ -71,7 +72,7 @@ if (!($_SESSION['logged_in'])) {
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_conferencia'] ?>|<?= ($col['descripcion']) ?>|<?= $col['nombre_ponente'] ?>|<?= $col['lugar'] ?>|<?= $col['fecha'] ?>|<?= $col['cupo_maximo'] ?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_conferencia'] ?>|<?= ($col['descripcion']) ?>|<?= $col['nombre_ponente'] ?>|<?= $col['lugar'] ?>|<?= $col['fecha'] ?>|<?= $col['fecha_termino'] ?>|<?= $col['cupo_maximo'] ?>" data-target="#modalEditar"><i class="fa fa-pencil"></i> Editar</button>
                                                                     <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_conferencia'] ?>" data-target="#modalEliminar"><i class="fa fa-trash"></i> Eliminar</button>
                                                                 </div>
                                                             </td>
@@ -249,9 +250,9 @@ if (!($_SESSION['logged_in'])) {
                     $('#modalEditar #descripcionE').val($(e.relatedTarget).data('id').split('|')[2]);
                     $('#modalEditar #ponenteE').val($(e.relatedTarget).data('id').split('|')[3]);
                     $('#modalEditar #lugarE').val($(e.relatedTarget).data('id').split('|')[4]);
-                    $('#modalEditar #fechaE').val($(e.relatedTarget).data('id').split('|')[5]);
-                    $('#modalEditar #cupoE').val($(e.relatedTarget).data('id').split('|')[6]);
-                    $('#modalEditar #cupoE').trigger("touchspin.updatesettings", {initval: $(e.relatedTarget).data('id').split('|')[6]});
+                    $('#modalEditar #fechaE').val($(e.relatedTarget).data('id').split('|')[5] + ' - ' + $(e.relatedTarget).data('id').split('|')[6]);
+                    $('#modalEditar #cupoE').val($(e.relatedTarget).data('id').split('|')[7]);
+                    $('#modalEditar #cupoE').trigger("touchspin.updatesettings", {initval: $(e.relatedTarget).data('id').split('|')[8]});
                     $('#modalEditar #hidden').val($(e.relatedTarget).data('id'));
                 });
 

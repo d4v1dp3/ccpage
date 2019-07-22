@@ -16,16 +16,16 @@ if (!empty($_POST)) {
         $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
     } elseif (!isset($_SESSION['id'])) {
         $_SESSION['toastr'] = "toastr.error('', 'No se han recibido parametros');";
-    } elseif ($consultar->validaInscripcion($_SESSION['id'], base64_decode($datos[0]), 'Taller') == 'true') {
-        $_SESSION['toastr'] = 'toastr.warning("", "Ya te encontrabas inscrito en el taller <i>' . $datos[1] . '</i>");';
-    } elseif ($consultar->inscribirTaller($_SESSION['id'], base64_decode($datos[0])) == 'false') {
+    } elseif ($consultar->validaInscripcion($_SESSION['id'], base64_decode($datos[0]), 'Conferencia') == 'true') {
+        $_SESSION['toastr'] = 'toastr.warning("", "Ya te encontrabas inscrito en la conferencia <i>' . $datos[1] . '</i>");';
+    } elseif ($consultar->inscribirConferencia($_SESSION['id'], base64_decode($datos[0])) == 'false') {
         $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
     } else {
-        $_SESSION['toastr'] = 'toastr.success("", "Se ha inscrito al taller <i>' . $datos[1] . '</i>");';
+        $_SESSION['toastr'] = 'toastr.success("", "Se ha inscrito como asistente a la conferencia <i>' . $datos[1] . '</i>");';
     }
 } else {
     $_SESSION['toastr'] = 'toastr.error("", "El registro no pudo ser completado, intente nuevamente");';
 }
-header('Location: ../users/talleres.php');
+header('Location: ../users/conferencias.php');
 ?>
 

@@ -413,7 +413,8 @@ body.canvas-menu .logo-element {
 }
 body.mini-navbar .nav-header {
     padding: 0;
-    background-color: #ff9300;
+    /*background-color: #ff9300;*/
+    background-color: inherit;
 }
 body.canvas-menu .nav-header {
     padding: 33px 25px;
@@ -1136,6 +1137,15 @@ button.dim:active:before {
     background-color: #00b159;
     color: #FFFFFF;
 }
+.badge-conferencia {
+    background-color: #ef4f91;
+    color: #FFF;
+}
+.badge-taller {
+    background-color: #008080;
+    color: #FFF;
+}
+
 /* TOOGLE SWICH */
 .onoffswitch {
     position: relative;

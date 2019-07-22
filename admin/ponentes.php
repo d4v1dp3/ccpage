@@ -29,6 +29,7 @@ if (!($_SESSION['logged_in'])) {
         <div id="wrapper">
             <?php include_once '../templates/navigator-admin.php' ?>
             <div id="page-wrapper" class="gray-bg">
+                <?php include_once '../templates/navbar.php' ?>
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
                         <h2><i class="fa fa-bullhorn"></i> &nbsp;Ponentes</h2>
@@ -174,19 +175,6 @@ if (!($_SESSION['logged_in'])) {
                     responsive: true,
                     dom: 'lTfgtp'
                 });
-
-                /* $.base64.utf8decode = true;
-                 $('#modalEstatus').on('show.bs.modal', function (e) {
-                 var c = ($.base64.atob($(e.relatedTarget).data('id'))).split('|')[0];
-                 var l = ($.base64.atob($(e.relatedTarget).data('id'))).split('|')[1].replace('&nbsp;', '');
-                 $('#pLabel').css({'color': '#ed5565'});
-                 if (l == 'Habilitar') {
-                 $('#pLabel').css({'color': '#1ab394'});
-                 }
-                 $('#modalEstatus #pLabel').text(l);
-                 $('#modalEstatus #rfc').text(c);
-                 $('#modalEstatus #hidden').val(c);
-                 }); */
 
                 setTimeout(function () {
                     toastr.options = {

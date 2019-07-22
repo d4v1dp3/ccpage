@@ -7,7 +7,7 @@ if (!($_SESSION['logged_in'])) {
     header('Location: ../login.php');
 } else {
     $consultas = new consultas();
-    $data = $consultas->consultaTalleresDisponibles($_SESSION['id']);
+    $data = $consultas->consultaConferenciasDisponibles($_SESSION['id']);
 }
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ if (!($_SESSION['logged_in'])) {
         <link href="../css/plugins/dataTables/datatables.min.css" rel="stylesheet">
         <link href="../css/animate.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
-        <title>CORE 2019 | Talleres</title>
+        <title>CORE 2019 | Conferencias</title>
     </head>
     <body>
         <div id="wrapper">
@@ -31,7 +31,7 @@ if (!($_SESSION['logged_in'])) {
                 <?php include_once '../templates/navbar.php' ?>
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
-                        <h2><i class="fa fa-flask"></i> &nbsp;Talleres</h2>
+                        <h2><i class="fa fa-slideshare"></i> &nbsp;Conferencias</h2>
                     </div>
                     <div class="col-lg-2">
                     </div>
@@ -41,14 +41,12 @@ if (!($_SESSION['logged_in'])) {
                         <div class="col-lg-12">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">
-                                    <h2>Horarios</h2>
-                                    <img class="centering img-responsive" src="../img/landing/taller_dos.png">
-                                    <h2>Puedes pre-registrarte en los siguientes talleres:</h2>
+                                    <h3>Puedes pre-registrarte para asistir en las siguientes conferencias:</h3>
                                     <div class="table-responsive">
                                         <table class="table table-striped table-hover dataTables-view" >
                                             <thead>
                                                 <tr>
-                                                    <th>Taller</th>
+                                                    <th>Conferencia</th>
                                                     <th>Ponente</th>
                                                     <th>Detalles</th>
                                                     <th>Cupo</th>
@@ -66,13 +64,13 @@ if (!($_SESSION['logged_in'])) {
                                                         }
                                                         ?>
                                                         <tr>
-                                                            <td><strong><?= $col['nombre_taller'] ?></strong></td>
+                                                            <td><strong><?= $col['nombre_conferencia'] ?></strong></td>
                                                             <td><?= $col['nombre_ponente'] ?></td>
                                                             <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $fecha ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora_inicio'] ?> hrs. - <?= $col['hora_termino'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
                                                             <td><span class="badge <?= $col['badge_color'] ?>"><?= $col['cupo'] ?></span></td>
                                                             <td class="text-right">
                                                                 <div class="btn-group">
-                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalInscribir"><i class="fa fa-plug"></i> Inscribirse</button>
+                                                                    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_conferencia'] ?>" data-target="#modalInscribir"><i class="fa fa-plug"></i> Inscribirse</button>
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -92,14 +90,14 @@ if (!($_SESSION['logged_in'])) {
                 <!-- ModalInscribir -->
                 <div class="modal fade" id="modalInscribir" role="dialog">
                     <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="../classes/inscribirTaller.php">
+                        <form method="post" data-toggle="validator" action="../classes/inscribirConferencia.php">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Inscribir al taller</h4>
+                                    <h4 class="modal-title">Inscribir en conferencia</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>¿Desea inscribirse en el taller <strong><label id="nombre"></label></strong>?</p>
+                                    <p>¿Desea inscribirse como asistente a la conferencia <strong><label id="nombre"></label></strong>?</p>
                                     <input type="hidden" id="hidden" name="hidden" value="">
                                 </div>
                                 <div class="modal-footer">

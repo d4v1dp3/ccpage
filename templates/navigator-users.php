@@ -12,10 +12,7 @@
                             </span></span></a>
                 </div>
                 <div class="logo-element">
-                    <span class="fa-stack color-logo-element">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <span class="fa-stack"></span>
-                    </span>
+                    <img src="../img/landing/logo_core.png" width="75px">
                 </div>
             </li>
             <li>
@@ -23,6 +20,9 @@
             </li>
             <li>
                 <a href="talleres.php"><i class="fa fa-flask" ></i> <span class="nav-label">Talleres</span></a>
+            </li>
+            <li>
+                <a href="conferencias.php"><i class="fa fa-slideshare"></i> <span class="nav-label">Conferencias</span></a>
             </li>
             <li>
                 <a href="cuenta.php"><i class="fa fa-star" ></i> <span class="nav-label">Mi cuenta</span></a>

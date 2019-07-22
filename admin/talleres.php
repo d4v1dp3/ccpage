@@ -31,6 +31,7 @@ if (!($_SESSION['logged_in'])) {
         <div id="wrapper">
             <?php include_once '../templates/navigator-admin.php' ?>
             <div id="page-wrapper" class="gray-bg">
+                <?php include_once '../templates/navbar.php' ?>
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
                         <h2><i class="fa fa-flask"></i> &nbsp;Talleres</h2>

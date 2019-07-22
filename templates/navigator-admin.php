@@ -12,10 +12,7 @@
                                         </span></span></a>
                             </div>
                             <div class="logo-element">
-                                <span class="fa-stack color-logo-element">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <span class="fa-stack"></span>
-                                </span>
+                                <img src="../img/landing/logo_core.png" width="75px">
                             </div>
                         </li>
                         <li>
@@ -39,3 +36,4 @@
                     </ul>
                 </div>
             </nav>
+            

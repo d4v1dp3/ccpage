@@ -124,7 +124,8 @@ DROP VIEW IF EXISTS lista_talleres;
 CREATE VIEW lista_talleres AS
 SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio,
 DATE_FORMAT(fecha_termino_curso, '%W %d de %M') dia_termino, DATE_FORMAT(fecha_curso, '%H:%i') hora_inicio,
-DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, estatus, lugar,
+DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, 
+DATE_FORMAT(fecha_termino_curso, '%d/%m/%Y %H:%i') fecha_termino, estatus, lugar,
 CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
 CASE WHEN (COUNT(id_taller)/cupo_maximo) <0.01 THEN 'badge'
 WHEN (COUNT(id_taller)/cupo_maximo) < 0.4 THEN 'badge-info'
@@ -138,7 +139,7 @@ GROUP BY id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, fecha_curs
 
 DROP VIEW IF EXISTS lista_talleres_disponibles;
 CREATE VIEW lista_talleres_disponibles AS
-SELECT id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio,
+SELECT id, nombre_taller nombre, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio,
 DATE_FORMAT(fecha_termino_curso, '%W %d de %M') dia_termino, DATE_FORMAT(fecha_curso, '%H:%i') hora_inicio,
 DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, estatus, lugar,
 CONCAT(CAST(COUNT(id_taller) AS CHAR(6)), ' de ',cupo_maximo) cupo,
@@ -154,7 +155,7 @@ ELSE 'badge' END badge_estatus,
 CASE WHEN estatus_inscripcion = 'Confirmado' THEN 'fa-check' 
 WHEN estatus_inscripcion = 'Validando' THEN 'fa-eye' 
 ELSE 'fa-exclamation' END icon_estatus,
-id_usuario, estatus_inscripcion, r.es_activo
+id_usuario, estatus_inscripcion, r.es_activo, 'Taller' tipo, 'badge-taller' badge_tipo 
 FROM taller t
 LEFT JOIN usuario_taller r ON r.id_taller = t.id
 GROUP BY id, nombre_taller, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar, id_usuario, estatus_inscripcion, es_activo;
@@ -174,7 +175,7 @@ BEGIN
        WHEN (COUNT(id_taller)/cupo_maximo) < 0.7 THEN 'badge-success'
        WHEN (COUNT(id_taller)/cupo_maximo) < 1 THEN 'badge-primary'
        WHEN (COUNT(id_taller)/cupo_maximo) = 1 THEN 'badge-confirm'
-       ELSE 'badge-danger'  END badge_color
+       ELSE 'badge-danger'  END badge_color 
        from taller t LEFT JOIN usuario_taller r ON r.id_taller = t.id  where t.id NOT IN (select id_taller from usuario_taller where id_usuario = user)
        GROUP BY id, nombre_taller;
 END //
@@ -208,7 +209,8 @@ DROP VIEW IF EXISTS lista_conferencias;
 CREATE VIEW lista_conferencias AS
 SELECT id, nombre_conferencia, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio,
 DATE_FORMAT(fecha_termino_curso, '%W %d de %M') dia_termino, DATE_FORMAT(fecha_curso, '%H:%i') hora_inicio,
-DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, estatus, lugar,
+DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, DATE_FORMAT(fecha_curso, '%d/%m/%Y %H:%i') fecha, 
+DATE_FORMAT(fecha_termino_curso, '%d/%m/%Y %H:%i') fecha_termino, estatus, lugar,
 CONCAT(CAST(COUNT(id_conferencia) AS CHAR(6)), ' de ',cupo_maximo) cupo,
 CASE WHEN (COUNT(id_conferencia)/cupo_maximo) <0.01 THEN 'badge'
 WHEN (COUNT(id_conferencia)/cupo_maximo) < 0.4 THEN 'badge-info'
@@ -219,6 +221,73 @@ ELSE 'badge-danger'  END badge_color
 FROM conferencia c
 LEFT JOIN usuario_conferencia r ON r.id_conferencia = c.id
 GROUP BY id, nombre_conferencia, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar;
+
+DROP VIEW IF EXISTS lista_conferencias_disponibles;
+CREATE VIEW lista_conferencias_disponibles AS
+SELECT id, nombre_conferencia nombre, descripcion, nombre_ponente, cupo_maximo, DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio,
+DATE_FORMAT(fecha_termino_curso, '%W %d de %M') dia_termino, DATE_FORMAT(fecha_curso, '%H:%i') hora_inicio,
+DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino, estatus, lugar,
+CONCAT(CAST(COUNT(id_conferencia) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+CASE WHEN (COUNT(id_conferencia)/cupo_maximo) <0.01 THEN 'badge'
+WHEN (COUNT(id_conferencia)/cupo_maximo) < 0.4 THEN 'badge-info'
+WHEN (COUNT(id_conferencia)/cupo_maximo) < 0.7 THEN 'badge-success'
+WHEN (COUNT(id_conferencia)/cupo_maximo) < 1 THEN 'badge-primary'
+WHEN (COUNT(id_conferencia)/cupo_maximo) = 1 THEN 'badge-confirm'
+ELSE 'badge-danger'  END badge_color,
+CASE WHEN estatus_inscripcion = 'Confirmado' THEN 'badge-confirm' 
+WHEN estatus_inscripcion = 'Validando' THEN 'badge-info' 
+ELSE 'badge' END badge_estatus,
+CASE WHEN estatus_inscripcion = 'Confirmado' THEN 'fa-check' 
+WHEN estatus_inscripcion = 'Validando' THEN 'fa-eye' 
+ELSE 'fa-exclamation' END icon_estatus,
+id_usuario, estatus_inscripcion, r.es_activo, 'Conferencia' tipo, 'badge-conferencia' badge_tipo   
+FROM conferencia c
+LEFT JOIN usuario_conferencia r ON r.id_conferencia = c.id 
+GROUP BY id, nombre_conferencia, descripcion, nombre_ponente, cupo_maximo, fecha_curso, estatus, lugar, id_usuario, estatus_inscripcion, es_activo;
+
+DROP PROCEDURE IF EXISTS lista_conferencia_disponible;
+
+DELIMITER //
+CREATE PROCEDURE lista_conferencia_disponible(IN user int unsigned)
+BEGIN
+     select id, nombre_conferencia, descripcion, nombre_ponente, cupo_maximo,
+     DATE_FORMAT(fecha_curso, '%W %d de %M') dia_inicio, DATE_FORMAT(fecha_termino_curso, '%W %d de %M') dia_termino,
+     DATE_FORMAT(fecha_curso, '%H:%i') hora_inicio, DATE_FORMAT(fecha_termino_curso, '%H:%i') hora_termino,
+      estatus, lugar, CONCAT(CAST(COUNT(id_conferencia) AS CHAR(6)), ' de ',cupo_maximo) cupo,
+       CASE WHEN (COUNT(id_conferencia)/cupo_maximo) <0.01 THEN 'badge'
+       WHEN (COUNT(id_conferencia)/cupo_maximo) < 0.4 THEN 'badge-info'
+       WHEN (COUNT(id_conferencia)/cupo_maximo) < 0.7 THEN 'badge-success'
+       WHEN (COUNT(id_conferencia)/cupo_maximo) < 1 THEN 'badge-primary'
+       WHEN (COUNT(id_conferencia)/cupo_maximo) = 1 THEN 'badge-confirm'
+       ELSE 'badge-danger'  END badge_color 
+       from conferencia c LEFT JOIN usuario_conferencia r ON r.id_conferencia = c.id  where c.id NOT IN (select id_conferencia from usuario_conferencia where id_usuario = user)
+       GROUP BY id, nombre_conferencia;
+END //
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS inscribe_conferencia;
+
+DELIMITER //
+CREATE PROCEDURE inscribe_conferencia(IN iuser int unsigned, IN iconferencia int unsigned)
+BEGIN
+
+IF (select count(*) as cupo from usuario_conferencia where id_conferencia = iconferencia) < (select cupo_maximo from conferencia where id = iconferencia) THEN
+    IF (select count(id_usuario) from usuario_conferencia where id_usuario = iuser and id_conferencia = iconferencia) > 0 THEN
+        select 0 as result;
+    ELSEIF (select count(id) from usuario where id = iuser) < 0 THEN
+        select 0 as result;
+    ELSEIF (select count(id) from conferencia where id = iconferencia) < 0 THEN
+        select 0 as result;
+    ELSE
+        INSERT INTO usuario_conferencia VALUES(iuser,iconferencia,NOW(),'Pendiente','1','','');
+        select 1 as result;
+    END IF;
+ELSE
+    select 0 as result;
+END IF;
+
+END //
+DELIMITER ;
 
 INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('1','Administrador','','administrador','','administrador','2000-01-01','3');
 INSERT INTO `login` VALUES('1','administrador','1',AES_ENCRYPT('Core.2019','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);

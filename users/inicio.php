@@ -8,7 +8,7 @@ if (!($_SESSION['logged_in'])) {
     header('Location: ../login.php');
 } else {
     $consultas = new consultas();
-    $data = $consultas->consultaTalleresInscritos($_SESSION['id']);
+    $data = $consultas->consultaInscritos($_SESSION['id']);
 }
 ?>
 <!DOCTYPE html>
@@ -29,13 +29,9 @@ if (!($_SESSION['logged_in'])) {
         <div id="wrapper">
             <?php include_once '../templates/navigator-users.php' ?>
             <div id="page-wrapper" class="gray-bg">
-
+                <?php include_once '../templates/navbar.php' ?>
                 <div class="row wrapper border-bottom white-bg page-heading">
-
                     <div class="col-lg-10">
-                        <!--
-                            <button type="button" id="sidebarCollapse" class="btn btn-info"><i class="fa fa-align-left"></i></button>
-                        -->
                         <h2><i class="fa fa-home"></i> &nbsp;Inicio</h2>
                     </div>
                     <div class="col-lg-2">
@@ -56,14 +52,15 @@ if (!($_SESSION['logged_in'])) {
                                             <hr>
                                         <?php } else {
                                             ?>
-                                            <span style="font-size: 16px; font-weight: 300;">Estás pre-registrado en los siguientes talles. </span><p><strong>** Proximamente se te enviará los datos de pago para la confirmación.** Mantente al pendiente </strong></p>
+                                            <span style="font-size: 16px; font-weight: 300;">Estás pre-registrado en los siguientes talleres y conferencias. </span><p><strong>** Proximamente se te enviará los datos de pago para la confirmación.** Mantente al pendiente </strong></p>
                                             <hr>
                                             <div class="table-responsive">
                                                 <table class="table table-striped table-hover dataTables-view" >
                                                     <thead>
                                                         <tr>
-                                                            <th>Taller | Ponente</th>
+                                                            <th>Título | Ponente</th>
                                                             <th>Detalles</th>
+                                                            <th>Tipo</th>
                                                             <th>Estatus</th>
                                                             <th></th>
                                                         </tr>
@@ -71,18 +68,23 @@ if (!($_SESSION['logged_in'])) {
                                                     <tbody>
                                                         <?php
                                                         foreach ($data as $col) {
+                                                            if ($col['dia_inicio'] === $col['dia_termino']) {
+                                                                $fecha = "{$col['dia_inicio']}, 2019";
+                                                            } else {
+                                                                $fecha = "{$col['dia_inicio']} al {$col['dia_termino']}, 2019";
+                                                            }
                                                             ?>
                                                             <tr>
-                                                                <td><strong><?= $col['nombre_taller'] ?></strong><br><span class="minimal"><i class="fa fa-user"></i> <?= $col['nombre_ponente'] ?></span></td>
-                                                                <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $col['dia'] ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
-                                                                
+                                                                <td><strong><?= $col['nombre'] ?></strong><br><span class="minimal"><i class="fa fa-user"></i> <?= $col['nombre_ponente'] ?></span></td>
+                                                                <td><span class="minimal"><i class="fa fa-calendar minimal-calendar"></i> <?= $fecha ?>&emsp;<i class="fa fa-clock-o minimal-clock"></i> <?= $col['hora_inicio'] ?> hrs. - <?= $col['hora_termino'] ?> hrs.&emsp;<i class="fa fa-map-marker minimal-map"></i> <?= $col['lugar'] ?></span><small><br><?= $col['descripcion'] ?></small></td>
+                                                                <td><span class="badge <?= $col['badge_tipo'] ?>"><?= $col['tipo'] ?></span></td>
                                                                 <td><span class="badge <?= $col['badge_estatus'] ?>"><i class="fa <?= $col['icon_estatus'] ?>"></i> <?= $col['estatus_inscripcion'] ?></span></td>
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
                                                                         <?php if ($col['estatus_inscripcion'] == "Pendiente") { ?>
-                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalAbandonar"><i class="fa fa-sign-out"></i> Abandonar</button>
+                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre'] ?>|<?= $col['tipo'] ?>" data-target="#modalAbandonar"><i class="fa fa-sign-out"></i> Abandonar</button>
                                                                         <?php } ?>
-                                                                    <!--    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button> -->
+                                                    <!--    <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button> -->
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -104,14 +106,14 @@ if (!($_SESSION['logged_in'])) {
 
                 <div class="modal fade" id="modalAbandonar" role="dialog">
                     <div class="modal-dialog modal-md">
-                        <form method="post" data-toggle="validator" action="../classes/abandonarTaller.php">
+                        <form method="post" data-toggle="validator" action="../classes/abandonar.php">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     <h4 class="modal-title">Abandonar el taller</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>¿Deseas cancelar la inscripción al taller <strong><label id="nombre"></label></strong>?</p>
+                                    <p>¿Deseas cancelar la inscripción al <span id="tipo"></span> <strong><label id="nombre"></label></strong>?</p>
                                     <input type="hidden" id="hidden" name="hidden" value="">
                                 </div>
                                 <div class="modal-footer">
@@ -132,13 +134,13 @@ if (!($_SESSION['logged_in'])) {
         <script src="../js/inspinia.js"></script>
         <script src="../js/plugins/validator/validator-0.9.0.js"></script>
         <script src="../js/plugins/toastr/toastr.min.js"></script>
-        
         <script src="../js/plugins/dataTables/date-eu.js"></script>
         <script>
             $(document).ready(function () {
 
                 $('#modalAbandonar').on('show.bs.modal', function (e) {
-                    $('#modalAbandonar #nombre').text( $(e.relatedTarget).data('id').split('|')[1] );
+                    $('#modalAbandonar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
+                    $('#modalAbandonar #tipo').text($(e.relatedTarget).data('id').split('|')[2]);
                     $('#modalAbandonar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
@@ -148,16 +150,16 @@ if (!($_SESSION['logged_in'])) {
                         showMethod: 'slideDown',
                         timeOut: 10000
                     };
-                    <?php
-                        if (isset($_SESSION["toastr"])) {
-                            echo $_SESSION["toastr"];
-                            unset($_SESSION["toastr"]);
-                        }
-                        ?>
+<?php
+if (isset($_SESSION["toastr"])) {
+    echo $_SESSION["toastr"];
+    unset($_SESSION["toastr"]);
+}
+?>
                 }, 400);
 
                 $('.dataTables-view').DataTable({
-                    columnDefs: [{targets: [4], orderable: false, searchable: false}],
+                    columnDefs: [{targets: [4], orderable: false, searchable: false}, {targets: [0], width: "20%"}],
                     pageLength: 25,
                     responsive: true,
                     dom: 'lTfgtp'
@@ -165,7 +167,7 @@ if (!($_SESSION['logged_in'])) {
 
             });
 
-            
+
         </script>
     </body>
 </html>

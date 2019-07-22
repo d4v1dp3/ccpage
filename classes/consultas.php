@@ -74,13 +74,17 @@ class consultas {
         return $resultado;
     }
 
-    public function validaInscripcion($idUsuario, $idTaller) {
+    public function validaInscripcion($idUsuario, $id, $tipo) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $resultado = 'false';
-        if ($idUsuario && $idTaller) {
-            $statement = $conexion->prepare("SELECT id_usuario FROM usuario_taller WHERE id_usuario=? AND id_taller=? LIMIT 1");
-            $statement->bind_param('ss', $idUsuario, $idTaller);
+        if ($idUsuario && $id) {
+            if($tipo === 'Taller') {
+                $statement = $conexion->prepare("SELECT id_usuario FROM usuario_taller WHERE id_usuario=? AND id_taller=? LIMIT 1");
+            } else {
+                $statement = $conexion->prepare("SELECT id_usuario FROM usuario_conferencia WHERE id_usuario=? AND id_conferencia=? LIMIT 1");
+            }
+            $statement->bind_param('ss', $idUsuario, $id);
             $statement->execute();
             $rs = $statement->get_result();
             while ($columna = mysqli_fetch_array($rs)) {
@@ -95,6 +99,27 @@ class consultas {
         } else {
             $resultado = 'false';
         }
+        $conexion->close();
+        return $resultado;
+    }
+    
+    public function abandonarInscripcion($idUsuario, $id, $tipo) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        if($tipo === 'Taller'){
+            $statement = $conexion->prepare("DELETE FROM usuario_taller WHERE id_usuario=? AND id_taller=?;");
+        } else {
+            $statement = $conexion->prepare("DELETE FROM usuario_conferencia WHERE id_usuario=? AND id_conferencia=?;");
+        }
+        $statement->bind_param("ss", $idUsuario, $id);
+        $statement->execute();
+        if ($statement->affected_rows === 0) {
+            $resultado = 'false';
+        } else {
+            $resultado = 'true';
+        }
+        $statement->close();
         $conexion->close();
         return $resultado;
     }
@@ -121,7 +146,19 @@ class consultas {
         $rs->close();
         return $data;
     }
-    
+
+    public function consultaConferenciasDisponibles($idUsuario) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("CALL lista_conferencia_disponible( ? );");
+        $statement->bind_param("i", $idUsuario);
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
+    }
+
     public function eliminarConferencia($idConferencia) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -139,6 +176,38 @@ class consultas {
         return $resultado;
     }
 
+    public function inscribirConferencia($idUsuario, $idConferencia) {
+        $sem_key = 12;
+        $sem_id = sem_get($sem_key, 1);
+        if (!sem_acquire($sem_id))
+            die('Error esperando al semaforo.');
+
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $resultado = 'false';
+        $statement = $conexion->prepare("call inscribe_conferencia(?,?);");
+        $statement->bind_param("ss", $idUsuario, $idConferencia);
+        $statement->execute();
+
+        $rs = $statement->get_result();
+        while ($columna = mysqli_fetch_array($rs)) {
+            $var = $columna['result'];
+        }
+        $rs->close();
+        if (!empty($var) && $var === 1) {
+            $resultado = 'true';
+        } else {
+            $resultado = 'false';
+        }
+        $statement->close();
+        $conexion->close();
+
+        if (!sem_release($sem_id))
+            die('Error liberando el semaforo');
+
+        return $resultado;
+    }
+
     public function consultaTalleres() {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -153,7 +222,7 @@ class consultas {
     public function consultaTalleresDisponibles($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("CALL lista_taller_disponible( ? );" );
+        $statement = $conexion->prepare("CALL lista_taller_disponible( ? );");
         $statement->bind_param("i", $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
@@ -162,11 +231,11 @@ class consultas {
         return $data;
     }
 
-    public function consultaTalleresInscritos($idUsuario) {
+    public function consultaInscritos($idUsuario) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
-        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario = ? ORDER BY id");
-        $statement->bind_param("s", $idUsuario);
+        $statement = $conexion->prepare("SELECT * FROM lista_talleres_disponibles WHERE id_usuario = ? UNION SELECT * FROM lista_conferencias_disponibles WHERE id_usuario = ?");
+        $statement->bind_param("ss", $idUsuario, $idUsuario);
         $statement->execute();
         $rs = $statement->get_result();
         $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
@@ -190,11 +259,12 @@ class consultas {
         $conexion->close();
         return $resultado;
     }
-    
+
     public function inscribirTaller($idUsuario, $idTaller) {
         $sem_key = 12;
         $sem_id = sem_get($sem_key, 1);
-        if (! sem_acquire($sem_id)) die ('Error esperando al semaforo.');
+        if (!sem_acquire($sem_id))
+            die('Error esperando al semaforo.');
 
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
@@ -208,7 +278,7 @@ class consultas {
             $var = $columna['result'];
         }
         $rs->close();
-        if (!empty($var) &&  $var === 1) {
+        if (!empty($var) && $var === 1) {
             $resultado = 'true';
         } else {
             $resultado = 'false';
@@ -216,25 +286,9 @@ class consultas {
         $statement->close();
         $conexion->close();
 
-        if (! sem_release($sem_id)) die ('Error liberando el semaforo');
+        if (!sem_release($sem_id))
+            die('Error liberando el semaforo');
 
-        return $resultado;
-    }
-
-    public function abandonarTaller($idUsuario, $idTaller) {
-        $newConexion = new Conexion();
-        $conexion = $newConexion->getConnection();
-        $resultado = 'false';
-        $statement = $conexion->prepare("DELETE FROM usuario_taller WHERE id_usuario=? AND id_taller=?;");
-        $statement->bind_param("ss", $idUsuario, $idTaller);
-        $statement->execute();
-        if ($statement->affected_rows === 0) {
-            $resultado = 'false';
-        } else {
-            $resultado = 'true';
-        }
-        $statement->close();
-        $conexion->close();
         return $resultado;
     }
 
