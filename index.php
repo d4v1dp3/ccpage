@@ -788,10 +788,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <p>
                             <strong><span data-i18n="pricing.publico" class="navy">Público en general:</span></strong> <span data-i18n="pricing.mesg1">Si requiere factura debe incluir datos fiscales: RFC, razón social y domicilio fiscal.</span><br />
                             <strong><span data-i18n="pricing.comun" class="navy">Comunidad politécnica:</span></strong><span data-i18n="pricing.mesg2"> Presentar copia de credencial IPN vigente.</span><br />
-                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong><br><br><br>
-                        </p>
-                        <p style="width: 50%;" class="col-lg-offset-3">
-                            <strong data-i18n="pricing.mesg6">* La comunidad politécnica no puede recibir factura por parte del politécnico, si requieren factura deben de pagar como externos, de lo contrario solo recibirán una nota.</strong><br>
+                            <strong><span data-i18n="pricing.mesg3" class="navy">Los pagos</span></strong><span data-i18n="pricing.mesg4"> deberán realizarse directamente en el banco con el número de cuenta y referencias correspondientes.</span> <strong data-i18n="pricing.mesg5">No se aceptarán pagos en efectivo los días del evento.</strong>
                         </p>
                     </div>
                 </div>
