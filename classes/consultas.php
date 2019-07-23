@@ -369,12 +369,16 @@ class consultas {
         return $resultado;
     }
 
-    public function cargarComprobante($idUsuario, $idTaller, $filepath) {
+    public function cargarComprobante($idUsuario, $id, $filepath, $tipo) {
         $newConexion = new Conexion();
         $conexion = $newConexion->getConnection();
         $resultado = 'false';
-        $statement = $conexion->prepare("UPDATE usuario_taller SET comprobante=?, estatus_inscripcion='Validando' WHERE id_usuario=? AND id_taller=?");
-        $statement->bind_param("sss", $filepath, $idUsuario, $idTaller);
+        if($tipo == 'Taller'){
+            $statement = $conexion->prepare("UPDATE usuario_taller SET comprobante=?, estatus_inscripcion='Validando' WHERE id_usuario=? AND id_taller=?");
+        } else {
+            $statement = $conexion->prepare("UPDATE usuario_conferencia SET comprobante=?, estatus_inscripcion='Validando' WHERE id_usuario=? AND id_conferencia=?");
+        }
+        $statement->bind_param("sss", $filepath, $idUsuario, $id);
         $statement->execute();
         if ($statement->affected_rows === 0) {
             $resultado = 'false';
@@ -384,6 +388,30 @@ class consultas {
         $statement->close();
         $conexion->close();
         return $resultado;
+    }
+    
+    public function consultaAsistentesTaller($idTaller) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("SELECT * FROM lista_asistentes_taller WHERE id_taller=?");
+        $statement->bind_param("s", $idTaller);
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
+    }
+    
+    public function consultaAsistentesConferencia($idConferencia) {
+        $newConexion = new Conexion();
+        $conexion = $newConexion->getConnection();
+        $statement = $conexion->prepare("SELECT * FROM lista_asistentes_conferencia WHERE id_conferencia=?");
+        $statement->bind_param("s", $idConferencia);
+        $statement->execute();
+        $rs = $statement->get_result();
+        $data = mysqli_fetch_all($rs, MYSQLI_ASSOC);
+        $rs->close();
+        return $data;
     }
 
     public function redirecciona($url) {

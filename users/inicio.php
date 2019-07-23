@@ -82,8 +82,8 @@ if (!($_SESSION['logged_in'])) {
                                                                 <td class="text-right">
                                                                     <div class="btn-group">
                                                                         <?php if ($col['estatus_inscripcion'] == "Pendiente") { ?>
-                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre'] ?>|<?= $col['tipo'] ?>" data-target="#modalAbandonar"><i class="fa fa-sign-out"></i> Abandonar</button>
-                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre_taller'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button>
+                                                                            <button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre'] ?>|<?= $col['tipo'] ?>" data-nombre="<?= $col['nombre'] ?>" data-tipo="<?= $col['tipo'] ?>" data-target="#modalAbandonar"><i class="fa fa-sign-out"></i> Abandonar</button>
+                                                                            <!--<button class="btn-white btn btn-xs open-Modal" data-toggle="modal" data-id="<?= base64_encode($col['id']) ?>|<?= $col['nombre'] ?>|<?= $col['tipo'] ?>" data-nombre="<?= $col['nombre'] ?>" data-tipo="<?= $col['tipo'] ?>" data-target="#modalConfirmar"><i class="fa fa-check"></i> Confirmar</button>-->
                                                                         <?php } ?>
                                                                     </div>
                                                                 </td>
@@ -131,10 +131,10 @@ if (!($_SESSION['logged_in'])) {
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Confirmar asistencia al taller</h4>
+                                    <h4 class="modal-title">Confirmar asistencia a <span class="spanTipo"></span></h4>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Carga tu comprobante de pago en <strong>formato pdf</strong> para confirmar la asistencia al taller <strong><label id="nombre"></label></strong></p>
+                                    <p>Carga tu comprobante de pago en <strong>formato pdf</strong> para confirmar la asistencia a <span class="spanTipo"></span> <strong><label id="nombre"></label></strong></p>
                                     <input type="hidden" id="hidden" name="hidden" value="">
                                     <div class="form-control">
                                         <input type="file" name="comprobante" accept="application/pdf" required="">
@@ -162,13 +162,14 @@ if (!($_SESSION['logged_in'])) {
             $(document).ready(function () {
 
                 $('#modalAbandonar').on('show.bs.modal', function (e) {
-                    $('#modalAbandonar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
-                    $('#modalAbandonar #tipo').text($(e.relatedTarget).data('id').split('|')[2]);
+                    $('#modalAbandonar #nombre').text($(e.relatedTarget).data('nombre'));
+                    $('#modalAbandonar #tipo').text($(e.relatedTarget).data('tipo'));
                     $('#modalAbandonar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
                 $('#modalConfirmar').on('show.bs.modal', function (e) {
-                    $('#modalConfirmar #nombre').text($(e.relatedTarget).data('id').split('|')[1]);
+                    $('#modalConfirmar #nombre').text($(e.relatedTarget).data('nombre'));
+                    $('#modalConfirmar .spanTipo').text($(e.relatedTarget).data('tipo'))
                     $('#modalConfirmar #hidden').val($(e.relatedTarget).data('id'));
                 });
 
@@ -187,14 +188,12 @@ if (isset($_SESSION["toastr"])) {
                 }, 400);
 
                 $('.dataTables-view').DataTable({
-                    columnDefs: [{targets: [4], orderable: false, searchable: false}, {targets: [0], width: "20%"}],
+                    columnDefs: [{targets: [0], width: "20%"},{targets: [4], orderable: false, searchable: false}],
                     pageLength: 25,
                     responsive: true,
                     dom: 'lTfgtp'
                 });
             });
-
-
         </script>
     </body>
 </html>

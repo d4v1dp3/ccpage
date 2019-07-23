@@ -1196,7 +1196,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     </div>
                 </div>
             </div>
-            
+
             <div class="row m-b-lg">
                 <div class="col-lg-12 text-center">
                     <h2 style="color:darkgray;">Instituciones representantes</h2>
@@ -1204,24 +1204,17 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </div>
 
             <div class="row m-t-xl">
-                <div class="col-md-7">
-                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
-                        <img class="logos-comite m-sm" alt="logo_cic" src="img/landing/comite/logo_cic.png">
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
-                        <img class="logos-comite m-sm" alt="logo_upiita" src="img/landing/comite/logo_upiita.png">
-                    </div>
-                    <div class="col-sm-4 col-md-4 col-xs-6 text-center">
-                        <img class="logos-comite m-sm" alt="logo_citedi" src="img/landing/comite/logo_citedi.png">
-                    </div>
+                <div class="col-sm-4 col-md-4 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_cic" src="img/landing/comite/logo_cic.png">
                 </div>
-                <div class="col-md-5">
-                    <div class="col-sm-4 col-md-6 col-xs-6 text-center">
-                        <img class="logos-comite m-sm" alt="logo_cidetec" src="img/landing/comite/logo_cidetec.png">
-                    </div>
-                    <div class="col-sm-4 col-md-6 col-xs-6 text-center">
-                        <img class="logos-comite m-sm" alt="logo_escom" src="img/landing/comite/logo_escom.png">
-                    </div>
+                <div class="col-sm-4 col-md-4 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_citedi" src="img/landing/comite/logo_citedi.png">
+                </div>
+                <div class="col-sm-4 col-md-6 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_cidetec" src="img/landing/comite/logo_cidetec.png">
+                </div>
+                <div class="col-sm-4 col-md-6 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_escom" src="img/landing/comite/logo_escom.png">
                 </div>
             </div>
 

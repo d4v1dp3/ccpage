@@ -4,7 +4,7 @@ class Conexion {
 
     public $usuario = "core";
     public $password = "c0r32019";
-    public $servidor = "localhost:4447";
+    public $servidor = "localhost:3306";
     public $basededatos = "core2019";
     public $conexion;
 

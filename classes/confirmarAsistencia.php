@@ -36,10 +36,10 @@ if (!empty($_POST)) {
                 if (in_array($filetype, $allowed)) {
                     if (is_uploaded_file($_FILES['comprobante']['tmp_name'])) {
                         //Es una mala practica, pero solo hace el execute cuando le envio el b64 desde el parametro
-                        if ($consultar->cargarComprobante($_SESSION['id'], base64_decode($datos[0]), base64_encode(file_get_contents($_FILES["comprobante"]["tmp_name"]))) == 'false') {
-                            $_SESSION['toastr'] = "toastr.error('', 'Tuvimos un problema cargando el archivo, intente nuevamente');";
-                        } else {
+                        if ($consultar->cargarComprobante($_SESSION['id'], base64_decode($datos[0]), base64_encode(file_get_contents($_FILES["comprobante"]["tmp_name"])), $datos[2])) {
                             $_SESSION['toastr'] = "toastr.success('', 'El archivo se ha cargado correctamente. Se validará la información para aprobar tu inscripción al taller " . $datos[1] . "');";
+                        } else {
+                            $_SESSION['toastr'] = "toastr.error('', 'Tuvimos un problema cargando el archivo, intente nuevamente');";
                         }
                     } else {
                         $_SESSION['toastr'] = "toastr.error('', 'Tuvimos un problema cargando el archivo, intente nuevamente');";

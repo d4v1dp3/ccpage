@@ -289,6 +289,18 @@ END IF;
 END //
 DELIMITER ;
 
+DROP VIEW IF EXISTS lista_asistentes_taller;
+CREATE VIEW lista_asistentes_taller AS
+SELECT id, UPPER(CONCAT(nombre, ' ', apellido)) contacto, correo, procedencia, telefono, usuario, DATE_FORMAT(fecha_alta, '%d/%m/%Y %H:%i') alta, id_taller  
+FROM usuario u
+LEFT JOIN usuario_taller r ON r.id_usuario = u.id;
+
+DROP VIEW IF EXISTS lista_asistentes_conferencia;
+CREATE VIEW lista_asistentes_conferencia AS
+SELECT id, UPPER(CONCAT(nombre, ' ', apellido)) contacto, correo, procedencia, telefono, usuario, DATE_FORMAT(fecha_alta, '%d/%m/%Y %H:%i') alta, id_conferencia  
+FROM usuario u
+LEFT JOIN usuario_conferencia r ON r.id_usuario = u.id;
+
 INSERT INTO `usuario`(`id`,`nombre`,`apellido`,`correo`,`telefono`,`usuario`,`fecha_alta`,`tipo`) VALUES('1','Administrador','','administrador','','administrador','2000-01-01','3');
 INSERT INTO `login` VALUES('1','administrador','1',AES_ENCRYPT('Core.2019','sUp3r?M4rI0'),'2000/01/01 00:00.00',DEFAULT);
 
