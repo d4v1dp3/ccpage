@@ -875,6 +875,24 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Dr. Erik Lee Guzmán</div>
+                            <small class="text-muted">ESFM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Dr. Moisés Vicente Márquez Olivera</div>
+                            <small class="text-muted">CIITEC</small>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row m-b-lg">
                 <div class="col-lg-12 text-center">
@@ -1174,6 +1192,33 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="media-body">
                             <div class="commens-name">Josafat Fornace Coxca</div>
                             <small class="text-muted">CIDETEC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Luis Edgar Alanís</div>
+                            <small class="text-muted">CIITEC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Hugo Flores</div>
+                            <small class="text-muted">CIITEC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Humberto</div>
+                            <small class="text-muted">CIITEC</small>
                         </div>
                     </div>
                 </div>
