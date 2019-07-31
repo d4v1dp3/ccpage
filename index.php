@@ -755,6 +755,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="col-lg-12 text-center">
                         <div class="navy-line"></div>
                         <h1 data-i18n="pricing.title">Costos</h1>
+                        <p class="pricing-account">Depósitos a cuentas <strong>BBVA Bancomer</strong><br/>
+                            <span>Fondo de Investigación Científica y Desarrollo Tecnológico del IPN</span><br/>
+                            Cuenta 0181557629 | Clabe 012 180 00181557629 6
+                        </p>
                     </div>
                 </div>
                 <div class="row">

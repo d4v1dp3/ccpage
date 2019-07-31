@@ -8765,3 +8765,14 @@ body.md-skin {
     font-size: 26px !important;
     color: #e5e6e7 !important;
 }
+
+.landing-page .pricing-account {
+    text-align: center;
+    color: #939393;
+    font-size: 14px;
+}
+.landing-page .pricing-account span {
+    color: #ff9300;
+    font-weight: bolder;
+    font-size: 15px;
+}
