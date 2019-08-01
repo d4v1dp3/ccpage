@@ -583,7 +583,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="team-member wow zoomIn">
                             <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle conference-member" alt="" data-toggle="modal" data-target="#humberto-diaz" href="#humberto-diaz">
                             <h4><span class="navy">Dr. Humberto Díaz Pando</span></h4>
-                            <p></p>
+                            <p>Calidad de datos, una perspectiva desde la integridad de datos como requisito de la ciber seguridad.</p>
                         </div>
                     </div>
                 </div>
@@ -865,7 +865,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     <div class="comments-avatar">
                         <img class="pull-left" alt="image" src="img/landing/avatar1.png">
                         <div class="media-body">
-                            <div class="commens-name">Dr. Juan Jose Tapia Higuera</div>
+                            <div class="commens-name">Dr. Juan Jose Tapia Armenta</div>
                             <small class="text-muted">CITEDI</small>
                         </div>
                     </div>
@@ -1223,6 +1223,33 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="media-body">
                             <div class="commens-name">Humberto</div>
                             <small class="text-muted">CIITEC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Eduardo Campos Moreno</div>
+                            <small class="text-muted">ESFM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Julio Méndez Macías</div>
+                            <small class="text-muted">ESFM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">César Aguilera Flores</div>
+                            <small class="text-muted">ESFM</small>
                         </div>
                     </div>
                 </div>
@@ -1864,11 +1891,11 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <div class="row">
                                 <img src="img/landing/avatar_humberto_d.jpg" class="img-responsive img-circle" alt=""><br>
                                 <h3 class="features-color-p">Dr. Humberto Díaz Pando</h3><br>
-                                <p class="text-justify" data-i18n="humberto-diaz.about">Tiene un doctorado</p><br>
+                                <p class="text-justify" data-i18n="humberto-diaz.about">Profesor Auxiliar de la Facultad de Ingeniería Informática de la Universidad Tecnológica de La Habana “José Antonio Echeverría”, CUJAE. Recibió su título de Ingeniero Informático en la CUJAE en el año 2006 y el título de Máster en Informática Aplicada en el año 2019. En el año 2014 recibe el título de Doctor por la Universidad de Alicante, España. En la actualidad se desempeña como Decano de la Facultad de Ingeniería Informática de la CUJAE, desde el año 2017. Su trabajo de investigación se centra en ciber seguridad, algoritmos criptográficos, seguridad en redes informáticas.</p><br>
                             </div>
                             <div class="row">
                                 <h3 class="features-color-p" data-i18n="words.about-conference">Acerca de la conferencia</h3><br>
-                                <p class="text-justify" data-i18n="humberto-diaz.conference">Información proximamente</p><br>
+                                <p class="text-justify" data-i18n="humberto-diaz.conference">En la actualidad, el ciber espacio ha experimentado un elevado crecimiento en todos los elementos que lo componen, en particular las aplicaciones que soportan los procesos de negocio y la toma de decisiones en las organizaciones. Uno de los recursos más importantes en el ciber espacio son los datos, por lo que es de vital importancia para las empresas garantizar la calidad de los que se utilizan para sus operaciones. La Calidad de Datos como disciplina dentro de la informática, se encarga de estudiar los contextos donde pueden aparecer problemas en los datos, así como la medición y aseguramiento de su calidad. Por otra parte, existen personas dentro y fuera de las empresas con capacidades para realizar ataques que pudieran afectarla. Esta conferencia aborda un enfoque de la seguridad de los datos como atributo de la calidad de estos. Se define un nuevo contexto de seguridad donde pueden surgir problemas de calidad; así como un método, basado en mecanismos criptográficos, resistente a ataques que permitirá la medición de esta. Los resultados experimentales muestran la viabilidad del método en cuanto a tiempo de ejecución, con un incremento en el almacenamiento que puede ser asumido en el despliegue del sistema.</p><br>
                             </div>
                         </div>
                     </div>
