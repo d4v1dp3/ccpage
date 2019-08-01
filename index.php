@@ -162,6 +162,14 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                     </div>
                     <div class="header-back robotica"></div>
                 </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 data-i18n="carousel.open_labs">Laboratorios abiertos</h1>
+                        </div>
+                    </div>
+                    <div class="header-back openlabs"></div>
+                </div>
             </div>
             <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

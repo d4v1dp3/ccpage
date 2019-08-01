@@ -36,7 +36,8 @@
         "smart": "Smart cities",
         "big": "Big Data",
         "more": "More Info",
-        "robo": "Robotics"
+        "robo": "Robotics",
+        "open_labs": "Open Labs"
     },
     "date": {
         "titulo": "Dates",
