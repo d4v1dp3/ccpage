@@ -181,6 +181,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </a>
         </div>
 
+        <div class="row text-center m-t-xl" style="margin-top: 100px;">
+        	<img src="img/landing/programa_conferencias.jpeg" alt="">
+        </div>
+
         <section id="date" class="timeline gray-section">
             <div class="container">
                 <div class="row">
@@ -628,12 +632,148 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                 </div>
+
+
+
+
+                <!-- TABLE -->
                 <!--
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                        <a href="#" class="btn btn-primary">Ver programación</a>
-                    </div>
-                </div> -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover dataTables-view" >
+                        <thead>
+                            <tr>
+                            	<th></th>
+                                <th><span class="navy">6 de Agosto</span></th>
+                                <th><span class="navy">7 de Agosto</span></th>
+                                <th><span class="navy">8 de Agosto</span></th>
+                                <th><span class="navy">9 de Agosto</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                        		<td><p>10:30 - 10:50</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>10:50 - 11:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>11:00 - 11:10</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>11:10 - 11:30</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>11:30 - 11:50</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>11:50 - 12:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>12:00 - 12:20</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>12:20 - 12:40</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>12:40 - 13:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>13:00 - 14:30</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>14:30 - 14:50</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>14:50 - 15:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>15:00 - 15:10</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>15:10 - 15:30</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>15:30 - 15:50</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>15:50 - 16:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        	<tr>
+                        		<td><p>16:00 - 17:00</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        		<td><p>Algo</p></td>
+                        	</tr>
+                        </tbody>
+                    </table>
+                </div>
+            	-->
+                <!-- TABLE -->
             </div>
         </section>
 
