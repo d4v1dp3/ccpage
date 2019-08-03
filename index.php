@@ -747,8 +747,8 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
-                        	</tr>
-                        	<tr>
+                        	</tr
+>                        	<tr>
                         		<td><p>15:30 - 15:50</p></td>
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
@@ -916,7 +916,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li class="pricing-desc"></li>
                             <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
                             <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$300.00 MXN</span></li>
-                            <li class="pricing-price"><text data-i18n="pricing.rec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
+                            <li class="pricing-price"><text data-i18n="pricing.rec">11495 Asistencia a congreso core Público en General / </text> <span>$200.00 MXN</span></li>
                             <li class="plan-action">
                                 <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                             </li>
@@ -928,7 +928,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li class="pricing-desc"></li>
                             <li  class="pricing-price"><text data-i18n="pricing.eponente"> Ponente / </text><span>$2,500.00 MXN</span></li>
                             <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$250.00 MXN</span></li>
-                            <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias comunidad Politécnica / </text><span>$150.00 MXN</span></li>
+                            <li class="pricing-price"><text data-i18n="pricing.erec">11494 Asistencia a congreso core Comunidad Politécnica / </text><span>$150.00 MXN</span></li>
                             <li>
                                 <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                             </li>
