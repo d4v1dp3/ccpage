@@ -181,9 +181,11 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </a>
         </div>
 
+        <!--
         <div class="row text-center m-t-xl" style="margin-top: 100px;">
         	<img src="img/landing/programa_conferencias.jpeg" alt="">
         </div>
+    	-->
 
         <section id="date" class="timeline gray-section">
             <div class="container">
@@ -632,149 +634,126 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                 </div>
-
-
-
-
-                <!-- TABLE -->
-                <!--
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover dataTables-view" >
+            </div>
+            <!-- TABLE -->
+            <div class="ibox float-e-margins">
+            	<div class="ibox-content">
+                <div class="table-responsive conferences-table">
+                    <table class="table table-bordered dataTables-view" >
                         <thead>
-                            <tr>
-                            	<th></th>
-                                <th><span class="navy">6 de Agosto</span></th>
-                                <th><span class="navy">7 de Agosto</span></th>
-                                <th><span class="navy">8 de Agosto</span></th>
-                                <th><span class="navy">9 de Agosto</span></th>
+                            <tr class="row">
+                            	<th class="col-2" style="min-width: 105px;;"></th>
+                                <th class="col-2 text-center"><span class="navy">6 de Agosto</span></th>
+                                <th class="col-2 text-center"><span class="navy">7 de Agosto</span></th>
+                                <th class="col-2 text-center"><span class="navy">8 de Agosto</span></th>
+                                <th class="col-2 text-center"><span class="navy">9 de Agosto</span></th>
                             </tr>
                         </thead>
                         <tbody>
-                        	<tr>
-                        		<td><p>10:30 - 10:50</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>10:00 - 10:30</p></td>
+                        		<td colspan="4"><p class="text-center m-t-sm">Registro</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>10:50 - 11:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>10:30 - 10:50</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Inauguración</p></td>
+                        		<td class="col-2"><p class="text-center">Transmission and Reception of Text and Images Using Visible Light</p></td>
+                        		<td class="col-2"><p class="text-center">Evaluation of Five Classifiers for Depression Episodes Detection</p></td>
+                        		<td class="col-2"><p class="text-center">Teaching basic concepts: geometric forms and colors on a NAO robot platform</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>11:00 - 11:10</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>10:50 - 11:00</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Propuesta de sistema de gestión para optimización de redes de transporte público</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Multilevel Image Transmission Using Polar Codes</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Análisis e identificación de locuciones verbales mexicanas.</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>11:10 - 11:30</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>11:00 - 11:10</p></td>
+                        		<td class="col-2"><p class="text-center">Receso</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>11:30 - 11:50</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>11:10 - 11:30</p></td>
+                        		<td class="col-2"><p class="text-center">Algoritmos híbridos paralelos para el problema de coloreado de grafos</p></td>
+                        		<td class="col-2"><p class="text-center">Modelo difuso para la evaluación de condiciones apropiadas para turismo en litorales de México</p></td>
+                        		<td class="col-2"><p class="text-center">Ramath: Mobile Application for Math Learning using Augmented Reality</p></td>
+                        		<td class="col-2"><p class="text-center">Image encryption system based on Cellular Automata and S-Box</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>11:50 - 12:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>11:30 - 11:50</p></td>
+                        		<td class="col-2"><p class="text-center">Sistema de navegación y evasión de obstáculos aplicando un sistema de control difuso en una placa de Arduino UNO</p></td>
+                        		<td class="col-2"><p class="text-center">Generation of Non-Coordinate Navigation Knowledge</p></td>
+                        		<td class="col-2"><p class="text-center">Embedded system for human detection applied to domotics</p></td>
+                        		<td class="col-2"><p class="text-center">Algoritmo multi-objetivo NSGA II para selección óptima de cartera de inversión de S&P 500</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>12:00 - 12:20</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>11:50 - 12:00</p></td>
+                        		<td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>12:20 - 12:40</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>12:00 - 12:20</p></td>
+                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_adolfo_g.jpg" alt="">Dr. Adolfo Guzmán Arenas<br>"Presente y futuro de la ciencia de datos y su tecnología"</p></td>
+                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_humberto_d.jpg" alt="">Dr. Humberto Díaz Pando<br>"Calida de datos, una perspectiva desde la integridad de datos como requisito de la ciberseguridad"</p></td>
+                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_martha_b.jpg" alt="">Dra. Martha Belem Saldivar Márquez<br>"Retos de la ingeniería y soluciones del Control Automático"</p></td>
+                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_jose_m.jpg" alt="">Dr. Manuel Alejandro Jiménez Lizárraga<br>"Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados"</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>12:40 - 13:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>12:20 - 12:40</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>13:00 - 14:30</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>12:40 - 13:00</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>14:30 - 14:50</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>13:00 - 14:30</p></td>
+                        		<td colspan="4"><p class="text-center m-t-sm">Comida</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>14:50 - 15:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>14:30 - 14:50</p></td>
+                        		<td class="col-2"><p class="text-center">Analog Algorithms with Discontinous States and Non-Unique Evolution Operators: Computability and Stability</p></td>
+                        		<td class="col-2"><p class="text-center">Embedded system prototype for the assistance of people with visual disabilities on the public sidewalk</p></td>
+                        		<td class="col-2"><p class="text-center">Procesador dedicado para el tratamiento de datos en formato de punto flotante</p></td>
+                        		<td class="col-2"><p class="text-center">Prediction of cancer using microarrays analysis by Computational Intelligence algorithms</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>15:00 - 15:10</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>14:50 - 15:00</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Detección y rastreo de peatones empleando vectores de características HOG y LBP en una MVS</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Application of Natural Language Processing techniques for classification of web published news in Spanish</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Convolutional model with classification through Izhikevich's neuron</p></td>
+                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Voice synthesis system based on Recursive Functions designed by graphs</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>15:10 - 15:30</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>15:00 - 15:10</p></td>
+                        	</tr>
+                        	<tr class="row">
+                        		<td class="col-2"><p>15:10 - 15:30</p></td>
+                        		<td class="col-2"><p class="text-center">Software de Estación Terrena para Cohetes Hidropropulsados</p></td>
+                        		<td class="col-2"><p class="text-center">Comparative analysis of interest point detectors algorithms on Robotic Operative System</p></td>
+                        		<td class="col-2"><p class="text-center">MelPeAS: An Intelligent Virtual Tutor for Mexican Elementary Schoolchildren</p></td>
+                        		<td class="col-2"><p class="text-center">Design of a system to determine the value of the property tax through the processing and analysis of satellite images</p></td>
                         	</tr
->                        	<tr>
-                        		<td><p>15:30 - 15:50</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+>                        	<tr class="row">
+                        		<td class="col-2"><p>15:30 - 15:50</p></td>
+                        		<td class="col-2"><p class="text-center">Algoritmo esteganográfico basado en autómatas celulares y en la sustitución de los bits menos significativos</p></td>
+                        		<td class="col-2"><p class="text-center">When Twitter becomes a data source for geospatial analysis</p></td>
+                        		<td class="col-2"><p class="text-center">Sistema de monitoreo de consumo eléctrico con interfaz para teléfono inteligente</p></td>
+                        		<td class="col-2"><p class="text-center">Propuesta de Sistema de Gestión Inteligente basado en IoT para hidroponía</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>15:50 - 16:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>15:50 - 16:00</p></td>
+                        		<td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
                         	</tr>
-                        	<tr>
-                        		<td><p>16:00 - 17:00</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
-                        		<td><p>Algo</p></td>
+                        	<tr class="row">
+                        		<td class="col-2"><p>16:00 - 17:00</p></td>
+                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_thilo_p.jpg" alt="">Dr. Thilo Pionteck<br>"Networks design for heterogeneous 3D SOC"</p></td>
+                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_marco_k.jpg" alt="">Dr. Marco Körner<br>"Machine Learning and Computer Vision in Remote Sensing and Earth Observation"</p></td>
+                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_svetlana_t.jpg" alt="">Dra. Svetlana Toldova<br>"Discourse analysis: a Rethoric structure theory approach"</p></td>
+                        		<td class="col-2"><p class="text-center">Clausura</p></td>
                         	</tr>
                         </tbody>
                     </table>
                 </div>
-            	-->
+                </div>
+                </div>
                 <!-- TABLE -->
-            </div>
         </section>
 
         <section class="navy-section testimonials" style="margin-top: 0">

@@ -40,7 +40,7 @@ if (!($_SESSION['logged_in'])) {
                     </div>
                 </div>
                 <div class="row wrapper wrapper-content animated fadeInRight">
-                    <div class="row">
+                    <div class="">
                         <div class="col-lg-12">
                             <div class="ibox float-e-margins">
                                 <div class="ibox-content">

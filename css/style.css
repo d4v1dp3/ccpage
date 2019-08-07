@@ -4045,6 +4045,17 @@ table.table-mail tr td {
     left: auto;
     right: 0;
 }
+.conferences-table th, .conferences-table td {
+    border: 2px solid #ff9300 !important;
+}
+
+.important-conference {
+    background-color: rgba(245,147,0,0.3);
+}
+
+.conferences-table img {
+    width: 80px;
+}
 /* BACKGROUNDS */
 .gray-bg,
 .bg-muted {
