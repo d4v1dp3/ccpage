@@ -916,7 +916,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li class="pricing-desc"></li>
                             <li class="pricing-price"><text data-i18n="pricing.ponente">Ponente / </text> <span>$2,800.00 MXN</span></li>
                             <li class="pricing-price"> <text data-i18n="pricing.ptaller"> Taller (cada uno) / </text><span>$300.00 MXN</span></li>
-                            <li class="pricing-price"><text data-i18n="pricing.rec">Reconocimiento de asistencia a conferencias externos / </text> <span>$200.00 MXN</span></li>
+                            <li class="pricing-price"><text data-i18n="pricing.rec">11495 Asistencia a congreso core Público en General / </text> <span>$200.00 MXN</span></li>
                             <li class="plan-action">
                                 <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                             </li>
@@ -928,7 +928,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li class="pricing-desc"></li>
                             <li  class="pricing-price"><text data-i18n="pricing.eponente"> Ponente / </text><span>$2,500.00 MXN</span></li>
                             <li  class="pricing-price"><text data-i18n="pricing.ework">Taller (cada uno) / </text><span>$250.00 MXN</span></li>
-                            <li class="pricing-price"><text data-i18n="pricing.erec">Reconocimiento de asistencia a conferencias comunidad Politécnica / </text><span>$150.00 MXN</span></li>
+                            <li class="pricing-price"><text data-i18n="pricing.erec">11494 Asistencia a congreso core Comunidad Politécnica / </text><span>$150.00 MXN</span></li>
                             <li>
                                 <a data-i18n="pricing.sign" class="btn btn-primary btn-xs" href="registro.php">Registrarse</a>
                             </li>
@@ -1042,6 +1042,15 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="media-body">
                             <div class="commens-name">Dr. Moisés Vicente Márquez Olivera</div>
                             <small class="text-muted">CIITEC</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Dr. Luz Noé Oliva Moreno</div>
+                            <small class="text-muted">UPIIH</small>
                         </div>
                     </div>
                 </div>
@@ -1248,6 +1257,24 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">Eder Efrén Trujillo Islas</div>
+                            <small class="text-muted">UPIIH</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6">
+                    <div class="comments-avatar">
+                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <div class="media-body">
+                            <div class="commens-name">José Alberto Damián Cárdenas</div>
+                            <small class="text-muted">UPIIH</small>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="row m-t-md">
@@ -1439,6 +1466,12 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 </div>
                 <div class="col-sm-4 col-md-3 col-xs-6 text-center">
                     <img class="logos-comite m-sm" alt="logo_escom" src="img/landing/comite/logo_escom.png">
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_esfm" src="img/landing/comite/logo_esfm.png">
+                </div>
+                <div class="col-sm-4 col-md-3 col-xs-6 text-center">
+                    <img class="logos-comite m-sm" alt="logo_upiih" src="img/landing/comite/logo_upiih.png">
                 </div>
             </div>
 
