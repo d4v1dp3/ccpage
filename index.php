@@ -747,8 +747,8 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
-                        	</tr>
-                        	<tr>
+                        	</tr
+>                        	<tr>
                         		<td><p>15:30 - 15:50</p></td>
                         		<td><p>Algo</p></td>
                         		<td><p>Algo</p></td>
