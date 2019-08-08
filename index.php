@@ -105,18 +105,6 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1 data-i18n="carousel.taller_interes">Invitación</h1>
-                            <p data-i18n="carousel.calls">Si eres parte del politécnico y eres alumno de posgrado o formas parte de alguna SEPI y quieres ser parte el comité organizador envia un correo a corecongresscs@gmail.com</p>
-                            <p>
-                                <!--<a class="btn btn-lg btn-primary" href="#calls" role="button" data-i18n="carousel.callw">Convocatoria para workshops</a>-->
-                            </p>
-                        </div>
-                    </div>
-                    <div class="header-back workshop"></div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="carousel-caption">
                             <h1 data-i18n="carousel.attend">Asiste a las conferencias</h1>
                             <p></p>
                             <p>
@@ -125,18 +113,6 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                     <div class="header-back conferencias"></div>
-                </div>
-                <div class="item">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1 data-i18n="carousel.algoritmo">Competencia de algoritmia</h1>
-                            <p></p>
-                            <p>
-                                <a class="btn btn-lg btn-primary" href="#challenges" data-i18n="carousel.enroll" role="button">Inscríbete</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="header-back algoritmia"></div>
                 </div>
                 <div class="item">
                     <div class="container">
@@ -207,15 +183,15 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
                                 <div class="vertical-timeline-content">
                                     <h2 data-i18n="date.tl_1">Inicio de recepción</h2>
-                                    <p data-i18n="date.fecha_1">1 de Mayo del 2019</p>
+                                    <p class="cross-text" data-i18n="date.fecha_1">1 de Mayo del 2019</p>
                                     <h2 data-i18n="date.tl_2">Fin de recepción</h2>
                                     <p class="cross-text" data-i18n="date.fecha_2">31 de Mayo del 2019</p>
                                     <p class="cross-text" data-i18n="date.fecha_2a">30 de Junio del 2019</p>
-                                    <p data-i18n="date.fecha_2b">19 de Julio del 2019</p>
+                                    <p class="cross-text" data-i18n="date.fecha_2b">19 de Julio del 2019</p>
                                     <h2 data-i18n="date.tl_3">Resultados a partir del</h2>
-                                    <p data-i18n="date.fecha_3">22 de Julio del 2019</p>
+                                    <p class="cross-text" data-i18n="date.fecha_3">22 de Julio del 2019</p>
                                     <span class="vertical-date"><span data-i18n="date.fecha_9">Abril 17 </span> | <strong
-                                            data-i18n="date.evento_1">Recepción de artículos</strong></span>
+                                            data-i18n="date.evento_1">Recepción de artículos (finalizada)</strong></span>
                                 </div>
                             </div>
                             <div class="vertical-timeline-block">
@@ -242,7 +218,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
                                 <div class="vertical-timeline-content">
                                     <h2 data-i18n="date.tl_4">Talleres</h2>
-                                    <p data-i18n="date.fecha_7">30 de Julio al 5 Agosto del 2019</p>
+                                    <p class="cross-text" data-i18n="date.fecha_7">30 de Julio al 5 Agosto del 2019</p>
                                     <h2 data-i18n="date.tl_5">Conferencias</h2>
                                     <p data-i18n="date.fecha_8">6 al 9 de Agosto del 2019</p>
                                     <span class="vertical-date"> <span data-i18n="date.fecha_11">Junio 30</span> | <strong
@@ -789,11 +765,11 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             calendario que se presenta a continuación.</p>
                         <h3 data-i18n="calls.articulos_fechas">Fechas Importantes</h3>
                         <ul>
-                            <li data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
+                            <li class="cross-text" data-i18n="calls.articulos_fechas_1">Inicio de recepción: 01 de Mayo del 2019</li>
                             <li class="cross-text" data-i18n="calls.articulos_fechas_2">Fin de recepción: 31 de Mayo del 2019</li>
                             <li class="cross-text" data-i18n="calls.articulos_fechas_2a">Fin de recepción: 30 de Junio del 2019</li>
-                            <li data-i18n="calls.articulos_fechas_2b">Fin de recepción: 19 de Julio del 2019</li>
-                            <li data-i18n="calls.articulos_fechas_3">Resultados a partir del: 22 de Julio del 2019</li>
+                            <li class="cross-text" data-i18n="calls.articulos_fechas_2b">Fin de recepción: 19 de Julio del 2019</li>
+                            <li class="cross-text" data-i18n="calls.articulos_fechas_3">Resultados a partir del: 22 de Julio del 2019</li>
                             <li data-i18n="calls.articulos_fechas_4">Conferencias: 6 - 9 Agosto del 2019</li>
                         </ul>
                         <h3 data-i18n="calls.articulos_titulo_2">Presentación de artículos</h3>
@@ -840,7 +816,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                             <li class="cross-text" data-i18n="calls.workshop_li_1">Inicio de recepción: 17 de Abril del 2019</li>
                             <li class="cross-text"  data-i18n="calls.workshop_li_2">Fin de recepción : 5 de Junio del 2019</li>
                             <li class="cross-text" data-i18n="calls.workshop_li_3">Resultados a partir del : 20 de Junio del 2019</li>
-                            <li data-i18n="calls.workshop_li_4">Conferencias : 30 de Julio al 5 Agosto del 2019</li>
+                            <li class="cross-text" data-i18n="calls.workshop_li_4">Conferencias : 30 de Julio al 5 Agosto del 2019</li>
                         </ul>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 m-t-lg m-b-lg">
@@ -940,20 +916,6 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.894158508486!2d-99.14978378558799!3d19.503188943474598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f84a9cf3183d%3A0x78efe76dd0d5bbe1!2sIPN+-+Computing+Research+Center!5e0!3m2!1sen!2smx!4v1554066507456!5m2!1sen!2smx"
                     width="100%" height="400" frameborder="0" style="border:0"></iframe>
-        </div>
-    </section>
-
-    <section class="navy-section testimonials3" style="margin-top: 0">
-        <div class="container testimonials2">
-            <div class="row">
-                <div class="col-lg-12 text-center wow zoomIn">
-                    <i class="fa fa-bell big-icon"></i>
-                    <h1 id="frase">
-                        <strong data-i18n="frase.frase">Invitación</strong>
-                    </h1>
-                    <h3><i>SI ERES PARTE DEL POLITÉCNICO Y ERES ALUMNO DE POSGRADO O FORMAS PARTE DE ALGUNA SEPI Y QUIERES SER PARTE EL COMITÉ ORGANIZADOR ENVIA UN CORREO A CORECONGRESSCS@GMAIL.COM</i></h3>
-                </div>
-            </div>
         </div>
     </section>
 
