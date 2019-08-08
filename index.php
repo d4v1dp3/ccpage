@@ -657,13 +657,12 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         	<tr class="row">
                         		<td class="col-2"><p>10:30 - 10:50</p></td>
                         		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Inauguración</p></td>
-                        		<td class="col-2"><p class="text-center">Transmission and Reception of Text and Images Using Visible Light</p></td>
+                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_thilo_p.jpg" alt="">Dr. Thilo Pionteck<br>"Networks design for heterogeneous 3D SOC"</p></td>
                         		<td class="col-2"><p class="text-center">Evaluation of Five Classifiers for Depression Episodes Detection</p></td>
                         		<td class="col-2"><p class="text-center">Teaching basic concepts: geometric forms and colors on a NAO robot platform</p></td>
                         	</tr>
                         	<tr class="row">
                         		<td class="col-2"><p>10:50 - 11:00</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Propuesta de sistema de gestión para optimización de redes de transporte público</p></td>
                         		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Multilevel Image Transmission Using Polar Codes</p></td>
                         		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Análisis e identificación de locuciones verbales mexicanas.</p></td>
                         	</tr>
@@ -674,7 +673,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         	<tr class="row">
                         		<td class="col-2"><p>11:10 - 11:30</p></td>
                         		<td class="col-2"><p class="text-center">Algoritmos híbridos paralelos para el problema de coloreado de grafos</p></td>
-                        		<td class="col-2"><p class="text-center">Modelo difuso para la evaluación de condiciones apropiadas para turismo en litorales de México</p></td>
+                        		<td class="col-2"><p class="text-center">Propuesta de sistema de gestión para optimización de redes de transporte público</p></td>
                         		<td class="col-2"><p class="text-center">Ramath: Mobile Application for Math Learning using Augmented Reality</p></td>
                         		<td class="col-2"><p class="text-center">Image encryption system based on Cellular Automata and S-Box</p></td>
                         	</tr>
@@ -703,25 +702,29 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         		<td class="col-2"><p>12:40 - 13:00</p></td>
                         	</tr>
                         	<tr class="row">
-                        		<td class="col-2"><p>13:00 - 14:30</p></td>
+                        		<td class="col-2"><p>13:00 - 14:10</p></td>
                         		<td colspan="4"><p class="text-center m-t-sm">Comida</p></td>
                         	</tr>
                         	<tr class="row">
+                        		<td class="col-2"><p>14:10 - 14:30</p></td>
+                        		<td class="col-2"><p class="text-center m-t-md p-t-sm">Comida</p></td>
+                        		<td class="col-2"><p class="text-center">Transmission and reception of Text and Images Using Visible Light</p></td>
+                        		<td class="col-2"><p class="text-center">Modelo difuso para la evaluación de condiciones apropiadas para turismo en litorales de México</p></td>
+                        		<td class="col-2"><p class="text-center">Estudio de herramientas para alcanzar niveles de calidad de software a nivel proceso</p></td>
+                        	</tr>
+                        	<tr class="row">
                         		<td class="col-2"><p>14:30 - 14:50</p></td>
-                        		<td class="col-2"><p class="text-center">Analog Algorithms with Discontinous States and Non-Unique Evolution Operators: Computability and Stability</p></td>
+                        		<td class="col-2"><p class="text-center m-t-md p-t-sm">Analog Algorithms with Discontinous States and Non-Unique Evolution Operators: Computability and Stability</p></td>
                         		<td class="col-2"><p class="text-center">Embedded system prototype for the assistance of people with visual disabilities on the public sidewalk</p></td>
                         		<td class="col-2"><p class="text-center">Procesador dedicado para el tratamiento de datos en formato de punto flotante</p></td>
                         		<td class="col-2"><p class="text-center">Prediction of cancer using microarrays analysis by Computational Intelligence algorithms</p></td>
                         	</tr>
                         	<tr class="row">
-                        		<td class="col-2"><p>14:50 - 15:00</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Detección y rastreo de peatones empleando vectores de características HOG y LBP en una MVS</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Application of Natural Language Processing techniques for classification of web published news in Spanish</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Convolutional model with classification through Izhikevich's neuron</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Voice synthesis system based on Recursive Functions designed by graphs</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>15:00 - 15:10</p></td>
+                        		<td class="col-2"><p>14:50 - 15:10</p></td>
+                        		<td class="col-2"><p class="text-center">Detección y rastreo de peatones empleando vectores de características HOG y LBP en una MVS</p></td>
+                        		<td class="col-2"><p class="text-center">Application of Natural Language Processing techniques for classification of web published news in Spanish</p></td>
+                        		<td class="col-2"><p class="text-center">Convolutional model with classification through Izhikevich's neuron</p></td>
+                        		<td class="col-2"><p class="text-center">Voice synthesis system based on Recursive Functions designed by graphs</p></td>
                         	</tr>
                         	<tr class="row">
                         		<td class="col-2"><p>15:10 - 15:30</p></td>
@@ -743,10 +746,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         	</tr>
                         	<tr class="row">
                         		<td class="col-2"><p>16:00 - 17:00</p></td>
-                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_thilo_p.jpg" alt="">Dr. Thilo Pionteck<br>"Networks design for heterogeneous 3D SOC"</p></td>
+                        		<td class="col-2"></td>
                         		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_marco_k.jpg" alt="">Dr. Marco Körner<br>"Machine Learning and Computer Vision in Remote Sensing and Earth Observation"</p></td>
                         		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_svetlana_t.jpg" alt="">Dra. Svetlana Toldova<br>"Discourse analysis: a Rethoric structure theory approach"</p></td>
-                        		<td class="col-2"><p class="text-center">Clausura</p></td>
+                        		<td class="col-2"><p class="m-t-xl text-center">Clausura</p></td>
                         	</tr>
                         </tbody>
                     </table>
@@ -1112,19 +1115,10 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 </div>
                 <div class="col-sm-4 col-md-3 col-xs-6">
                     <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
+                        <img class="pull-left" alt="image" src="img/landing/comite/staff_alejandra_gp.png">
                         <div class="media-body">
-                            <div class="commens-name">Alejandra GP</div>
+                            <div class="commens-name">Alejandra Iveth García Pérez</div>
                             <small class="text-muted">CIC</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xs-6">
-                    <div class="comments-avatar">
-                        <img class="pull-left" alt="image" src="img/landing/avatar1.png">
-                        <div class="media-body">
-                            <div class="commens-name">Orlando Andrade</div>
-                            <small class="text-muted">UPIITA</small>
                         </div>
                     </div>
                 </div>
