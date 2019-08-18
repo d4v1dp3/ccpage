@@ -37,7 +37,9 @@
         "big": "Big Data",
         "more": "More Info",
         "robo": "Robotics",
-        "open_labs": "Open Labs"
+        "open_labs": "Open Labs",
+        "gallery": "Gallery",
+        "more-pics": "Show all"
     },
     "date": {
         "titulo": "Dates",
@@ -80,6 +82,9 @@
         "titulo_4": "7 Competences and challenges",
         "titulo_5": "12 Workshops",
         "titulo_6": "80 Research works"
+    },
+    "gallery": {
+      "titulo": "Gallery CORE 2019"
     },
     "presentations": {
         "titulo": "Keynote Speakers 2019",

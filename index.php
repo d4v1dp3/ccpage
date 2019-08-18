@@ -14,6 +14,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
         <title>CIC | CORE 2019</title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="font-awesome/css/fontcustom.css" rel="stylesheet">
@@ -70,6 +71,7 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                 <li data-target="#inSlider" data-slide-to="5"></li>
                 <li data-target="#inSlider" data-slide-to="6"></li>
                 <li data-target="#inSlider" data-slide-to="7"></li>
+                <li data-target="#inSlider" data-slide-to="8"></li>
             </ol>
             <div id="carousel" class="carousel-inner" role="listbox">
                 <div class="item active">
@@ -89,6 +91,17 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         </div>
                     </div>
                     <div class="header-back core"></div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 data-i18n="carousel.gallery">Galería del evento</h1>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#gallery" data-i18n="carousel.more-pics" role="button">Ver todas las fotos</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="header-back galeria"></div>
                 </div>
                 <div class="item">
                     <div class="container">
@@ -159,9 +172,9 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
 
         <!--
         <div class="row text-center m-t-xl" style="margin-top: 100px;">
-        	<img src="img/landing/programa_conferencias.jpeg" alt="">
+                <img src="img/landing/programa_conferencias.jpeg" alt="">
         </div>
-    	-->
+        -->
 
         <section id="date" class="timeline gray-section">
             <div class="container">
@@ -380,6 +393,78 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
                         <div class="m-t-lg">
                             <i class="fa fa-graduation-cap big-icon"></i>
                             <h2 data-i18n="general.titulo_6">80 Trabajos de investigación</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery" class="features">
+            <div class="container">
+                <div class="row features-block">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="navy-line"></div>
+                            <h1 data-i18n="gallery.titulo">Galería CORE 2019</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="lightBoxGallery">
+                        <a href="img/galeria/1.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/1s.jpg"></a>
+                        <a href="img/galeria/2.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/2s.jpg"></a>
+                        <a href="img/galeria/3.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/3s.jpg"></a>
+                        <a href="img/galeria/4.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/4s.jpg"></a>
+                        <a href="img/galeria/5.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/5s.jpg"></a>
+                        <a href="img/galeria/6.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/6s.jpg"></a>
+                        <a href="img/galeria/7.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/7s.jpg"></a>
+                        <a href="img/galeria/8.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/8s.jpg"></a>
+                        <a href="img/galeria/9.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/9s.jpg"></a>
+                        <a href="img/galeria/10.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/10s.jpg"></a>
+                        <a href="img/galeria/11.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/11s.jpg"></a>
+                        <a href="img/galeria/12.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/12s.jpg"></a>
+                        <a href="img/galeria/13.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/13s.jpg"></a>
+                        <a href="img/galeria/14.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/14s.jpg"></a>
+                        <a href="img/galeria/15.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/15s.jpg"></a>
+                        <a href="img/galeria/16.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/16s.jpg"></a>
+                        <a href="img/galeria/17.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/17s.jpg"></a>
+                        <a href="img/galeria/18.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/18s.jpg"></a>
+                        <a href="img/galeria/19.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/19s.jpg"></a>
+                        <a href="img/galeria/20.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/20s.jpg"></a>
+                        <a href="img/galeria/21.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/21s.jpg"></a>
+                        <a href="img/galeria/22.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/22s.jpg"></a>
+                        <a href="img/galeria/23.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/23s.jpg"></a>
+                        <a href="img/galeria/24.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/24s.jpg"></a>
+                        <a href="img/galeria/25.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/25s.jpg"></a>
+                        <a href="img/galeria/26.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/26s.jpg"></a>
+                        <a href="img/galeria/27.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/27s.jpg"></a>
+                        <a href="img/galeria/28.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/28s.jpg"></a>
+                        <a href="img/galeria/29.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/29s.jpg"></a>
+                        <a href="img/galeria/30.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/30s.jpg"></a>
+                        <a href="img/galeria/31.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/31s.jpg"></a>
+                        <a href="img/galeria/32.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/32s.jpg"></a>
+                        <a href="img/galeria/33.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/33s.jpg"></a>
+                        <a href="img/galeria/34.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/34s.jpg"></a>
+                        <a href="img/galeria/35.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/35s.jpg"></a>
+                        <a href="img/galeria/36.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/36s.jpg"></a>
+                        <a href="img/galeria/37.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/37s.jpg"></a>
+                        <a href="img/galeria/38.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/38s.jpg"></a>
+                        <a href="img/galeria/39.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/39s.jpg"></a>
+                        <a href="img/galeria/40.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/40s.jpg"></a>
+                        <a href="img/galeria/41.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/41s.jpg"></a>
+                        <a href="img/galeria/42.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/42s.jpg"></a>
+                        <a href="img/galeria/43.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/43s.jpg"></a>
+                        <a href="img/galeria/44.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/44s.jpg"></a>
+                        <a href="img/galeria/45.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/45s.jpg"></a>
+                        <a href="img/galeria/46.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/46s.jpg"></a>
+                        <a href="img/galeria/47.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/47s.jpg"></a>
+                        <a href="img/galeria/48.jpg" title="CORE 2019 Foto-Galeria" data-gallery=""><img src="img/galeria/48s.jpg"></a>
+                        <div id="blueimp-gallery" class="blueimp-gallery">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <a class="close">×</a>
+                            <a class="play-pause"></a>
+                            <ol class="indicator"></ol>
                         </div>
                     </div>
                 </div>
@@ -613,126 +698,126 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
             </div>
             <!-- TABLE -->
             <div class="ibox float-e-margins">
-            	<div class="ibox-content">
-                <div class="table-responsive conferences-table">
-                    <table class="table table-bordered dataTables-view" >
-                        <thead>
-                            <tr class="row">
-                            	<th class="col-2" style="min-width: 105px;;"></th>
-                                <th class="col-2 text-center"><span class="navy">6 de Agosto</span></th>
-                                <th class="col-2 text-center"><span class="navy">7 de Agosto</span></th>
-                                <th class="col-2 text-center"><span class="navy">8 de Agosto</span></th>
-                                <th class="col-2 text-center"><span class="navy">9 de Agosto</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        	<tr class="row">
-                        		<td class="col-2"><p>10:00 - 10:30</p></td>
-                        		<td colspan="4"><p class="text-center m-t-sm">Registro</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>10:30 - 10:50</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Inauguración</p></td>
-                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_thilo_p.jpg" alt="">Dr. Thilo Pionteck<br>"Networks design for heterogeneous 3D SOC"</p></td>
-                        		<td class="col-2"><p class="text-center">Evaluation of Five Classifiers for Depression Episodes Detection</p></td>
-                        		<td class="col-2"><p class="text-center">Teaching basic concepts: geometric forms and colors on a NAO robot platform</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>10:50 - 11:00</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Multilevel Image Transmission Using Polar Codes</p></td>
-                        		<td rowspan="2" class="col-2"><p class="m-t-xl text-center">Análisis e identificación de locuciones verbales mexicanas.</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>11:00 - 11:10</p></td>
-                        		<td class="col-2"><p class="text-center">Receso</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>11:10 - 11:30</p></td>
-                        		<td class="col-2"><p class="text-center">Algoritmos híbridos paralelos para el problema de coloreado de grafos</p></td>
-                        		<td class="col-2"><p class="text-center">Propuesta de sistema de gestión para optimización de redes de transporte público</p></td>
-                        		<td class="col-2"><p class="text-center">Ramath: Mobile Application for Math Learning using Augmented Reality</p></td>
-                        		<td class="col-2"><p class="text-center">Image encryption system based on Cellular Automata and S-Box</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>11:30 - 11:50</p></td>
-                        		<td class="col-2"><p class="text-center">Sistema de navegación y evasión de obstáculos aplicando un sistema de control difuso en una placa de Arduino UNO</p></td>
-                        		<td class="col-2"><p class="text-center">Generation of Non-Coordinate Navigation Knowledge</p></td>
-                        		<td class="col-2"><p class="text-center">Embedded system for human detection applied to domotics</p></td>
-                        		<td class="col-2"><p class="text-center">Algoritmo multi-objetivo NSGA II para selección óptima de cartera de inversión de S&P 500</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>11:50 - 12:00</p></td>
-                        		<td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>12:00 - 12:20</p></td>
-                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_adolfo_g.jpg" alt="">Dr. Adolfo Guzmán Arenas<br>"Presente y futuro de la ciencia de datos y su tecnología"</p></td>
-                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_humberto_d.jpg" alt="">Dr. Humberto Díaz Pando<br>"Calida de datos, una perspectiva desde la integridad de datos como requisito de la ciberseguridad"</p></td>
-                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_martha_b.jpg" alt="">Dra. Martha Belem Saldivar Márquez<br>"Retos de la ingeniería y soluciones del Control Automático"</p></td>
-                        		<td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_jose_m.jpg" alt="">Dr. Manuel Alejandro Jiménez Lizárraga<br>"Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados"</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>12:20 - 12:40</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>12:40 - 13:00</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>13:00 - 14:10</p></td>
-                        		<td colspan="4"><p class="text-center m-t-sm">Comida</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>14:10 - 14:30</p></td>
-                        		<td class="col-2"><p class="text-center m-t-md p-t-sm">Comida</p></td>
-                        		<td class="col-2"><p class="text-center">Transmission and reception of Text and Images Using Visible Light</p></td>
-                        		<td class="col-2"><p class="text-center">Modelo difuso para la evaluación de condiciones apropiadas para turismo en litorales de México</p></td>
-                        		<td class="col-2"><p class="text-center">Estudio de herramientas para alcanzar niveles de calidad de software a nivel proceso</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>14:30 - 14:50</p></td>
-                        		<td class="col-2"><p class="text-center m-t-md p-t-sm">Analog Algorithms with Discontinous States and Non-Unique Evolution Operators: Computability and Stability</p></td>
-                        		<td class="col-2"><p class="text-center">Embedded system prototype for the assistance of people with visual disabilities on the public sidewalk</p></td>
-                        		<td class="col-2"><p class="text-center">Procesador dedicado para el tratamiento de datos en formato de punto flotante</p></td>
-                        		<td class="col-2"><p class="text-center">Prediction of cancer using microarrays analysis by Computational Intelligence algorithms</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>14:50 - 15:10</p></td>
-                        		<td class="col-2"><p class="text-center">Detección y rastreo de peatones empleando vectores de características HOG y LBP en una MVS</p></td>
-                        		<td class="col-2"><p class="text-center">Application of Natural Language Processing techniques for classification of web published news in Spanish</p></td>
-                        		<td class="col-2"><p class="text-center">Convolutional model with classification through Izhikevich's neuron</p></td>
-                        		<td class="col-2"><p class="text-center">Voice synthesis system based on Recursive Functions designed by graphs</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>15:10 - 15:30</p></td>
-                        		<td class="col-2"><p class="text-center">Software de Estación Terrena para Cohetes Hidropropulsados</p></td>
-                        		<td class="col-2"><p class="text-center">Comparative analysis of interest point detectors algorithms on Robotic Operative System</p></td>
-                        		<td class="col-2"><p class="text-center">MelPeAS: An Intelligent Virtual Tutor for Mexican Elementary Schoolchildren</p></td>
-                        		<td class="col-2"><p class="text-center">Design of a system to determine the value of the property tax through the processing and analysis of satellite images</p></td>
-                        	</tr
->                        	<tr class="row">
-                        		<td class="col-2"><p>15:30 - 15:50</p></td>
-                        		<td class="col-2"><p class="text-center">Algoritmo esteganográfico basado en autómatas celulares y en la sustitución de los bits menos significativos</p></td>
-                        		<td class="col-2"><p class="text-center">When Twitter becomes a data source for geospatial analysis</p></td>
-                        		<td class="col-2"><p class="text-center">Sistema de monitoreo de consumo eléctrico con interfaz para teléfono inteligente</p></td>
-                        		<td class="col-2"><p class="text-center">Propuesta de Sistema de Gestión Inteligente basado en IoT para hidroponía</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>15:50 - 16:00</p></td>
-                        		<td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
-                        	</tr>
-                        	<tr class="row">
-                        		<td class="col-2"><p>16:00 - 17:00</p></td>
-                        		<td class="col-2"></td>
-                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_marco_k.jpg" alt="">Dr. Marco Körner<br>"Machine Learning and Computer Vision in Remote Sensing and Earth Observation"</p></td>
-                        		<td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_svetlana_t.jpg" alt="">Dra. Svetlana Toldova<br>"Discourse analysis: a Rethoric structure theory approach"</p></td>
-                        		<td class="col-2"><p class="m-t-xl text-center">Clausura</p></td>
-                        	</tr>
-                        </tbody>
-                    </table>
+                <div class="ibox-content">
+                    <div class="table-responsive conferences-table">
+                        <table class="table table-bordered dataTables-view" >
+                            <thead>
+                                <tr class="row">
+                                    <th class="col-2" style="min-width: 105px;;"></th>
+                                    <th class="col-2 text-center"><span class="navy">6 de Agosto</span></th>
+                                    <th class="col-2 text-center"><span class="navy">7 de Agosto</span></th>
+                                    <th class="col-2 text-center"><span class="navy">8 de Agosto</span></th>
+                                    <th class="col-2 text-center"><span class="navy">9 de Agosto</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row">
+                                    <td class="col-2"><p>10:00 - 10:30</p></td>
+                                    <td colspan="4"><p class="text-center m-t-sm">Registro</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>10:30 - 10:50</p></td>
+                                    <td rowspan="2" class="col-2"><p class="m-t-xl text-center">Inauguración</p></td>
+                                    <td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_thilo_p.jpg" alt="">Dr. Thilo Pionteck<br>"Networks design for heterogeneous 3D SOC"</p></td>
+                                    <td class="col-2"><p class="text-center">Evaluation of Five Classifiers for Depression Episodes Detection</p></td>
+                                    <td class="col-2"><p class="text-center">Teaching basic concepts: geometric forms and colors on a NAO robot platform</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>10:50 - 11:00</p></td>
+                                    <td rowspan="2" class="col-2"><p class="m-t-xl text-center">Multilevel Image Transmission Using Polar Codes</p></td>
+                                    <td rowspan="2" class="col-2"><p class="m-t-xl text-center">Análisis e identificación de locuciones verbales mexicanas.</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>11:00 - 11:10</p></td>
+                                    <td class="col-2"><p class="text-center">Receso</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>11:10 - 11:30</p></td>
+                                    <td class="col-2"><p class="text-center">Algoritmos híbridos paralelos para el problema de coloreado de grafos</p></td>
+                                    <td class="col-2"><p class="text-center">Propuesta de sistema de gestión para optimización de redes de transporte público</p></td>
+                                    <td class="col-2"><p class="text-center">Ramath: Mobile Application for Math Learning using Augmented Reality</p></td>
+                                    <td class="col-2"><p class="text-center">Image encryption system based on Cellular Automata and S-Box</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>11:30 - 11:50</p></td>
+                                    <td class="col-2"><p class="text-center">Sistema de navegación y evasión de obstáculos aplicando un sistema de control difuso en una placa de Arduino UNO</p></td>
+                                    <td class="col-2"><p class="text-center">Generation of Non-Coordinate Navigation Knowledge</p></td>
+                                    <td class="col-2"><p class="text-center">Embedded system for human detection applied to domotics</p></td>
+                                    <td class="col-2"><p class="text-center">Algoritmo multi-objetivo NSGA II para selección óptima de cartera de inversión de S&P 500</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>11:50 - 12:00</p></td>
+                                    <td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>12:00 - 12:20</p></td>
+                                    <td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_adolfo_g.jpg" alt="">Dr. Adolfo Guzmán Arenas<br>"Presente y futuro de la ciencia de datos y su tecnología"</p></td>
+                                    <td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_humberto_d.jpg" alt="">Dr. Humberto Díaz Pando<br>"Calida de datos, una perspectiva desde la integridad de datos como requisito de la ciberseguridad"</p></td>
+                                    <td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_martha_b.jpg" alt="">Dra. Martha Belem Saldivar Márquez<br>"Retos de la ingeniería y soluciones del Control Automático"</p></td>
+                                    <td rowspan="3" class="col-2 important-conference"><p class="m-t-xl text-center"><img src="img/landing/avatar_jose_m.jpg" alt="">Dr. Manuel Alejandro Jiménez Lizárraga<br>"Aplicación de la teoría de juegos en la formación de vehículos aéreos no tripulados"</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>12:20 - 12:40</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>12:40 - 13:00</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>13:00 - 14:10</p></td>
+                                    <td colspan="4"><p class="text-center m-t-sm">Comida</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>14:10 - 14:30</p></td>
+                                    <td class="col-2"><p class="text-center m-t-md p-t-sm">Comida</p></td>
+                                    <td class="col-2"><p class="text-center">Transmission and reception of Text and Images Using Visible Light</p></td>
+                                    <td class="col-2"><p class="text-center">Modelo difuso para la evaluación de condiciones apropiadas para turismo en litorales de México</p></td>
+                                    <td class="col-2"><p class="text-center">Estudio de herramientas para alcanzar niveles de calidad de software a nivel proceso</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>14:30 - 14:50</p></td>
+                                    <td class="col-2"><p class="text-center m-t-md p-t-sm">Analog Algorithms with Discontinous States and Non-Unique Evolution Operators: Computability and Stability</p></td>
+                                    <td class="col-2"><p class="text-center">Embedded system prototype for the assistance of people with visual disabilities on the public sidewalk</p></td>
+                                    <td class="col-2"><p class="text-center">Procesador dedicado para el tratamiento de datos en formato de punto flotante</p></td>
+                                    <td class="col-2"><p class="text-center">Prediction of cancer using microarrays analysis by Computational Intelligence algorithms</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>14:50 - 15:10</p></td>
+                                    <td class="col-2"><p class="text-center">Detección y rastreo de peatones empleando vectores de características HOG y LBP en una MVS</p></td>
+                                    <td class="col-2"><p class="text-center">Application of Natural Language Processing techniques for classification of web published news in Spanish</p></td>
+                                    <td class="col-2"><p class="text-center">Convolutional model with classification through Izhikevich's neuron</p></td>
+                                    <td class="col-2"><p class="text-center">Voice synthesis system based on Recursive Functions designed by graphs</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>15:10 - 15:30</p></td>
+                                    <td class="col-2"><p class="text-center">Software de Estación Terrena para Cohetes Hidropropulsados</p></td>
+                                    <td class="col-2"><p class="text-center">Comparative analysis of interest point detectors algorithms on Robotic Operative System</p></td>
+                                    <td class="col-2"><p class="text-center">MelPeAS: An Intelligent Virtual Tutor for Mexican Elementary Schoolchildren</p></td>
+                                    <td class="col-2"><p class="text-center">Design of a system to determine the value of the property tax through the processing and analysis of satellite images</p></td>
+                                </tr
+                                >                        	<tr class="row">
+                                    <td class="col-2"><p>15:30 - 15:50</p></td>
+                                    <td class="col-2"><p class="text-center">Algoritmo esteganográfico basado en autómatas celulares y en la sustitución de los bits menos significativos</p></td>
+                                    <td class="col-2"><p class="text-center">When Twitter becomes a data source for geospatial analysis</p></td>
+                                    <td class="col-2"><p class="text-center">Sistema de monitoreo de consumo eléctrico con interfaz para teléfono inteligente</p></td>
+                                    <td class="col-2"><p class="text-center">Propuesta de Sistema de Gestión Inteligente basado en IoT para hidroponía</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>15:50 - 16:00</p></td>
+                                    <td colspan="4"><p class="text-center m-t-sm">Receso</p></td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="col-2"><p>16:00 - 17:00</p></td>
+                                    <td class="col-2"></td>
+                                    <td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_marco_k.jpg" alt="">Dr. Marco Körner<br>"Machine Learning and Computer Vision in Remote Sensing and Earth Observation"</p></td>
+                                    <td class="col-2 important-conference"><p class="text-center"><img src="img/landing/avatar_svetlana_t.jpg" alt="">Dra. Svetlana Toldova<br>"Discourse analysis: a Rethoric structure theory approach"</p></td>
+                                    <td class="col-2"><p class="m-t-xl text-center">Clausura</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                </div>
-                </div>
-                <!-- TABLE -->
+            </div>
+            <!-- TABLE -->
         </section>
 
         <section class="navy-section testimonials" style="margin-top: 0">
@@ -2137,14 +2222,11 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en") {
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.js"></script>
     <script src="js/inspinia.js"></script>
+    <script src="js/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
     <script src="js/plugins/i18next/i18next.min.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
     <script src="js/plugins/wow/wow.min.js"></script>
     <script>
-        $(function () {
-
-        });
-
         $(document).ready(function () {
             $('body').scrollspy({
                 target: '.navbar-fixed-top',

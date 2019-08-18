@@ -7161,7 +7161,9 @@ body.landing-page {
 .landing-page .header-back.ciudadInteligente {
     background: url('../img/landing/header_ciudadInteligente.jpg') 50% 0 no-repeat;
 }
-
+.landing-page .header-back.galeria {
+    background: url('../img/landing/header_galeria.jpg') 50% 0 no-repeat;
+}
 .landing-page .carousel {
     height: 470px;
 }
